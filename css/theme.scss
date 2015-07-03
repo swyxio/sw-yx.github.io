@@ -16,10 +16,12 @@
 
 
 body {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 130px;
+//  padding-bottom: 60px;
   color: #ddd;
-  background-color: #2D2D31;
+//  background-color: #2D2D31;
+  background-color: #292929;
+  background-image: url(./pics/triangles.png);
 }
 
 .copyright {
@@ -49,7 +51,7 @@ body {
 }
 
 .container{
-      margin-right: 25%;
+//      margin-right: 25%;
 }
 
 .well {
@@ -121,34 +123,27 @@ a:hover{
 /************************/
 
 ul.social-media {
-  text-align:left;
+  text-align:center;
   padding: 0 0 10px 0;
   li {
     display:inline-block;
   }
   li > a {
-    width: 32px;
-    height: 32px;
+    width: 45px;
+    height: 45px;
     background: #f9f7f3;
     border-radius: 0.25em;
     @include transition(background-color 0.2s);
     border-bottom-color: transparent;
-      display: inline-block;
-      overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  background-repeat: no-repeat;
-  background-position: center center;
+    display: inline-block;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    background-position: center center;
 
     &:hover {
       background-color: #da4939;
-    }
-  }
-
-  li a.twitter {
-    background-position: 0 0;
-      &:hover {
-        background-position: 0 -32px;
     }
   }
 
@@ -188,9 +183,9 @@ ul.social-media {
   }
  }
 
-
-div.post-title{
-  text-align: center;
+h3.post-title{
+  padding-top: 35px;
+  text-align: left;
   font-size: 25px;
 }
 
@@ -212,6 +207,41 @@ div.post-meta {
   }
 }
 
-div.post-content > img{
+//div.post-content > img{
+//
+//}
 
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+    .twoRow .navbar-collapse {
+        clear: left;
+    }
+  .footer-distributed .footer{
+		text-align: center;
+	}
+
+	.footer-distributed .footer{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer{
+		line-height: 1.8;
+	}
+}
+
+.footer-distributed {
+  background-color: #292c2f;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+  margin-top: 80px;
+  text-align: center;
 }
