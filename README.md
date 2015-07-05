@@ -1,4 +1,4 @@
-Jekyll Clean
+Jekyll Clean Dark
 ============
 
 * Get it from [github](https://github.com/scotte/jekyll-clean).
@@ -36,29 +36,12 @@ push your existing master off to a new branch so you have the old history and st
 a new branch with this as the start, merging in your \_posts and other assets (after
 git rm'ing the current \_posts.
 
-Not ideal, but you have to make a choice - either apply it manually or base your
-blog off this theme's branch. Either way it will work, and both have their own
-pros and cons.
 
 You can setup an upstream tracking repository like so:
 
 ```
 $ git remote add upstream git@github.com:scotte/jekyll-clean.git
 ```
-
-And now when you wish to merge your own branch onto the latest version of the
-theme, simply do:
-
-```
-$ git fetch upstream
-$ git merge upstream/gh-pages
-```
-
-Of course you will have to resolve conflicts for \_config.yml, \_includes/links-list.html,
-and \_posts, and so on, but in practice this is pretty simple.
-
-This is how I maintain my own blog which is based on this theme. The old history is
-sitting in an **old-master** branch that I can refer to when I need to.
 
 License
 =======
