@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Jekyll Clean Theme"
+title: "Jekyll Dark Clean Theme"
 date: 2014-08-22 16:25:06 -0700
-comments: false
+comments: true
 tags: jekyll
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam metus, commodo sit amet ante a, finibus efficitur lorem. Maecenas egestas purus in tempor volutpat. Sed dapibus tortor nec sem suscipit ullamcorper. Nulla nec lorem lacus. Phasellus condimentum massa quis dolor consequat viverra ut ac magna.
+description: Here I want to introduce you the dark theme for Jekyll. It was forked from [Scotte's](https://github.com/scotte/jekyll-clean) jekyll-clean and customized.
 comments: true
 ---
 
@@ -31,7 +31,7 @@ Don't forget to occassionally merge against my upstream repository so you can ge
 the latest changes. Pull requests are encouraged and accepted!
 
 Installation
-============
+==
 
 If you don't have a blog already on github, start by cloning this repository.
 Best to do that directly on github and then clone that down to your computer.

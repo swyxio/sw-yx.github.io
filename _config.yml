@@ -3,13 +3,10 @@
 name: Blog Name
 description: Software Developer
 
-# url is currently only used only for the RSS feed in feed.xml
+# Url is currently only used only for the RSS feed in feed.xml
 url: http://streetturtle.github.io
 
-# baseurl will often be '', but for a project page on gh-pages, it needs to
-# be the project name.
-# *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
-#     run it like so: jekyll serve --baseurl=''
+# For a project page here should be a project name. Otherwise (for user's/organizaion's page leave it empty)
 baseurl: '/jekyll-clean-dark'
 
 social:
@@ -19,8 +16,9 @@ social:
   instagram: streetturtle
   lastfm: streetturtle
 
-  # Google Analytics key, leave blank to ignore
+# Google Analytics key, leave blank to ignore
 google_analytics_key:
+# Yandex metrika (https://metrica.yandex.com/) leave blanc to ignore or put true to use
 yandex_metrika:
 
 
