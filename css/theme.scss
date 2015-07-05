@@ -97,6 +97,8 @@ code {
   border-radius: 5px;
 }
 pre {
+    color: #ddd;
+
   display: block;
   margin-top: 0;
   margin-bottom: 1em;
@@ -137,8 +139,6 @@ ul.social-media {
   li > a {
     width: 45px;
     height: 45px;
-//    background: #f9f7f3;
-//    background: #3CA2A2;
     border-radius: 0.25em;
     @include transition(background-color 0.2s);
     border-bottom-color: transparent;

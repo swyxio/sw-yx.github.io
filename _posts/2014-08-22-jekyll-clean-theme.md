@@ -4,7 +4,8 @@ title: "Jekyll Clean Theme"
 date: 2014-08-22 16:25:06 -0700
 comments: false
 tags: jekyll
-description: some test description
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam metus, commodo sit amet ante a, finibus efficitur lorem. Maecenas egestas purus in tempor volutpat. Sed dapibus tortor nec sem suscipit ullamcorper. Nulla nec lorem lacus. Phasellus condimentum massa quis dolor consequat viverra ut ac magna.
+comments: true
 ---
 
 * Get it from [github](https://github.com/scotte/jekyll-clean).
