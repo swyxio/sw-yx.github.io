@@ -12,9 +12,6 @@ url: http://streetturtle.github.io
 #     run it like so: jekyll serve --baseurl=''
 baseurl: '/jekyll-clean-dark'
 
-# This can be '' to hide the Github nav button
-github: 'streetturtle'
-
 social:
   github: streetturtle
   stackoverflow: streetturtle
