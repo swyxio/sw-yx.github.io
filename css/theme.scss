@@ -36,9 +36,9 @@ body {
   margin-top: .7em;
   line-height: 1em;
 }
-.sidebar a:hover {
-  color: #3071a9;
-}
+//.sidebar a:hover {
+//  color: #3071a9;
+//}
 
 .well {
   background-color: #444;
@@ -234,9 +234,10 @@ nav .navbar-toggle {
 }
 .navbar-brand {
   font-size: 30px;
+  color: #3CA2A2 !important;
 }
 nav.navbar.shrink {
-  min-height: 35px;
+  min-height: 25px;
 }
 nav.shrink a {
   padding-top: 10px !important;
