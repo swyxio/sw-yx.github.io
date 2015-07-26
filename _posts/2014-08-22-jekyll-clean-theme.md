@@ -37,9 +37,7 @@ After you will have to set up your `_config.yml`
 License
 =======
 
-The content of this theme is distributed and licensed under a
-![License Badge]({{ site.baseurl}}/images/cc_by_88x31.png)
-[Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/legalcode)
+The content of this theme is distributed and licensed under a [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/legalcode)
 
     This license lets others distribute, remix, tweak, and build upon your work,
     even commercially, as long as they credit you for the original creation. This

@@ -2,19 +2,17 @@
 
 <div class="container container-center">
   <div class="row">
-    <div class="col-md-3 hidden-xs">
-      {% include sidebar.html %}
-    </div>
-    <div class="col-md-9">
+
+    <div class="col-md-8">
       <div class="article">
         <div class="well">
 
-          <h1><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h1>
+          <h1><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></h1>
 
           <div class="post-meta">
             <ul>
               {% for tag in page.tags %}
-              <li><a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a></li>
+              <li><a href="{{ site.url }}/tag/{{ tag }}">{{ tag }}</a></li>
               {% endfor %}
             </ul>
             <time>{{ page.date | date_to_string }}</time>
@@ -31,14 +29,11 @@
           {% endif %}
         </div>
       </div>
-<!--
-      <div class="pagination">
-        {% if page.next %}
-        <a class="btn btn-default" href="{{ site.baseurl}}{{ page.next.url }}" class="next">Newer Post</a> {% endif %} {% if page.previous %}
-        <a class="btn btn-default" href="{{ site.baseurl}}{{ page.previous.url }}" class="previous">Older Post</a> {% endif %}
-      </div>
--->
 
+    </div>
+
+    <div class="col-md-4 hidden-xs">
+      {% include sidebar.html %}
     </div>
   </div>
 </div>

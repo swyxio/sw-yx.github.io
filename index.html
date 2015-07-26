@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: page
 ---
 
-<div class="well main-page">
-  {% for post in site.posts limit:10 %}
+{% for post in site.posts limit:10 %}
   <h3 class="post-title">
     <a href="{{ site.baseurl}}{{ post.url }}">
       {{ post.title }}
@@ -25,12 +24,10 @@ layout: default
     </p>
   </div>
   {% endfor %}
-</div>
-</div>
 
 
 <div class="post-footer">
   <div class="column-full">
-    <h3><a href="{{ '/blog' | prepend: site.baseurl | prepend: site.url }}">Blog archive</a></h3>
+    <h3><a href="{{ '/archive.html' | prepend: site.baseurl | prepend: site.url }}">Blog archive</a></h3>
   </div>
 </div>
