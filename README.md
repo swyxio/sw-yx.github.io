@@ -13,7 +13,7 @@ sidebar.
 Optionally you can use:
 
  - [Disqus](http://disqus.com) as a comments system;
- - [Google Analyticse](http://www.google.com/analytics/);
+ - [Google Analytics](http://www.google.com/analytics/);
  - [Yandex Metrika](http://metrica.yandex.com);
  - Blog tags.
 
