@@ -6,7 +6,10 @@ comments: true
 tags: jekyll
 description: Here I want to introduce you the dark theme for Jekyll. It was forked from Scotte's jekyll-clean theme and customized.
 comments: true
+toc: true
 ---
+
+## Introduction
 
 Here is a sample post for Jekyll-Clean-Dark theme. This theme was created on top of Jekyll Clean theme by Scotte, you can view the originnal version in action [on his blog](https://scotte.github.io).
 
@@ -26,16 +29,15 @@ Optionally you can use:
 
 All these features could be set up in `_config.yml`. Also you can have social icons which could lead to your social acounts. Out-of-the box it has: LinkedIn, GitHub, StackOverflow, LastFm, Instagram. You can easily add more by putting svg images in a /css/social folder.
 
-Installation
-==
+## Installation
+
 
 If you dont't have your own blog you can clone this repository and put your articles in a `_posts` folder.
 If you already have your own blog then I think you can clone this repository and copy-paste content keeping your `_posts` folder.
 
 After you will have to set up your `_config.yml`
 
-License
-=======
+## License
 
 The content of this theme is distributed and licensed under a [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/legalcode)
 
