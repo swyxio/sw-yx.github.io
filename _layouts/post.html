@@ -3,7 +3,7 @@
 {% if page.toc %}
   <script type="text/javascript">
     $(document).ready(function() {
-    $('#toc').toc({ listType: 'ul' });
+    $('#toc').toc({ listType: 'ul', showSpeed: 0 });
     });
   </script>
 {% endif %}
@@ -27,7 +27,7 @@
           </div>
 
           <div class="post-content">
-            <div id="toc"></div>
+            <div id="toc" class="toc"></div>
             {{ content }}
           </div>
           {% if page.comments %}
