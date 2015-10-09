@@ -12,10 +12,6 @@ baseurl: '/jekyll-clean-dark'
 
 social:
   github: streetturtle
-  stackoverflow: streetturtle
-  linkedin: streetturtle
-  instagram: streetturtle
-  lastfm: streetturtle
 
 # Google Analytics key, leave blank to ignore
 google_analytics_key:
