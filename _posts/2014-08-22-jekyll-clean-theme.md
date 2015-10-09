@@ -11,14 +11,27 @@ toc: true
 
 ## Introduction
 
-Here is a sample post for Jekyll-Clean-Dark theme. This theme was created on top of Jekyll Clean theme by Scotte, you can view the originnal version in action [on his blog](https://scotte.github.io).
+Here is a sample post for Jekyll-Clean-Dark theme. 
 
 * Get it from [github](https://github.com/streetturtle/jekyll-clean-dark).
 * See the [live demo](http://pavelmakhov.com/jekyll-clean-dark).
-* See it [in action on my own blog](http://pavelmakhov.com).
+* See it [in action on my blog](http://pavelmakhov.com).
 
-This theme uses some parts of Twitter Bootstrap, which allows it to look nice on a mobile devices using a collapsable nav bar and hiding the
-sidebar.
+This theme was created on top of [Jekyll Clean theme](https://scotte.github.io) by Scotte.
+
+This theme uses some parts of Twitter Bootstrap, which allows it looks nice on a mobile devices using a collapsable nav bar and hiding the sidebar.
+
+Here how it looks like on iPhone 5:
+
+![My helpful screenshot]({{ site.baseurl | prepend:site.url}}/images/iphone_portrait.PNG)
+![My helpful screenshot]({{ site.baseurl | prepend:site.url}}/images/iphone_landscape.PNG)
+
+And on iPad mini:
+
+![My helpful screenshot]({{ site.baseurl | prepend:site.url}}/images/ipad_portrait.PNG)
+
+![My helpful screenshot]({{ site.baseurl | prepend:site.url}}/images/ipad_landscape.PNG)
+
 
 Optionally you can use:
 
@@ -27,10 +40,52 @@ Optionally you can use:
  - [Yandex Metrika](http://metrica.yandex.com);
  - Blog tags.
 
-All these features could be set up in `_config.yml`. Also you can have social icons which could lead to your social acounts. Out-of-the box it has: LinkedIn, GitHub, StackOverflow, LastFm, Instagram. You can easily add more by putting svg images in a /css/social folder.
+Also you can have social icons which could lead to your social acounts. 
+Out-of-the box it has: 
+
+<ul class="social-media">
+    <li>
+        <a title="{{ site.social.github }} on Github"
+            href="https://github.com/{{ site.social.github }}"
+            class="github wc-img-replace" target="_blank">Github</a>
+    </li>
+    <li>
+        <a title="{{ site.social.stackoverflow }} on StackOverflow"
+            href="http://stackoverflow.com/users/1252056/{{ site.social.stackoverflow }}"
+            class="stackoverflow wc-img-replace" target="_blank">StackoverFlow</a>
+    </li>
+    <li>
+        <a title="{{ site.social.github }} on LinkedIn"
+            href="https://www.linkedin.com/in/{{ site.social.linkedin }}"
+            class="linkedin wc-img-replace" target="_blank">LinkedIn</a>
+    </li>
+    <li>
+        <a title="{{ site.social.instagram }} on Instagram"
+            href="https://instagram.com/{{ site.social.instagram }}"
+            class="instagram wc-img-replace" target="_blank">Instagram</a>
+    </li>
+    <li>
+        <a title="{{ site.social.lastfm }} on LinkedIn"
+            href="http://lastfm.com/user/{{ site.social.lastfm }}"
+            class="lastfm wc-img-replace" target="_blank">LastFm</a>
+    </li>
+    <li>
+        <a title="{{ site.social.careers }} on Careers"
+            href="https://careers.stackoverflow.com/{{ site.social.careers }}"
+            class="careers wc-img-replace" target="_blank">Careers</a>
+    </li>
+    <li>
+        <a title="{{ site.social.rss }} RSS"
+            href="{{site.url}}/{{ site.social.rss }}"
+            class="rss wc-img-replace" target="_blank">RSS</a>
+    </li>
+</ul>
+
+You can easily add more by putting svg images in a /css/social folder and adding css styles for them.
+
+All these features could be set up in `_config.yml`.
 
 ## Installation
-
 
 If you dont't have your own blog you can clone this repository and put your articles in a `_posts` folder.
 If you already have your own blog then I think you can clone this repository and copy-paste content keeping your `_posts` folder.

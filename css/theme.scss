@@ -152,7 +152,7 @@ ul.social-media {
 //      background-color: #3CA2A2;
     }
   }
-  li a.github {
+    li a.github {
     background-image: url("./social/githubWh.svg");
     &:hover {
       background-image: url("./social/githubGr.svg");
@@ -180,6 +180,18 @@ ul.social-media {
     background-image: url("./social/lastfmWh.svg");
     &:hover {
       background-image: url("./social/lastfmGr.svg");
+    }
+  }
+  li a.careers {
+    background-image: url("./social/careers.svg");
+    &:hover {
+      background-image: url("./social/careers.svg");
+    }
+  }
+  li a.rss {
+    background-image: url("./social/rssWh.svg");
+    &:hover {
+      background-image: url("./social/rssGr.svg");
     }
   }
 }
