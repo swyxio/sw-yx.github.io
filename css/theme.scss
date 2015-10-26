@@ -293,6 +293,10 @@ nav.shrink .navbar-toggle {
   padding: 20px 25px;
   margin-top: 80px;
   text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
 }
 
 
@@ -327,4 +331,13 @@ nav.shrink .navbar-toggle {
 	-webkit-box-shadow: 0 10px 6px -6px #777;
 	   -moz-box-shadow: 0 10px 6px -6px #777;
 	        box-shadow: 0 10px 6px -6px #777;
+}
+
+.wrapper{
+  min-height: 100%;
+  position: relative;
+}
+
+.content{
+  padding-bottom: 250px;
 }
