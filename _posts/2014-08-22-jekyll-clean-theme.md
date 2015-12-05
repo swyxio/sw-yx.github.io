@@ -44,41 +44,54 @@ Also you can have social icons which could lead to your social acounts.
 Out-of-the box it has: 
 
 <ul class="social-media">
+
     <li>
         <a title="{{ site.social.github }} on Github"
             href="https://github.com/{{ site.social.github }}"
-            class="github wc-img-replace" target="_blank">Github</a>
+            target="_blank"><i class="fa fa-github fa-2x"></i></a>
     </li>
+    
+
+    
     <li>
         <a title="{{ site.social.stackoverflow }} on StackOverflow"
             href="http://stackoverflow.com/users/1252056/{{ site.social.stackoverflow }}"
-            class="stackoverflow wc-img-replace" target="_blank">StackoverFlow</a>
+            target="_blank"><i class="fa fa-stack-overflow fa-2x"></i></a>
     </li>
+    
+
     <li>
         <a title="{{ site.social.github }} on LinkedIn"
             href="https://www.linkedin.com/in/{{ site.social.linkedin }}"
-            class="linkedin wc-img-replace" target="_blank">LinkedIn</a>
+            target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
     </li>
+    
+
+
+    
     <li>
         <a title="{{ site.social.instagram }} on Instagram"
             href="https://instagram.com/{{ site.social.instagram }}"
-            class="instagram wc-img-replace" target="_blank">Instagram</a>
+            target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
     </li>
+    
+
+
+    
     <li>
         <a title="{{ site.social.lastfm }} on LinkedIn"
             href="http://lastfm.com/user/{{ site.social.lastfm }}"
-            class="lastfm wc-img-replace" target="_blank">LastFm</a>
+            target="_blank"><i class="fa fa-lastfm fa-2x"></i></a>
     </li>
-    <li>
-        <a title="{{ site.social.careers }} on Careers"
-            href="https://careers.stackoverflow.com/{{ site.social.careers }}"
-            class="careers wc-img-replace" target="_blank">Careers</a>
-    </li>
+    
+
+    
     <li>
         <a title="{{ site.social.rss }} RSS"
             href="{{site.url}}/{{ site.social.rss }}"
-            class="rss wc-img-replace" target="_blank">RSS</a>
+            target="_blank"><i class="fa fa-rss fa-2x"></i></a>
     </li>
+    
 </ul>
 
 You can easily add more by putting svg images in a /css/social folder and adding css styles for them.
