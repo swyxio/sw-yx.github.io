@@ -2,10 +2,8 @@
 layout: post
 title: "Jekyll Dark Clean Theme"
 date: 2014-08-22 16:25:06 -0700
-comments: true
 tags: jekyll
 description: Here I want to introduce you the dark theme for Jekyll. It was forked from Scotte's jekyll-clean theme and customized.
-comments: true
 toc: true
 ---
 
@@ -109,10 +107,10 @@ After you will have to set up your `_config.yml`
 
 The content of this theme is distributed and licensed under a [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/legalcode)
 
-    This license lets others distribute, remix, tweak, and build upon your work,
-    even commercially, as long as they credit you for the original creation. This
-    is the most accommodating of licenses offered. Recommended for maximum
-    dissemination and use of licensed materials.
+> This license lets others distribute, remix, tweak, and build upon your work,
+> even commercially, as long as they credit you for the original creation. This
+> is the most accommodating of licenses offered. Recommended for maximum
+> dissemination and use of licensed materials.
 
 In other words: you can do anything you want with this theme on any site, just please
 provide a link to the original theme on github.

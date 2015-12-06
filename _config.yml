@@ -28,7 +28,7 @@ yandex_metrika:
 # setting below must also be true. Individual posts can override 'comments' to
 # disable on a post-by-post basis
 disqus: streetturtle
-comments: true
+comments: false
 
 permalink: /:year/:month/:title
 
@@ -36,8 +36,11 @@ permalink: /:year/:month/:title
 #paginate: 3
 
 highlighter: pygments
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+#markdown: redcarpet
+#redcarpet:
+#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+markdown: kramdown
+kramdown:
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
 
 exclude: ['README.md', 'LICENSE']
