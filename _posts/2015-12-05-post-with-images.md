@@ -28,4 +28,20 @@ This theme supports two types of images:
 {% endraw %}
 {% endhighlight html %}
 
+You can apply your own styles to image by creating css class with style:
+
+{% highlight css %}
+.custom-image
+{
+// your style
+}
+{% endhighlight css %}
+
+And then applying your style just after the image in curly brackets with colon:
+
+{% highlight html %}
+{% raw %}
+[!image](path to image){:.custom-image}
+{% endraw %} 
+{% endhighlight html %}
 
