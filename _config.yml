@@ -13,7 +13,7 @@ baseurl: '/jekyll-clean-dark'
 social:
   github: streetturtle
   stackoverflow: ''
-  linkedin: ''
+  linkedin:
   instagram: ''
   lastfm: ''
   rss: feed.xml
@@ -21,7 +21,7 @@ social:
 # Google Analytics key, leave blank to ignore
 google_analytics_key:
 # Yandex metrika (https://metrica.yandex.com/) leave blanc to ignore or put true to use
-yandex_metrika:
+yandex_metrica:
 
 
 # Set this to your disqus shortname to enable comments. Note that the 'comments'
@@ -36,9 +36,7 @@ permalink: /:year/:month/:title
 #paginate: 3
 
 highlighter: pygments
-#markdown: redcarpet
-#redcarpet:
-#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
 markdown: kramdown
 kramdown:
   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
