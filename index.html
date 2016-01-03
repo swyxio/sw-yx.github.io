@@ -3,7 +3,7 @@ layout: page
 ---
 
 {% for post in site.posts limit:10 %}
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="{{post.url | prepend:site.baseurl | prepend:site.url}}">
       {{ post.title }}
     </a>
