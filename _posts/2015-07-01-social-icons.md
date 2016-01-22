@@ -30,7 +30,7 @@ Out-of-the box it has:
       target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
   </li>
   <li>
-    <a title="LinkedIn"
+    <a title="Last.fm"
       href="http://lastfm.com/user/{{ site.social.lastfm }}"
       target="_blank"><i class="fa fa-lastfm fa-2x"></i></a>
   </li>
