@@ -53,3 +53,20 @@ Using very cool [feature](http://kramdown.gettalong.org/quickref.html#block-attr
 
 >Warning 
 {: .note .warning}
+
+# Keyboard buttons
+
+In case you need to show some keyboard shortcut like `Ctrl`{: .key}+`A`{:.key} use following construction:
+
+{% highlight bash %}
+`Ctrl`{: .key}+`A`{:.key}
+{% endhighlight bash %}
+
+Example of keyboard shortcut in terminal:
+
+`Ctrl`{: .key} + `A`{: .key} = Move cursor to beginning of line
+`Ctrl`{: .key} + `E`{: .key} = Move cursor to end of line
+`Ctrl`{: .key} + `C`{: .key} = kills the current process.
+`Ctrl`{: .key} + `Z`{: .key} = sends the current process to the background.
+`Ctrl`{: .key} + `D`{: .key} = logs you out.
+`Ctrl`{: .key} + `R`{: .key} = finds the last command matching the entered letters.

@@ -49,12 +49,7 @@ body {
 .main-page {
   width: 75%;
 }
-//.well h1 {
-//  color: #ddd;
-//  font: {
-//    size: 1.3em
-//  }
-//}/
+
 h1 { font-size: 2em; }
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.17em; }
@@ -280,16 +275,6 @@ nav.shrink .navbar-toggle {
 	margin:40px auto;
 }
 
-
-/*==================================================
- * Effect 1
- * ===============================================*/
-.effect1{
-	-webkit-box-shadow: 0 10px 6px -6px #777;
-	   -moz-box-shadow: 0 10px 6px -6px #777;
-	        box-shadow: 0 10px 6px -6px #777;
-}
-
 .wrapper{
   min-height: 100%;
   position: relative;
@@ -297,4 +282,14 @@ nav.shrink .navbar-toggle {
 
 .content{
   padding-bottom: 250px;
+}
+
+.key {
+  font-size: 1.0em;
+  box-shadow: 1px 0 1px 0 #555, 0 1px 0 2px #888, 0 2px 0 2px #777;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin: 2px 3px;
+  padding: 0px 5px;
 }
