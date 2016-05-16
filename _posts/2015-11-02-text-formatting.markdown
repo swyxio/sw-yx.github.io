@@ -35,7 +35,7 @@ You also can combine them: `**asterisks and _underscores_**` -> **asterisks and 
 
 >Blockquotes
 
-Using very cool [feature](http://kramdown.gettalong.org/quickref.html#block-attributes) of kramdown which allows to assign any attribute to a block-level element I've added note a warning:
+Using very cool [feature](http://kramdown.gettalong.org/quickref.html#block-attributes) of kramdown which allows to assign any attribute to a block-level element I've added note and warning:
 
 {% highlight bash %}
 >Note 
