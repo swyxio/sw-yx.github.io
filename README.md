@@ -15,7 +15,8 @@ Optionally you can use:
  - [Disqus](http://disqus.com) as a comments system;
  - [Google Analytics](http://www.google.com/analytics/);
  - [Yandex Metrica](http://metrica.yandex.com);
- - Blog tags.
+ - Blog tags;
+ - Share buttons.
 
 All these features could be set up in `_config.yml`. Also you can have social icons which could lead to your social acounts. It uses font-awesome, so you can have any icon you want to any social profile. Out-of-the box it has: LinkedIn, GitHub, StackOverflow, LastFm, Instagram. And you can easily add more by adding new style in `theme.css` and setting it in `_config.yml`.
 
