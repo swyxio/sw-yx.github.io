@@ -6,6 +6,12 @@ tags: jekyll
 description: Text formatting examples.
 ---
 
+# Accent colors
+
+Accent color is color for some important elements, such as links, buttons, icons. Currently accent color is <span class="label" style="background-color:#3CA2A2; color:#444444">#3CA2A2</span>. This theme has some more predefined colors available in **theme.scss**, under variable `$accent-color` in the beggining of the file, such as <span class="label" style="background-color:#C38FD6; color:#444444">#C38FD6</span>, <span class="label" style="background-color:#8FD6B3; color:#444444">#8FD6B3</span>, <span class="label" style="background-color:#35B4DE; color:#444444">#35B4DE</span>, <span class="label" style="background-color:#D2E354; color:#444444">#D2E354</span>, <span class="label" style="background-color:#52B54B; color:#444444">#52B54B</span>. You can use one of them or define your own!
+
+# Text formating example
+
 Some examples of text formating for some common text elements.
 
 # Headers
@@ -28,11 +34,10 @@ You also can combine them: `**asterisks and _underscores_**` -> **asterisks and 
 
 # Blockquotes and notes
 
-
 {% highlight bash %}
 >Blockquotes
 {% endhighlight bash %}
-
+he
 >Blockquotes
 
 Using very cool [feature](http://kramdown.gettalong.org/quickref.html#block-attributes) of kramdown which allows to assign any attribute to a block-level element I've added note and warning:
