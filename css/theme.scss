@@ -25,10 +25,11 @@ $accent-color: #3CA2A2;    // original =)
 //$accent-color: #52B54B;  // green
 
 $font-color: #dddddd;
+$background-color: #292929;
+$post-panel-color: #444;
+$footer-background-color: #292c2f;
 $note-color: #87CEFA;
 $warning-color: #ffff00;
-$footer-background-color: #292c2f;
-$background-color: #292929;
 
 //********************************************************
 //                  Common styles
@@ -40,7 +41,7 @@ body {
   //background: $background-color url(./pics/squares.png); // Another good pattern for background
 }
 .well {
-  background-color: #444;
+  background-color: $post-panel-color;
   box-shadow: 0 0 0 0, 0px 8px 16px rgba(0, 0, 0, 0.2);
   border: 0;
   border-radius: 6px;
@@ -339,6 +340,21 @@ nav.shrink .navbar-toggle {
 {
   margin: 0 auto;
   display: block;
+}
+.filename{
+  padding: 0px;
+  margin: 0px;
+  background-color: #292929;
+  color: lightgrey;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  margin-bottom: 0px;
+  padding-left: 1em;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  border-left: 0px;
+  bottom: -2px;
+  position: relative;
+  padding-bottom: 2px;
 }
 
 //********************************************************
