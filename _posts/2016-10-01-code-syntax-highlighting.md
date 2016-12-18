@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Sample post with code snippets"
-date: 2015-09-01 16:25:06
+title: "Code snippets"
+date: 2016-10-01 16:25:06
 tags: code jekyll
 description: Sample post showing how code samples would look like
 ---
