@@ -8,7 +8,7 @@ description: Sample post showing how code samples would look like
 
 ## Introduction
 
-For code syntax coloration I'm using Darcula theme from Intellij IDEA, which I've found in this post [Darcula theme for Pygments](http://smasue.github.io/pygments-darcula/).
+For code syntax coloration I'm using Darcula theme from Intellij IDEA, which I've found in this post [Darcula theme for Pygments](http://smasue.github.io/pygments-darcula).
 
 XML with line numbers (linenos flag), `{{ "{%" }} highlight xml linenos %}`:
 {% highlight xml linenos %}
