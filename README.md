@@ -17,18 +17,23 @@ Optionally you can use:
  - [Disqus](http://disqus.com) as a comments system;
  - [Google Analytics](http://www.google.com/analytics/);
  - [Yandex Metrica](http://metrica.yandex.com);
- - Blog tags;
+ - Blog tags - check the section below;
  - Share buttons.
 
 All these features could be set up in `_config.yml`. Also you can have social icons which could lead to your social profiles. It uses [font-awesome](http://fontawesome.io/), so you can have any icon you want to any social profile. Out-of-the box it has: LinkedIn, GitHub, StackOverflow, LastFm, Instagram. And you can easily add more by adding new style in `theme.css` and setting it in `_config.yml`.
 
 Installation
-==
+============
 
 If you dont't have your own blog you can clone this repository and put your articles in a `_posts` folder.
 If you already have your own blog then I think you can clone this repository and copy-paste content keeping your `_posts` folder.
 
 After you will have to set up your `_config.yml`
+
+Blog tags
+=========
+
+To use this feature you simply will need to create a markdown file for each tag which you are using in you site in **tag** folder. To simplify this procedure there is an [/admin](http://pavelmakhov.com/jekyll-clean-dark/admin) page, which outputs the bash command which you just need to run inside **tag** folder of your site. Also don't forget to rerun it when you add a post with new tag.
 
 License
 =======
