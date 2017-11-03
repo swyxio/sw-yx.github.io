@@ -34,16 +34,18 @@ XML with line numbers (linenos flag), `{{ "{%" }} highlight xml linenos %}`:
 {% endraw %}
 {% endhighlight xml %}
 
-JSON:
+>JSON
+{:.filename}
 {% highlight json %}
 {"employees":[
     {"firstName":"John", "lastName":"Doe"},
     {"firstName":"Anna", "lastName":"Smith"},
     {"firstName":"Peter", "lastName":"Jones"}
 ]}
-{% endhighlight json %}
+{% endhighlight %}
 
-SQL:
+>SQL
+{:.filename}
 {% highlight SQL %}
 select count(*) as cm_content_nodes
 from alf_node nd, alf_qname qn, alf_namespace ns
@@ -51,9 +53,10 @@ where qn.ns_id = ns.id
   and nd.type_qname_id = qn.id
   and ns.uri = 'http://www.alfresco.org/model/content/1.0'
   and qn.local_name = 'content';
-{% endhighlight SQL %}
+{% endhighlight %}
 
-Java:
+>Java
+{:.filename}
 {% highlight java %}
 private String getToken(HttpClient client) throws UnsupportedEncodingException{
   Cookie[] cookies = client.getState().getCookies();
@@ -64,4 +67,14 @@ private String getToken(HttpClient client) throws UnsupportedEncodingException{
   }
   return null;
 }
-{% endhighlight java %}
+{% endhighlight %}
+
+To add name to the code snippet, as in the examples above, add following construction before the snippet:
+
+{% highlight %}
+{% raw %}
+>Java
+{:.filename}
+{% highlight java %}
+{% endraw %}
+{% endhighlight %}
