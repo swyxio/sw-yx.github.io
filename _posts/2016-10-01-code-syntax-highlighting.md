@@ -71,7 +71,7 @@ private String getToken(HttpClient client) throws UnsupportedEncodingException{
 
 To add name to the code snippet, as in the examples above, add following construction before the snippet:
 
-{% highlight %}
+{% highlight bash %}
 {% raw %}
 >Java
 {:.filename}
