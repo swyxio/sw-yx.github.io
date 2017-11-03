@@ -76,5 +76,6 @@ To add name to the code snippet, as in the examples above, add following constru
 >Java
 {:.filename}
 {% highlight java %}
+...
 {% endraw %}
 {% endhighlight %}
