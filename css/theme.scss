@@ -30,6 +30,8 @@ $post-panel-color: #444;
 $footer-background-color: #292c2f;
 $note-color: #87CEFA;
 $warning-color: #ffff00;
+// use this or pick any from /css/pics/background folder or from transparenttextures.com
+$background-pattern: 'random-grey-variations.png';
 
 //********************************************************
 //                  Common styles
@@ -37,8 +39,7 @@ $warning-color: #ffff00;
 body {
   padding-top: 80px;
   color: $font-color;
-  background: $background-color url(./pics/triangles.png);
-  //background: $background-color url(./pics/squares.png); // Another good pattern for background
+  background: $background-color url(pics/background/#{$background-pattern});
 }
 .well {
   background-color: $post-panel-color;

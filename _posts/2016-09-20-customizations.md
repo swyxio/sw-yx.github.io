@@ -11,27 +11,27 @@ tags:
 
 # Accent color
 
-Accent color is color for some important elements, such as links, buttons, icons. Currently accent color is <span class="label" style="background-color:#3CA2A2; color:#444444">#3CA2A2</span>. This theme has some more predefined colors available in **theme.scss**:
+Accent color is color for some important elements, such as links, buttons, icons. Currently accent color is <span class="btn" style="background-color:#3CA2A2; color:#444444">#3CA2A2</span>. This theme has some more predefined colors available in **theme.scss**:
 
 >theme.scss
 {:.filename}
-{% highlight sass %}
- // Several accent colors, choose one or create your own!
- $accent-color: #3CA2A2;    // original =)
- //$accent-color: #C38FD6;  // velvet
- //$accent-color: #8FD6B3;  // greenish
- //$accent-color: #35B4DE;  // bluish
- //$accent-color: #D2E354;  // yellowish
- // $accent-color: #52B54B;  // green
- 
+{% highlight scss %}
+// Several accent colors, choose one or create your own!
+$accent-color: #3CA2A2;     // original =)
+// $accent-color: #C38FD6;   velvet
+// $accent-color: #8FD6B3;   greenish
+// $accent-color: #35B4DE;   bluish
+// $accent-color: #D2E354;   yellowish
+// $accent-color: #52B54B;   green
+
 {% endhighlight %}
 
-You can use one of them (just hover over the label to see accent color in action) or define your own!
+You can use one of them (just click the button below to see accent color in action) or define your own!
 
-<span class="label" style="background-color:#C38FD6; color:#444444">#C38FD6</span>, <span class="label" style="background-color:#8FD6B3; color:#444444">#8FD6B3</span>, <span class="label" style="background-color:#35B4DE; color:#444444">#35B4DE</span>, <span class="label" style="background-color:#D2E354; color:#444444">#D2E354</span>, <span class="label" style="background-color:#52B54B; color:#444444">#52B54B</span>. 
+<span class="btn" style="background-color:#C38FD6; color:#444444">#C38FD6</span>, <span class="btn" style="background-color:#8FD6B3; color:#444444">#8FD6B3</span>, <span class="btn" style="background-color:#35B4DE; color:#444444">#35B4DE</span>, <span class="btn" style="background-color:#D2E354; color:#444444">#D2E354</span>, <span class="btn" style="background-color:#52B54B; color:#444444">#52B54B</span>.
  
 <script>
-  $('.label').hover(function(){
+  $('.btn').click(function(){
     var color = $(this).text();
     [].forEach.call($('a'), function(item) {
       item.style.color = color
@@ -60,4 +60,63 @@ $post-panel-color: #444;
 $footer-background-color: #292c2f;
 $note-color: #87CEFA;
 $warning-color: #ffff00;
-{% endhighlight%}
+{% endhighlight %}
+
+# Background
+
+It is also possible to change the background pattern and color. This theme comes with few patterns pre-installed -- you can check them by clicking on the images below. Or check the [transparenttextures.com](https://www.transparenttextures.com/) -- it has tons of different patterns for background.
+
+<style>
+.pattern-list{
+    list-style-type: none;
+    padding: 0;
+}
+.pattern{
+    height: 100px;
+    box-shadow: 0 0 3px 2px rgba(0,0,0,.1);
+
+}
+.pattern:hover {
+    box-shadow: 0 0 3px 2px rgba(0,0,0,.3);
+    transition: box-shadow .2s ease;
+    cursor: pointer;
+}
+.smthg{
+    max-width: none !important;
+}
+.col-sm-6 {
+    padding: 5px !important;
+}
+</style>
+
+<ul class="pattern-list">
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/3px-tile.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/asfalt-light.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/black-linen.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/food.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/gplay.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/green-dust-and-scratches.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/hexellence.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/random-grey-variations.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/shley-tree-1.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/subtle-grey.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/xv.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/triangles.png')"></div></li>
+</ul>
+
+<script>
+  $('.pattern').click(function(){
+    var source = this.style.backgroundImage;
+    document.getElementsByTagName('body')[0].style.backgroundImage = source;
+    console.log("url('" + source + "'))");
+  })
+</script>
+
+To change the color go to the **theme.scss** and change the `background-pattern` variable to the name of the pattern image file. To use custom pattern, download it from [transparenttextures.com](https://www.transparenttextures.com/) and place it under **css/pics/background/**.
+
+>theme.scss
+{:.filename}
+{% highlight scss %}
+// use this or pick any from /css/pics/background folder or from transparenttextures.com
+$background-pattern: 'random-grey-variations.png';
+{% endhighlight %}
