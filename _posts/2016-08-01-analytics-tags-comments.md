@@ -22,17 +22,7 @@ To enable Yandex Metrica you need to register, create a 'counter' and then copy-
 
 # Tags
 
-Using tags in Jekyll is a bit tricky topic, I used this approach: [charliepark.org/tags-in-jekyll/](http://charliepark.org/tags-in-jekyll/). You can read technical details there. To simply use tags provide list of tags in post header:
-
-{% highlight bash %}
-tags:
- - jekyll
- - analytics
- - tags
- - comments
-{% endhighlight bash %}
-
-And then before pushing your changes to github copy generated folder `/_site/tag` in your blog's root folder (github pages will not generate it automatically).
+To use this feature you simply will need to create a markdown file for each tag which you are using in you site in **tag** folder. To simplify this procedure there is an [/admin](http://pavelmakhov.com/jekyll-clean-dark/admin.html) page, which outputs the bash command which you just need to run inside **tag** folder of your site. Also don't forget to rerun it when you add a post with new tag.
 
 # Comments
 
