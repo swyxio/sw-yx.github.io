@@ -10,9 +10,9 @@ This theme was created on top of Jekyll Clean theme by Scotte, you can view the 
 * See it [in action on my own blog](http://pavelmakhov.com).
 * Easily [customizable](http://pavelmakhov.com/jekyll-clean-dark/2016/09/customizations)
 
-![preview1](./images/preview1.jpg)
-![preview2](./images/preview2.jpg)
-![preview3](./images/preview3.jpg)
+![preview1](./assets/images/preview1.jpg)
+![preview2](./assets/images/preview2.jpg)
+![preview3](./assets/images/preview3.jpg)
 
 This theme uses some parts of Twitter Bootstrap, which allows it to look nice on a mobile devices using a collapsable nav bar and hiding the
 sidebar.

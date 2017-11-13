@@ -18,10 +18,10 @@ This theme uses some parts of Twitter Bootstrap, which allows it looks nice on a
 
 Here how it looks like on some portable devices:
 
-![My helpful screenshot]({{ site.baseurl | prepend:site.url}}/images/iphone_portrait.PNG){: .center-image }*iPhone 5 portrait*
+![My helpful screenshot]({{ site.baseurl | prepend:site.url}}/assets/images/iphone_portrait.PNG){: .center-image }*iPhone 5 portrait*
 
-![My helpful screenshot]({{ site.baseurl | prepend:site.url}}/images/iphone_landscape.PNG){: .center-image }*iPhone 5 landscape*
+![My helpful screenshot]({{ site.baseurl | prepend:site.url}}/assets/images/iphone_landscape.PNG){: .center-image }*iPhone 5 landscape*
 
-![My helpful screenshot]({{ site.baseurl | prepend:site.url}}/images/ipad_portrait.PNG){: .center-image }*iPad mini portrait*
+![My helpful screenshot]({{ site.baseurl | prepend:site.url}}/assets/images/ipad_portrait.PNG){: .center-image }*iPad mini portrait*
 
-![My helpful screenshot]({{ site.baseurl | prepend:site.url}}/images/ipad_landscape.PNG){: .center-image }*iPad mini landscape*
+![My helpful screenshot]({{ site.baseurl | prepend:site.url}}/assets/images/ipad_landscape.PNG){: .center-image }*iPad mini landscape*

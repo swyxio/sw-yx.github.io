@@ -90,18 +90,18 @@ It is also possible to change the background pattern and color. This theme comes
 </style>
 
 <ul class="pattern-list">
-<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/3px-tile.png')"></div></li>
-<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/asfalt-light.png')"></div></li>
-<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/black-linen.png')"></div></li>
-<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/food.png')"></div></li>
-<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/gplay.png')"></div></li>
-<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/green-dust-and-scratches.png')"></div></li>
-<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/hexellence.png')"></div></li>
-<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/random-grey-variations.png')"></div></li>
-<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/shley-tree-1.png')"></div></li>
-<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/subtle-grey.png')"></div></li>
-<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/xv.png')"></div></li>
-<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/css/pics/background/triangles.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/assets/css/pics/background/3px-tile.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/assets/css/pics/background/asfalt-light.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/assets/css/pics/background/black-linen.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/assets/css/pics/background/food.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/assets/css/pics/background/gplay.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/assets/css/pics/background/green-dust-and-scratches.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/assets/css/pics/background/hexellence.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/assets/css/pics/background/random-grey-variations.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/assets/css/pics/background/shley-tree-1.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/assets/css/pics/background/subtle-grey.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/assets/css/pics/background/xv.png')"></div></li>
+<li class="col-sm-6"><div class="pattern" style="background-image:url('{{ site.baseurl }}/assets/css/pics/background/triangles.png')"></div></li>
 </ul>
 
 <script>
