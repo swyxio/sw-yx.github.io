@@ -34,7 +34,7 @@
 
   {% if site.social.rss %}
     <li>
-      <a title="{{ site.social.rss }} RSS" href="{{ site.baseurl }}/{{ site.social.rss }}" target="_blank"><i class="fa fa-rss fa-2x"></i></a>
+      <a title="{{ site.social.rss }} RSS" href="{{ site.social.rss | relative_url }}" target="_blank"><i class="fa fa-rss fa-2x"></i></a>
     </li>
   {% endif %}
 
