@@ -1,7 +1,7 @@
 Jekyll Clean Dark
 ============
 
-[![Gem Version](https://badge.fury.io/rb/jekyll-clean-dark.svg)](https://badge.fury.io/rb/jekyll-clean-dark) - WIP
+[![Gem Version](https://badge.fury.io/rb/jekyll-clean-dark.svg)](https://badge.fury.io/rb/jekyll-clean-dark)
 
 This theme was created on top of Jekyll Clean theme by Scotte, you can view the original version in action [on his blog](https://scotte.github.io).
 
@@ -35,6 +35,17 @@ If you already have your own blog then I think you can clone this repository and
 
 After you will have to set up your `_config.yml`
 
+Gem Installation
+================
+
+Follow the instructions on the Jekyll [site](https://jekyllrb.com/docs/themes/). Then copy the following files from this repository:
+
+ -_config.yml
+ - about.md
+ - admin.md
+ - archive.html
+ - feed.xml 
+ 
 Blog tags
 =========
 
