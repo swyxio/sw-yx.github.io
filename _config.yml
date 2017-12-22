@@ -19,11 +19,10 @@ share:
   email: true
 
 social:
-  github: swyx
-  stackoverflow: ''
+  twitter: swyx
+  github: sw-yx
+  stackoverflow: swyx
   linkedin: shawnswyxwang
-  instagram: ''
-  lastfm: ''
   rss: feed.xml
 
 # Google Analytics key, leave blank to ignore
