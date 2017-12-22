@@ -2,8 +2,8 @@
 layout: post
 title: slashslash
 date: 2017-04-17
-categories: slashslash
-tags: fat
+tags: slashslash
+feelings: fat
 ---
 
 I have been traveling and that plus a little laziness has led to a 4 day streak of zero days. not good. 

@@ -2,8 +2,8 @@
 layout: post
 title: AFrame adding Controllers
 date: 2017-03-26
-categories: aframe
-tags: fat
+tags: aframe
+feelings: fat
 ---
 
 i have finished the last part of a-frame school. teleport controllers dont work well in chrome+vive. reported as <https://github.com/fernandojsg/aframe-teleport-controls/issues/14>

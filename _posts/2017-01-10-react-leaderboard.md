@@ -2,8 +2,8 @@
 layout: post
 date: 2017-01-10
 title: React Leaderboard
-categories: react freecodecamp jquery es6
-tags: happy
+tags: react freecodecamp jquery es6
+feelings: happy
 ---
 
 ### completed the [freecodecamp leaderboard project!](codepen.io/swyx/pen/apdZar)###

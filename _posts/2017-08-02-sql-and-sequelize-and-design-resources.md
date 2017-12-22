@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-08-02
-categories: fsa
-tags: sick
+tags: fsa
+feelings: sick
 title: sql and sequelize and design resources
 ---
 

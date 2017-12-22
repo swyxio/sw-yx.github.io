@@ -2,8 +2,8 @@
 layout: post
 date: 2017-08-09
 title: FSA deploy wikistack to heroku
-categories: FSA
-tags: ambitious
+tags: FSA
+feelings: ambitious
 ---
 
 my last post on [deploying the FSA Twitter.js project](https://sw-yx.github.io/2017/FSA-deploy-twitter-js/) was well received. well, here's the FSA wikistack version!

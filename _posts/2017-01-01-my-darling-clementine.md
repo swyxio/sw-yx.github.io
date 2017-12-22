@@ -2,8 +2,8 @@
 layout: post
 title: "my darling clementine"
 date: 2017-01-01
-categories: javascript freecodecamp clementine
-tags: tired ambitious
+tags: javascript freecodecamp clementine
+feelings: tired ambitious
 ---
 
 Happy new year!

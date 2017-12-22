@@ -2,8 +2,8 @@
 layout: post
 title: next project
 date: 2017-03-03
-categories: freecodecamp react
-tags: finished
+tags: freecodecamp react
+feelings: finished
 ---
 
 Deploying the vladimir project to heroku

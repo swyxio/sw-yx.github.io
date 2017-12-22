@@ -2,8 +2,8 @@
 layout: post
 title: picking boilerplates
 date: 2017-05-04
-categories: vue
-tags: lighter
+tags: vue
+feelings: lighter
 ---
 
 ##vue boilerplate day!

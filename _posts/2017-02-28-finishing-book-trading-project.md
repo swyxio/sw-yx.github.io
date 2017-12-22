@@ -2,8 +2,8 @@
 layout: post
 title: Finishing book trading project
 date: 2017-02-28
-categories: freecodecamp react
-tags: moved
+tags: freecodecamp react
+feelings: moved
 ---
 
 today I moved to my new digs. everything is nice and clean and I am feeling happy and ready to be productive. today I will plug in the books object to the interface and allow the user to add books.

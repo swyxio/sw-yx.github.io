@@ -2,8 +2,8 @@
 layout: post
 title: bitcoin problems
 date: 2017-05-14
-categories: altcoins
-tags: fat
+tags: altcoins
+feelings: fat
 ---
 
 I have been spending the past couple days or so reading into bitcoin (and eventually its competitors). Data is here <https://coin.dance> and [the main site](https://bitcoin.org/en/faq) has good introduction (but none of the downsides or history)

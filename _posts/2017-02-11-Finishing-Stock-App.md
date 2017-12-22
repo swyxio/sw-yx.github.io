@@ -2,8 +2,8 @@
 layout: post
 title: Finishing Stock App
 date: 2017-02-11
-categories: freecodecamp gomix
-tags: fat
+tags: freecodecamp gomix
+feelings: fat
 ---
 
 4.30 checking in here. job done! <https://swyx-fcc-stockchart.gomix.me> and <https://github.com/sw-yx/fcc-stockchart>

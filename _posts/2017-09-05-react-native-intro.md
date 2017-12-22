@@ -1,9 +1,9 @@
 ---
 layout: post
 date: 2017-09-05
-categories: react native
+tags: react native
 title: react native intro
-tags: happy
+feelings: happy
 ---
 
 I made a thing!

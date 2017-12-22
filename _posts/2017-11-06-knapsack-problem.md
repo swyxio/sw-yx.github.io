@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-11-05
-tags: happy
-categories: firebase algods
+feelings: happy
+tags: firebase algods
 title: knapsack problem
 ---
 

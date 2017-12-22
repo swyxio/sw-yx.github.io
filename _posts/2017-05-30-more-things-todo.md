@@ -2,8 +2,8 @@
 layout: post
 title: more things to do
 date: 2017-05-30
-categories: todo
-tags: reinvigorated
+tags: todo
+feelings: reinvigorated
 ---
 
 i have been on a very long hiatus mainly due to travel (and a very silly oversight of mine prevtravel). regardless I am very refreshed after this break and excited to get back in business (in 2 days). meanwhile I wanted to note down this thing:

@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-11-13
-tags: happy
-categories: feathers
+feelings: happy
+tags: feathers
 title: feathersjs investigation
 ---
 

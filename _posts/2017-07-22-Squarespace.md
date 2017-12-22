@@ -2,8 +2,8 @@
 layout: post
 date: 2017-07-22
 title: Squarespace
-categories: projects
-tags: determined
+tags: projects
+feelings: determined
 ---
 
 The net evaluation of my Humans of Hacker News post is that it was a complete failure to attract any sort of attention although a couple people did say they liked the idea. However this truly was one of those things where I did enjoy the process. At the same time, nothing lasting is likely to come out of it (I had 2 responses on my survey which is better than nothing) and for that reason I am unlikely to dedicate more time. I might do another round of calls to really make sure there is no PMF and then call it quits.

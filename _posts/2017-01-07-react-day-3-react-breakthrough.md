@@ -2,8 +2,8 @@
 layout: post
 title: react day 3 - react breakthrough!
 date: 2017-01-07
-categories: react udemy javascript freecodecamp
-tags: flipflopping
+tags: react udemy javascript freecodecamp
+feelings: flipflopping
 ---
 
 i have just viewed [cs50 lecture 0](https://www.youtube.com/watch?v=BAs4VyEN-SM) and it was disappointing because it was too basic. i am moderating my own views right now and going for react on codepen as it at least lets me learn something. i will still have to cover my bases somewhere but cs50 is probably not it right now.

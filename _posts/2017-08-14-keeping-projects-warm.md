@@ -2,8 +2,8 @@
 layout: post
 title: keeping projects warm
 date: 2017-08-14
-categories: projects
-tags: determined
+tags: projects
+feelings: determined
 ---
 
 i pretty much took a personal day yesterday with the guitar practice and theater show. today i went back to running and now i am set for a productive day.  todo list:

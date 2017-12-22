@@ -2,8 +2,8 @@
 layout: post
 title: drawing network graphs
 date: 2017-05-10
-categories: dataviz
-tags: hungry
+tags: dataviz
+feelings: hungry
 ---
 
 i spent a lot of time in a hellhole today looking at network graphs ([tutorial(https://www.cl.cam.ac.uk/~cm542/teaching/2011/stna-pdfs/stna-lecture11.pdf)). 

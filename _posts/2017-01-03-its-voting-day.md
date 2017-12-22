@@ -2,8 +2,8 @@
 layout: post
 title: "it's voting day!"
 date: 2017-01-03
-categories: javascript freecodecamp mongoose express
-tags: ready tired excited
+tags: javascript freecodecamp mongoose express
+feelings: ready tired excited
 ---
 
 # intro

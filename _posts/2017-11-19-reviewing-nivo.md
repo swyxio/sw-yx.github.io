@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-11-19
-tags: happy
-categories: react nivo
+feelings: happy
+tags: react nivo
 title: reviewing react dataviz - Nivo
 ---
 

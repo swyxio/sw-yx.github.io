@@ -1,8 +1,8 @@
 ---
 date: 2017-08-08
 title: test post pls ignore
-categories: fsa
-tags: fat
+tags: fsa
+feelings: fat
 layout: post
 ---
 

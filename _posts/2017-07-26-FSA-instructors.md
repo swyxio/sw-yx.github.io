@@ -2,8 +2,8 @@
 layout: post
 title: FSA instructors
 date: 2017-07-26
-categories: thoughts
-tags: light
+tags: thoughts
+feelings: light
 ---
 
 Our two main instructors so far have been [Cassio](https://twitter.com/cassiozen) and [Dan](https://twitter.com/danceoval?lang=en)

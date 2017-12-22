@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-09-20
-tags: sick
-categories: fullstack react-native
+feelings: sick
+tags: fullstack react-native
 title: starting stackathon
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-10-19
-tags: happy
-categories: fsa interviewing
+feelings: happy
+tags: fsa interviewing
 title: Hiring Day and Clement interview
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title: shoestring.js
 date: 2017-08-11
-categories: fsa css
-tags: happy
+tags: fsa css
+feelings: happy
 ---
 
 today we did <https://github.com/sw-yx/fsa-shoestring.js> and it made me have some appreciation for the behind the scenes working of Bootstrap. also was a re-introduction to SCSS but i am still not very comfortable with it.

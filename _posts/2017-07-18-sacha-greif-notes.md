@@ -2,8 +2,8 @@
 layout: post
 date: 2017-07-18
 title: sacha greif notes
-categories: projects
-tags: happy
+tags: projects
+feelings: happy
 ---
 
 <https://devchat.tv/react-native-radio/43-the-state-of-javascript-and-react-native-with-sacha-greif>

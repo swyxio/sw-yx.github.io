@@ -2,8 +2,8 @@
 layout: post
 title: Mitigating Mongoose Magic
 date: 2017-03-19
-categories: workproject
-tags: fat
+tags: workproject
+feelings: fat
 ---
 
 I spent a couple more hours dealing with the nuances of mongoose today to get an MVP of the api I will need to use up and running. 

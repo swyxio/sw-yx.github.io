@@ -2,8 +2,8 @@
 layout: post
 title: GNU terry pratchett
 date: 2017-08-07
-categories: zeroday
-tags: tired
+tags: zeroday
+feelings: tired
 ---
 
 i think i am finally getting over my flu. worked out for the first time in weeks.

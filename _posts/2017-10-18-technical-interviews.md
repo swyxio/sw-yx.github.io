@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-10-18
-tags: happy
-categories: fsa
+feelings: happy
+tags: fsa
 title: technical interviewing
 ---
 

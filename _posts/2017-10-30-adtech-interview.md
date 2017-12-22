@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-10-30
-tags: meh
-categories: javascript
+feelings: meh
+tags: javascript
 title: adtech interview
 ---
 

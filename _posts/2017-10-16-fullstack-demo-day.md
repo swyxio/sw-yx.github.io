@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-10-16
-tags: happy
-categories: fsa
+feelings: happy
+tags: fsa
 title: fullstack demo day
 ---
 

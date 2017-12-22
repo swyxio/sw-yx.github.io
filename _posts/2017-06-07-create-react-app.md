@@ -2,8 +2,8 @@
 layout: post
 title: create react app
 date: 2017-06-07
-categories: react
-tags: fat
+tags: react
+feelings: fat
 ---
 
 i have basically finished [my little flirtation with contributing to an open source boilerplate](https://github.com/icebob/vue-express-mongo-boilerplate/issues/48#issuecomment-306810835). At the end of the day it is awe inspiring to learn directly from an obviously insanely capable full stack developer, but the whole thing feels a little too fringe and I need to work on my core skills instead of copying and pasting programming patterns.

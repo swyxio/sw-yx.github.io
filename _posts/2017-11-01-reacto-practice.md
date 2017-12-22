@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-11-01
-tags: happy
-categories: algos
+feelings: happy
+tags: algos
 title: reacto practice
 ---
 

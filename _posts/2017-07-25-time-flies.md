@@ -2,8 +2,8 @@
 layout: post
 date: 2017-07-25
 title: time flies
-categories: thoughts
-tags: determined
+tags: thoughts
+feelings: determined
 ---
 
 time is flying and it is almost the end of july and another 2 week block. I have slipped in some of my goals. I never got started with the buffer clone and the shirt idea has basically started taking up a lot of time. I will also be fairly busy this weekend moving out of my apartment.

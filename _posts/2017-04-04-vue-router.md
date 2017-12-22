@@ -2,8 +2,8 @@
 layout: post
 title: vue router
 date: 2017-04-04
-categories: vue
-tags: grinding
+tags: vue
+feelings: grinding
 ---
 
 12am here. let's go.

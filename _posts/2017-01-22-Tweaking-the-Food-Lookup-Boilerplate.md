@@ -2,8 +2,8 @@
 layout: post
 date: 2017-01-22
 title: Tweaking the Food Lookup Boilerplate
-categories: react node mongoose express
-tags: optimistic
+tags: react node mongoose express
+feelings: optimistic
 ---
 
 10.40. So yesterday was a big success day with the resolution of the FCC Data Viz certification and I finally found a working deployable full stack React + Express boilerplate.

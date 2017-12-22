@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-12-19
-tags: happy
-categories: freecodecamp
+feelings: happy
+tags: freecodecamp
 title: No. Zero. Days. My Roadmap from Javascript noob to Full Stack Developer in 12 Months (draft 2)
 ---
 

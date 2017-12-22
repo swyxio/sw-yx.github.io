@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-12-21
-tags: happy
-categories: react
+feelings: happy
+tags: react
 title: pluralsight and react
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-12-04
-tags: happy
-categories: react
+feelings: happy
+tags: react
 title: react nyc pres
 ---
 

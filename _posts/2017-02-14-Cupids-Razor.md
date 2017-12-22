@@ -2,8 +2,8 @@
 layout: post
 title: Cupid's Razor
 date: 2017-02-14
-categories: freecodecamp
-tags: motivated
+tags: freecodecamp
+feelings: motivated
 ---
 
 So I have been taking a bit of a meteor detour but the more I read the more I like it (particularly because of [meteor toys](meteor.toys) but also just avoiding mucking around with sockets and databases and getting optimistic rendering for free.

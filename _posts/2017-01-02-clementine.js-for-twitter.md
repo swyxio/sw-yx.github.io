@@ -2,8 +2,8 @@
 layout: post
 title: "clementine.js for twitter"
 date: 2017-01-02
-categories: javascript freecodecamp clementine
-tags: optimistic
+tags: javascript freecodecamp clementine
+feelings: optimistic
 ---
 
 Today's task is to adapt FCC's out of the box version of clementine.js to take twitter auth. 
@@ -33,7 +33,7 @@ The key thing to note is what users can do WITHOUT authentication:
 * User Story: As an unauthenticated or authenticated user, I can see and vote on everyone's polls.
 * User Story: As an unauthenticated or authenticated user, I can see the results of polls in chart form. (This could be implemented using Chart.js or Google Charts.)
 
-This means the addclick and getclick api's are completely unrestricted. this is not a problem with the existing clementine framework. however there is a puzzle as to how to add new categories:
+This means the addclick and getclick api's are completely unrestricted. this is not a problem with the existing clementine framework. however there is a puzzle as to how to add new tags:
 
 * User Story: As an authenticated user, if I don't like the options on a poll, I can create a new option.
 

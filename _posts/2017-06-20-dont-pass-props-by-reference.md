@@ -1,9 +1,9 @@
 ---
 layout: post
 date: 2017-06-20
-categories: pup
+tags: pup
 title: Dont pass props by reference
-tags: happy
+feelings: happy
 ---
 
 I have been battling a particularly terrible bug with a nested react component for the past day and only just solved it. The problem essentially was that I had a component (A) that was nested in another component (B), and when I unmounted B (B1) and switched to another instance of B (B2) the values from A (that were valid in B1) were somehow persisting in B2.

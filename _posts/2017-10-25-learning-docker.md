@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-10-25
-tags: happy
-categories: docker
+feelings: happy
+tags: docker
 title: learning docker
 ---
 

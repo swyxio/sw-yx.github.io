@@ -2,8 +2,8 @@
 layout: post
 title: four weeks in
 date: 2017-07-28
-categories: projects
-tags: todos
+tags: projects
+feelings: todos
 ---
 
 it is 4 weeks and it is time to update my scores.

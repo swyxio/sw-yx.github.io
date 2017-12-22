@@ -2,8 +2,8 @@
 layout: post
 title: Finishing the prototype
 date: 2017-02-26
-categories: workgame
-tags: fat
+tags: workgame
+feelings: fat
 ---
 
 9.00 here. i have fleshed out the prototype table but have realized that I really want the left frozen panel and so I am going to migrate the table to a google chart table <https://developers.google.com/chart/interactive/docs/gallery/table>

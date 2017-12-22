@@ -2,8 +2,8 @@
 layout: post
 title: Learning Redux - Unintentional Mutations
 date: 2017-01-18
-categories: react freecodecamp redux
-tags: happy
+tags: react freecodecamp redux
+feelings: happy
 ---
 
 [React-redux links](https://github.com/markerikson/react-redux-links) is going to prove handy if I go down this path. But at this point I am convinced that I need to spend a couple days each on Angular 2 and Ruby On Rails just to satisfy myself that I am going down a path that I like. Redux is already beginning to annoy me with its magic.

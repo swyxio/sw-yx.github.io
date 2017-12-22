@@ -2,8 +2,8 @@
 layout: post
 title: Friday 13th and I feel so good
 date: 2017-01-13
-categories: react freecodecamp
-tags: happy bloated
+tags: react freecodecamp
+feelings: happy bloated
 ---
 
 today i finished every last detail of the [FCC recipebox project](http://codepen.io/swyx/pen/xgOVwV) cloning everything down to the UI (black, of course). There were some interesting things to learn including:

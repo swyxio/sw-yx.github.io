@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-10-14
-tags: happy
-categories: react
+feelings: happy
+tags: react
 title: ripping off design
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-10-27
-tags: happy
-categories: slog
+feelings: happy
+tags: slog
 title: steering into the suck
 ---
 

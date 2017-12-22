@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-10-23
-tags: happy
-categories: design
+feelings: happy
+tags: design
 title: intelligent design
 ---
 

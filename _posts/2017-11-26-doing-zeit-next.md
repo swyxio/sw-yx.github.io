@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-11-26
-tags: happy
-categories: zeit nextjs
+feelings: happy
+tags: zeit nextjs
 title: doing zeit next
 ---
 

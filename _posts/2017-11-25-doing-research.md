@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-11-25
-tags: happy
-categories: work
+feelings: happy
+tags: work
 title: doing research
 ---
 

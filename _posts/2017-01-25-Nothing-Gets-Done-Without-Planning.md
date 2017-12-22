@@ -2,8 +2,8 @@
 layout: post
 title: Nothing Gets Done Without Planning
 date: 2017-01-25
-categories: freecodecamp react express node
-tags: optimistic
+tags: freecodecamp react express node
+feelings: optimistic
 ---
 
 still working on <https://www.freecodecamp.com/challenges/build-a-nightlife-coordination-app>

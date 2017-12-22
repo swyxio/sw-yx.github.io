@@ -2,8 +2,8 @@
 layout: post
 date: 2017-01-23
 title: FIrst Fullstack Board for WOrk
-categories: react node express
-tags: happy
+tags: react node express
+feelings: happy
 ---
 
 5.00 here after pretty much starting from 11. Thank god again for <https://www.fullstackreact.com/articles/using-create-react-app-with-a-server/>. I finished the analytics board I have been planning for work and I am really happy with how it turned out. Here is the stack I used:

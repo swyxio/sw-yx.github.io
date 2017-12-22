@@ -2,8 +2,8 @@
 layout: post
 title: Mini-Hiatus Day 2
 date: 2017-01-29
-categories: codewars
-tags: in-transit
+tags: codewars
+feelings: in-transit
 ---
 
 my other commitments continue to drain my coding time. I have 15 minutes so I am just going to hit up codewars again.

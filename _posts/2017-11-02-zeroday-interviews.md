@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-11-02
+feelings: zeroday
 tags: zeroday
-categories: zeroday
 title: zeroday (interviews)
 ---
 

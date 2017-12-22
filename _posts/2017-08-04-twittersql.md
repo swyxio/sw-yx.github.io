@@ -2,8 +2,8 @@
 layout: post
 title: twittersql
 date: 2017-08-04
-categories: projects
-tags: fat
+tags: projects
+feelings: fat
 ---
 
 we added a postgresql backend to the twitter.js project today:

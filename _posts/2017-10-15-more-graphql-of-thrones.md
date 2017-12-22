@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-10-15
-tags: happy
-categories: fsa graphql react
+feelings: happy
+tags: fsa graphql react
 title: more graphql of thrones
 ---
 

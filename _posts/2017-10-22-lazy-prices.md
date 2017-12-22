@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-10-22
-tags: happy fat
-categories: hustle
+feelings: happy fat
+tags: hustle
 title: lazy prices
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title: A Survey of Javascript Stock Charting Libraries
 date: 2017-02-09
-categories: freecodecamp react
-tags: happy
+tags: freecodecamp react
+feelings: happy
 ---
 
 on to the FCC stock chart project: <https://www.freecodecamp.com/challenges/chart-the-stock-market>

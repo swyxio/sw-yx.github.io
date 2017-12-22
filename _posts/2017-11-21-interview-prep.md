@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-11-21
-tags: happy
-categories: interviews
+feelings: happy
+tags: interviews
 title: interview prep
 ---
 

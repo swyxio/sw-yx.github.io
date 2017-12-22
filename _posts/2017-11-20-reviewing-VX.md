@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-11-20
-tags: happy
-categories: react-review vx
+feelings: happy
+tags: react-review vx
 title: reviewing vx
 ---
 

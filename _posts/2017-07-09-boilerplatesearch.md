@@ -2,8 +2,8 @@
 layout: post
 date: 2017-07-09
 title: boilerplate search
-categories: projects
-tags: productive
+tags: projects
+feelings: productive
 ---
 
 i have done a basic version of the boilerplate engine. 

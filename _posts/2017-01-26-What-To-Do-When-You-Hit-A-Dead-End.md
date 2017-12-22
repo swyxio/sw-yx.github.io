@@ -2,8 +2,8 @@
 layout: post
 date: 2017-01-26
 title: What to do when you hit a dead end
-categories: freecodecamp react
-tags: tired
+tags: freecodecamp react
+feelings: tired
 ---
 
 still working on https://www.freecodecamp.com/challenges/build-a-nightlife-coordination-app

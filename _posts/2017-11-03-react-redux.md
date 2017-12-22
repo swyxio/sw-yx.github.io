@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-11-03
-tags: happy
-categories: react
+feelings: happy
+tags: react
 title: react redux
 ---
 

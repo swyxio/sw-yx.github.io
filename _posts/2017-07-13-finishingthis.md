@@ -2,8 +2,8 @@
 layout: post
 date: 2017-07-13
 title: finishing packagejason
-categories: projects
-tags: fat
+tags: projects
+feelings: fat
 ---
 
 Ok time to polish up and deploy this sumbitch. Today's tasks:

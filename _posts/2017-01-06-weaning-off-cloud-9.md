@@ -2,8 +2,8 @@
 layout: post
 title: purging cloud 9
 date: 2017-01-06
-categories: operational
-tags: rested
+tags: operational
+feelings: rested
 ---
 
 yesterday was as close to an 0 day as i have yet faced. I had multiple interruptions but the positive thing is a thing i wrote for work made it to the front page of hackernews. it wasnt my best work but not bad for a few hours work (obviously i have been prepping it in my mind for days). For today I want to catch up on my podcasts and so am turning off udemy and spending some time on basic React tutorials to get it running on cloud9.

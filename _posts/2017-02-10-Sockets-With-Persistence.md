@@ -2,8 +2,8 @@
 layout: post
 date: 2017-02-10
 title: Sockets With Persistence
-categories: freecodecamp gomix socketio
-tags: preempting
+tags: freecodecamp gomix socketio
+feelings: preempting
 ---
 
 So the other part of the stock chart challenge is implementing sockets. This is native within create-react-app and meteor but I wanted to do a bit of my own cooking as it is too easy to lean on meteor.

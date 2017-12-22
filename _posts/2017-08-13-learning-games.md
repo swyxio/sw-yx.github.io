@@ -2,8 +2,8 @@
 layout: post
 title: learning games
 date: 2017-08-13
-categories: resources
-tags: happy
+tags: resources
+feelings: happy
 ---
 
 here are some fun learning games:

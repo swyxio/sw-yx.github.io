@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-11-30
-tags: happy
-categories: opensource
+feelings: happy
+tags: opensource
 title: react presentation
 ---
 

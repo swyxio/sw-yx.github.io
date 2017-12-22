@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-09-28
-tags: inspired
-categories: startups
+feelings: inspired
+tags: startups
 title: Techstars NY Summer 2017
 ---
 

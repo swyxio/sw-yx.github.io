@@ -2,8 +2,8 @@
 layout: post
 date: 2017-01-20
 title: Create React App - With Express
-categories: react
-tags: tired
+tags: react
+feelings: tired
 ---
 
 i nearly missed my session today and i am so traumatized from the last Crawler session i am taking a break from that today. instead today I aim for a relatively easier thing to do: implement <https://github.com/facebookincubator/create-react-app> and [deploy to heroku](https://github.com/mars/create-react-app-buildpack).

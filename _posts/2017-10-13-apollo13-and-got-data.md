@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-10-13
-tags: happy
-categories: apollo graphql fsa
+feelings: happy
+tags: apollo graphql fsa
 title: apollo 13 and got data
 ---
 

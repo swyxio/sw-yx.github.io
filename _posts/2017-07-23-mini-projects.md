@@ -2,8 +2,8 @@
 layout: post
 title: mini projects
 date: 2017-07-23
-categories: learning
-tags: tired
+tags: learning
+feelings: tired
 ---
 
 today i'm going to pay a bit of my bootcamp debt by finishing the js guessing game i have been putting off.

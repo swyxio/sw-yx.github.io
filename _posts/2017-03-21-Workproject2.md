@@ -2,8 +2,8 @@
 layout: post
 title: Workproject 2
 date: 2017-03-21
-categories: workproject node react
-tags: fat
+tags: workproject node react
+feelings: fat
 ---
 
 I only made it 30 minutes yesterday in vue. It became evident that I would need way more than 2 hours to learn all the necessary paths of vue. it will take the same time as React. So given I have less than a week until my SF trip I am going to just finish up workproject and then see what I can do in VR.

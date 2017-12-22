@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-10-28
-tags: happy
-categories: hustle
+feelings: happy
+tags: hustle
 title: landing page suck
 ---
 

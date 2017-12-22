@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-11-24
-tags: happy
-categories: vim
+feelings: happy
+tags: vim
 title: learning vim
 ---
 

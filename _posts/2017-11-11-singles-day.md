@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-11-11
-tags: happy
-categories: zeroday
+feelings: happy
+tags: zeroday
 title: singles day
 ---
 

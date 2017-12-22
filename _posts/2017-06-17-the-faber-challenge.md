@@ -2,8 +2,8 @@
 layout: post
 date: 2017-06-17
 title: the faber challenge
-categories: projects
-tags: fat
+tags: projects
+feelings: fat
 ---
 
 # Weekend sprint! 

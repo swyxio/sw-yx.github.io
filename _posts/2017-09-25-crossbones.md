@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-09-25
-tags: happy
-categories: react-native
+feelings: happy
+tags: react-native
 title: CrossBones
 ---
 

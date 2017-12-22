@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-11-04
-tags: determined
-categories: firebase
+feelings: determined
+tags: firebase
 title: back on the horse - lugtfy
 ---
 

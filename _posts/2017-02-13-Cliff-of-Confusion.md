@@ -2,8 +2,8 @@
 layout: post
 title: Cliff of Confusion
 date: 2017-02-13
-categories: meteor freecodecamp
-tags: motivated
+tags: meteor freecodecamp
+feelings: motivated
 ---
 
 I have had some encouraging chats on the <http://jrdevmentoring.com> slack channel (that Zac of <http://thereactionary.net/> turned me on to), basically describing the [Cliff of Confusion](https://www.vikingcodeschool.com/posts/why-learning-to-code-is-so-damn-hard) I am about to face with the impending end of Freecodecamp. It is a very real and troubling thing but I will power through it.

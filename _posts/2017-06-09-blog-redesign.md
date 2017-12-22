@@ -2,8 +2,8 @@
 layout: post
 title: blog redesign
 date: 2017-06-09
-categories: jekyll hexo
-tags: fat
+tags: jekyll hexo
+feelings: fat
 ---
 
 I finally decided to give enough of a crap about this blog to give it a facelift.

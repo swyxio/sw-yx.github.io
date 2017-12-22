@@ -2,8 +2,8 @@
 layout: post
 title: No Zero Days
 date: 2017-01-27
-categories: freecodecamp
-tags: full
+tags: freecodecamp
+feelings: full
 ---
 
 11.30. Entering a 3 day low productivity period due to family commitments. I need stuff that I can do with just 1-2 hours a day. That said I think I am in a moderately productive zone right now and can crank out more of the nightlife project. stay tuned.

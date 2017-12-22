@@ -2,8 +2,8 @@
 layout: post
 title: Retackling the Crawler 
 date: 2017-01-21
-categories: freecodecamp react redux
-tags: determined
+tags: freecodecamp react redux
+feelings: determined
 ---
 
 4. after two straight days of abject failure i am a little worn down but i am grateful that i have a bunch of different tracks i can pursue when I get stuck in a rut (or waiting for a reply from stackoverflow).

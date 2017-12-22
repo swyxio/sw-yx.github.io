@@ -2,8 +2,8 @@
 layout: post
 date: 2017-07-08
 title: my vue boilerplate
-categories: vue
-tags: determined
+tags: vue
+feelings: determined
 ---
 
 after months of searching and being unsatisfied with other people's boilerplates i am going to do my own.

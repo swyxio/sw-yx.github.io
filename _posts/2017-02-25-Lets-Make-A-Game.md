@@ -2,8 +2,8 @@
 layout: post
 title: Let's Make a Game
 date: 2017-02-25
-categories: game
-tags: excited
+tags: game
+feelings: excited
 ---
 
 it is refreshing to have a new project after getting stuck in the mud doing probably too much in Meteor. getting over the hump of my sickness probably also had something to do with it.

@@ -2,8 +2,8 @@
 layout: post
 date: 2017-07-10
 title: boilerplate search 2
-categories: meteor projects
-tags: fat
+tags: meteor projects
+feelings: fat
 ---
 
 I am done with the first trello feature, the "reputation score"

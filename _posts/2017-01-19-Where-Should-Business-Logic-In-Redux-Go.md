@@ -2,8 +2,8 @@
 layout: post
 date: 2017-01-19
 title: Where should "Business Logic" in Redux go?
-categories: redux freecodecamp
-tags: resigned
+tags: redux freecodecamp
+feelings: resigned
 ---
 
 reddit has been very helpful in pointing out that to deep copy any object that doesnt have a method you just have to JSON.stringify and then JSON.parse. not elegant but it works. as a bonus you can easily perform equality checks which will come in useful when looking at locations.

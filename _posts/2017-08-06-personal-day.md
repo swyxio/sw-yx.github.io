@@ -2,8 +2,8 @@
 layout: post
 title: personal day
 date: 2017-08-06
-categories: zeroday
-tags: happy
+tags: zeroday
+feelings: happy
 ---
 
 i basically didnt code today but i had a good day with guitar friends and then acapella friends (will miss you Heather!)

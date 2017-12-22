@@ -2,7 +2,7 @@
 layout: post
 title: dualclass.me
 date: 2017-04-18
-categories: wordpress
+tags: wordpress
 tag: fat
 ---
 

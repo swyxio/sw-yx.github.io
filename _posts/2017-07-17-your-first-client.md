@@ -2,8 +2,8 @@
 layout: post
 title: your first client
 date: 2017-07-17
-categories: rants
-tags: focus
+tags: rants
+feelings: focus
 ---
 
 From a FSA post I made this morning:

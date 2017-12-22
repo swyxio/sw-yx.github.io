@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-10-12
-tags: happy
-categories: fsa
+feelings: happy
+tags: fsa
 title: graphql of thrones mvp
 ---
 

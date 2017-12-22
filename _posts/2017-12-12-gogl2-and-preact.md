@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-12-12
-tags: happy
-categories: algo
+feelings: happy
+tags: algo
 title: gogl2 and preact
 ---
 

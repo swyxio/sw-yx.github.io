@@ -2,8 +2,8 @@
 layout: post
 title: List of Newbie Web Developer Resources
 date: 2017-01-16
-categories: redux resources udemy codepen
-tags: resources
+tags: redux resources udemy codepen
+feelings: resources
 ---
 
 Today I made a small amount of progress. I completed my first round of the udemy redux tutorial on codepen. there are some tricks to porting things on codepen (where everything is on one file instead of multiple): <http://codepen.io/swyx/pen/egdjQR>

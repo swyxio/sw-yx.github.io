@@ -2,8 +2,8 @@
 layout: post
 date: 2017-01-11
 title: peeking at react recipe box
-categories: building
-tags: distracted
+tags: building
+feelings: distracted
 ---
 
 i have been procrastinating all night and probably wont get much done. lets crank out something. no zero days.

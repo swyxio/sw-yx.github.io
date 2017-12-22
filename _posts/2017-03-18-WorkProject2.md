@@ -2,8 +2,8 @@
 layout: post
 title: Work Project 2
 date: 2017-03-18
-categories: workproject
-tags: full
+tags: workproject
+feelings: full
 ---
 
 So now I am waiting to start doing the nonprofit work for freecodecamp. in the meantime I have plenty other projects I need to take care of.

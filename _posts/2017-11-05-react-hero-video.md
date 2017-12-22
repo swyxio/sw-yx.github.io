@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-11-05
-tags: happy
-categories: grind
+feelings: happy
+tags: grind
 title: react hero video
 ---
 

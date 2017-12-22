@@ -2,8 +2,8 @@
 layout: post
 title: SED interview done
 date: 2017-07-21
-categories: projects
-tags: happy
+tags: projects
+feelings: happy
 ---
 
 After about a week of stressing and research I have just submitted all the necessary files for Sacha's SED interview! The experience wasn't 100% smooth but it was positive and I am keen to do more to ask the questions I want to ask from people I really respect.

@@ -2,8 +2,8 @@
 layout: post
 title: job postings
 date: 2017-03-01
-categories: freecodecamp react
-tags: recovering
+tags: freecodecamp react
+feelings: recovering
 ---
 
 

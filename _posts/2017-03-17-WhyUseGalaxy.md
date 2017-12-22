@@ -1,8 +1,8 @@
 ---
 layout: post
 title: I just finished FreeCodeCamp's Backend Certification
-categories: meteor freecodecamp
-tags: happy
+tags: meteor freecodecamp
+feelings: happy
 date: 2017-03-17
 ---
 

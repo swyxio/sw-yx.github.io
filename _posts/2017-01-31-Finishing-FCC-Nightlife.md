@@ -2,8 +2,8 @@
 layout: post
 date: 2017-01-31
 title: Finishing FCC Nightlife
-categories: freecodecamp react node
-tags: full
+tags: freecodecamp react node
+feelings: full
 ---
 
 4.00 here. The only way to break out of a nonproductive streak is to force your self to JUST DO IT. 

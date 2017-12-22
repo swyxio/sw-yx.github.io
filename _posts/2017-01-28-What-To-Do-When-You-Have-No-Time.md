@@ -2,8 +2,8 @@
 layout: post
 title: What To Do When You have No Time
 date: 2017-01-28
-categories: codecombat
-tags: busy
+tags: codecombat
+feelings: busy
 ---
 
 as expected work and family bit hard today. it will bite even harder tomorrow. When I am short on time I am just going to fire up my [List of Newbie Resources](http://swyx.io/blog/2017/01/16/List-of-Newbie-Web-Developer-Resources) and just do something off the list.

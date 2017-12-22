@@ -2,8 +2,8 @@
 layout: post
 date: 2017-01-15
 title: Game of Life - Done!
-categories: freecodecamp react
-tags: done
+tags: freecodecamp react
+feelings: done
 ---
 
 checking in on the other side of the flight. I am still battling a bad cold but decided to just knock out the Game of Life task today given that I realize it doesnt require redux and is just more of a math problem than anything else.

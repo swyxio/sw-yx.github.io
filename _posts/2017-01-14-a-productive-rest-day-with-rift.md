@@ -1,9 +1,9 @@
 ---
 layout: post
 date: 2017-01-14
-categories: jekyll
+tags: jekyll
 title: A Productive Rest Day (with Rift)
-tags: sick
+feelings: sick
 ---
 
 I am traveling and sick so today I am taking it easy with freecodecamp and just catching up on reading. I also fixed up some of the look and feel of the blog as I was uncomfortable with leaving it so basic so at least I have some navigation.

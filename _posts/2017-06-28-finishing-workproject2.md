@@ -2,8 +2,8 @@
 layout: post
 title: Finishing Workproject 2
 date: 2017-06-28
-categories: firebase vue
-tags: happy
+tags: firebase vue
+feelings: happy
 ---
 
 in a massive sprint to 6am last night I finished workproject 2, hosted at <http://sentieoblinkvue.firebaseapp.com>. The stack is basically firebase and vue and it is amazing how intuitive vue is. I even did my first transition work, basically bringing a form of the old html <blink> tag back.

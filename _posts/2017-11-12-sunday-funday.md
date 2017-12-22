@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-11-12
-tags: meh
-categories: js
+feelings: meh
+tags: js
 title: sunday funday
 ---
 

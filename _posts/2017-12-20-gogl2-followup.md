@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-12-20
-tags: happy
-categories: interviews
+feelings: happy
+tags: interviews
 title: gogl2 followup
 ---
 

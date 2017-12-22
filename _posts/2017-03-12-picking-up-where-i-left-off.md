@@ -2,8 +2,8 @@
 layout: post
 title: Picking Up Where I left Off
 date: 2017-03-12
-tags: freecodecamp
-categories: determined fat
+feelings: freecodecamp
+tags: determined fat
 ---
 
 I am still working on creating a Meteor based boilerplate application in order to work up to the last FCC project: <https://www.freecodecamp.com/challenges/build-a-pinterest-clone>

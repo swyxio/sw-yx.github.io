@@ -2,8 +2,8 @@
 layout: post
 title: meteor shower
 date: 2017-06-21
-categories: meteor
-tags: happy
+tags: meteor
+feelings: happy
 ---
 
 after a long but very productive day yesterday i hope to take a break from meteor while i wait for feedback from JR. I can either work on some VEMB (icebob) stuff or learn VulcanJS or Django.

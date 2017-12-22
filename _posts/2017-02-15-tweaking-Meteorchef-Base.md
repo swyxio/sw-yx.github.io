@@ -2,8 +2,8 @@
 layout: post
 title: Tweaking MeteorChef Base
 date: 2017-02-15
-categories: freecodecamp meteor base
-tags: full
+tags: freecodecamp meteor base
+feelings: full
 ---
 
 I spent today making my first edits to MeteorChef/Base. not a terribly productive day to be honest.

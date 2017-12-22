@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-11-07
-tags: happy
-categories: graphql
+feelings: happy
+tags: graphql
 title: more algo work today
 ---
 

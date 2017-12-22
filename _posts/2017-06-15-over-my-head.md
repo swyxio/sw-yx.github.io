@@ -2,8 +2,8 @@
 layout: post
 title: over my head
 date: 2017-06-15
-categories: vue
-tags: fat
+tags: vue
+feelings: fat
 ---
 
 I dont want to leave things half done and so am continuing to drown in icebob's [request for commit](https://github.com/icebob/vue-express-mongo-boilerplate/issues/48).

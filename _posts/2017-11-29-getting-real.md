@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-11-29
-tags: happy
-categories: work
+feelings: happy
+tags: work
 title: getting real
 ---
 

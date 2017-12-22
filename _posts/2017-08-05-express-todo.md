@@ -2,8 +2,8 @@
 layout: post
 title: express todo app
 date: 2017-08-05
-categories: fsa
-tags: ambitious
+tags: fsa
+feelings: ambitious
 ---
 
 today i took one of the FSA checkpoint projects and ran a little bit with it. the task was to make a backend todo app and so my personal challenge was to add a frontend. i describe the process a little here <https://github.com/sw-yx/fsa-checkpoint-express> and the final result is hosted here <https://swyx-expresstodo.herokuapp.com/>.

@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2017-10-03
-tags: meh
-categories: foss
+feelings: meh
+tags: foss
 title: reactnyc and open source
 ---
 

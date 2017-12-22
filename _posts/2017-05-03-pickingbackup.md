@@ -2,8 +2,8 @@
 layout: post
 title: picking back up
 date: 2017-05-03
-categories: mongo express react node
-tags: MERN
+tags: mongo express react node
+feelings: MERN
 ---
 
 a dreadful couple of weeks due to a combination of travel (to london) and subsequent sickness. I am not beating myself up about it and instead just moving on. I have also signed on for FullStack Academy starting late june.

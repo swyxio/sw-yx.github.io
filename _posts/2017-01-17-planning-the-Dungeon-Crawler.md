@@ -2,8 +2,8 @@
 layout: post
 date: 2017-01-17
 title: Planning The Dungeon Crawler
-categories: freecodecamp react redux
-tags: full
+tags: freecodecamp react redux
+feelings: full
 ---
 
 So here are the user stories for the Crawler:

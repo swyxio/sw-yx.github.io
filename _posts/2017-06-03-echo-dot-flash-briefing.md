@@ -2,8 +2,8 @@
 layout: post
 title: Tutorial - How to Host an Alexa Flash Briefing feed on AWS Lambda and get a Free Amazon Echo Dot
 date: 2017-06-03
-categories: python
-tags: happy
+tags: python
+feelings: happy
 ---
 
 posted with images at: <https://medium.com/@swyx/tutorial-how-to-host-an-alexa-flash-briefing-feed-on-aws-lambda-and-get-a-free-amazon-echo-dot-a50fa1c76a64>
