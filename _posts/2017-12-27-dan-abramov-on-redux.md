@@ -12,7 +12,7 @@ These are my notes from Dan's [egghead.io courses](https://egghead.io/redux). (_
 ---
 
 # Table of Contents
-- [Course 1: [Getting Started with Redux](https://egghead.io/courses/getting-started-with-redux)](#course-1---getting-started-with-redux--https---eggheadio-courses-getting-started-with-redux-)
+- [Course 1: Getting Started with Redux](#course-1---getting-started-with-redux--https---eggheadio-courses-getting-started-with-redux-)
   * [Principles of redux](#principles-of-redux)
   * [Reducer tips:](#reducer-tips-)
   * [Three methods of `createStore`](#three-methods-of--createstore-)
@@ -23,7 +23,7 @@ These are my notes from Dan's [egghead.io courses](https://egghead.io/redux). (_
   * [passing store down using Context](#passing-store-down-using-context)
   * [combining React and Redux (react-redux method)](#combining-react-and-redux--react-redux-method-)
   * [Action Creators](#action-creators)
-- [Course 2: [Building React Applications with Idiomatic Redux](https://egghead.io/courses/building-react-applications-with-idiomatic-redux)](#course-2---building-react-applications-with-idiomatic-redux--https---eggheadio-courses-building-react-applications-with-idiomatic-redux-)
+- [Course 2: Building React Applications with Idiomatic Redux](#course-2---building-react-applications-with-idiomatic-redux--https---eggheadio-courses-building-react-applications-with-idiomatic-redux-)
 
 ---
 
