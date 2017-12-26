@@ -9,6 +9,24 @@ description: notes from Dan's egghead.io courses
 
 These are my notes from Dan's [egghead.io courses](https://egghead.io/redux). (_stuff in italics are my own opinions_). I skipped all the test related parts as there was a lot of unnecessary stuff for me. I am also familiar with redux and react-redux so there will be implicit assumptions here.
 
+---
+
+# Table of Contents
+- [Course 1: [Getting Started with Redux](https://egghead.io/courses/getting-started-with-redux)](#course-1---getting-started-with-redux--https---eggheadio-courses-getting-started-with-redux-)
+  * [Principles of redux](#principles-of-redux)
+  * [Reducer tips:](#reducer-tips-)
+  * [Three methods of `createStore`](#three-methods-of--createstore-)
+  * [Reducer Composition](#reducer-composition)
+  * [combining React and Redux (crude method)](#combining-react-and-redux--crude-method-)
+  * [separating Presentational Components and Container Components (basic method)](#separating-presentational-components-and-container-components--basic-method-)
+  * [combining React and Redux (better method)](#combining-react-and-redux--better-method-)
+  * [passing store down using Context](#passing-store-down-using-context)
+  * [combining React and Redux (react-redux method)](#combining-react-and-redux--react-redux-method-)
+  * [Action Creators](#action-creators)
+- [Course 2: [Building React Applications with Idiomatic Redux](https://egghead.io/courses/building-react-applications-with-idiomatic-redux)](#course-2---building-react-applications-with-idiomatic-redux--https---eggheadio-courses-building-react-applications-with-idiomatic-redux-)
+
+---
+
 # Course 1: [Getting Started with Redux](https://egghead.io/courses/getting-started-with-redux)
 
 _This course starts with a basic introduction of Redux's APIs, then shows how to integrate React and Redux, concluding with using the `react-redux` library but showing the steps to get there including using React's Context API._
