@@ -7,7 +7,11 @@ title: dan abramov on redux
 description: notes from Dan's egghead.io courses
 ---
 
-These are notes from Dan's [egghead.io courses](https://egghead.io/redux). (_stuff in italics are my own opinions_). I skipped all the test related parts as there was a lot of unnecessary stuff for me. I am also familiar with redux and react-redux so there will be implicit assumptions here.
+These are my notes from Dan's [egghead.io courses](https://egghead.io/redux). (_stuff in italics are my own opinions_). I skipped all the test related parts as there was a lot of unnecessary stuff for me. I am also familiar with redux and react-redux so there will be implicit assumptions here.
+
+# Getting Started with Redux
+
+_This course starts with a basic introduction of Redux's APIs, then shows how to integrate React and Redux, concluding with using the `react-redux` library but showing the steps to get there including using React's Context API._
 
 ## Principles of redux
 
@@ -154,5 +158,90 @@ class Foo extends Component {
 }
 ```
 
+with this you no longer need to wrap your entire app with a `renderfn()` and a top-level `subscribe` as you saw in the crude example above.
+
 _this updates individual components based on store subscription and is better than rerendering the entire app as you saw above. Individual components can also draw upon the redux state and no longer have to rely on getting state from parents._
 
+## passing store down using Context
+
+_note: the context api is currently being [changed](https://github.com/reactjs/rfcs/pull/2) so expect the specific API of the below to change but the `Context` concept should stay around._
+
+```javascript
+class Provider extends Component {
+  getChildContext() {
+    return {
+      store: this.props.store
+    }
+  }
+  render() {
+    return this.props.children
+  }
+}
+Provider.childContextTypes = { // currently must specify this to enable context passing
+  store: React.PropTypes.object 
+}
+ReactDOM.render(
+  <Provider store={createStore(rootReducer)}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+)
+```
+
+with all that done, now you can do `const {store} = this.context` in any descendent of `<App />` if it is a class component. If it is a functional component, you still have to declare `contextTypes`:
+
+```javascript
+
+// note we are using the SECOND argument here
+const FunComponent = (props, { store }) => <div>{store.text}</div>
+FunComponent.contextTypes = { // as above, must specify this to receive
+  store: React.PropTypes.object
+}
+```
+
+Context essentially allows global variables along the tree which goes against the core principles of React but can be handy for dependency injection like we are doing here. for more, read: <https://reactjs.org/docs/context.html>
+
+## combining React and Redux (react-redux method)
+
+`react-redux` exports a `Provider` (which we wrote above) and a `connect` method which helps you generate a container component wrapping a presentational component.
+
+```javascript
+import { Provider } from 'react-redux' // aka already written for you
+
+ReactDOM.render(
+  <Provider store={createStore(rootReducer)}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+)
+```
+
+so in a given component, you can do... 
+
+```javascript
+import { connect } from 'react-redux'
+import React, { Component } from 'react'
+
+class RawComponent extends Component {
+// your component here ...
+}
+
+const mapStateToProps = (state, ownProps) => {
+  return { // data you would get from context or redux store
+    foo: state.foo,
+    containerProp: ownProps.containerProp
+  }
+}
+const mapDispatchToProps = dispatch => {
+  return { // methods that would use store.dispatch
+    bar: baz => dispatch({ type: 'SOME_ACTION', baz })
+  }
+}
+
+const ConnectedComponent = connect(mapStateToProps, mapDispatchToProps)(RawComponent)
+// or export default connect(mapStateToProps, mapDispatchToProps)(RawComponent)
+```
+
+You can supply `null` for either `mapStateToProps` or `mapDispatchToProps` if you don't need it. If you don't need both you can simply call `connect()(RawComponent)` and a `dispatch` prop will still be supplied if you want to use it for any message dispatching.
+
+The container created from `connect` also passes on its `ownProps` as a second argument to either `mapStateToProps` or  `mapDispatchToProps` so the above container would work with `<ConnectedComponent containerProp="foobar" />`.
