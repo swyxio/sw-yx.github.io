@@ -9,7 +9,7 @@ description: notes from Dan's egghead.io courses
 
 These are my notes from Dan's [egghead.io courses](https://egghead.io/redux). (_stuff in italics are my own opinions_). I skipped all the test related parts as there was a lot of unnecessary stuff for me. I am also familiar with redux and react-redux so there will be implicit assumptions here.
 
-# Getting Started with Redux
+# Course 1: [Getting Started with Redux](https://egghead.io/courses/getting-started-with-redux)
 
 _This course starts with a basic introduction of Redux's APIs, then shows how to integrate React and Redux, concluding with using the `react-redux` library but showing the steps to get there including using React's Context API._
 
@@ -245,3 +245,22 @@ const ConnectedComponent = connect(mapStateToProps, mapDispatchToProps)(RawCompo
 You can supply `null` for either `mapStateToProps` or `mapDispatchToProps` if you don't need it. If you don't need both you can simply call `connect()(RawComponent)` and a `dispatch` prop will still be supplied if you want to use it for any message dispatching.
 
 The container created from `connect` also passes on its `ownProps` as a second argument to either `mapStateToProps` or  `mapDispatchToProps` so the above container would work with `<ConnectedComponent containerProp="foobar" />`.
+
+## Action Creators
+
+Action Creators are literally helper functions to help you create actions. Again they are not required but are probably good practice for creating maintainable apps. You can split these out into their own file and/or export them with their accompanying reducer. Just a helpful pattern, not super important.
+
+```javascript
+const fooCreator = foo => {
+  return {
+    type: 'FOO_CREATED',
+    foo
+  }
+}
+```
+
+This can seem like boilerplate but they help to document your software as it is basically describing what it is doing.
+
+# Course 2: [Building React Applications with Idiomatic Redux](https://egghead.io/courses/building-react-applications-with-idiomatic-redux)
+
+to be completed
