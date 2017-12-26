@@ -82,7 +82,7 @@ _if `foo` and `fooReducer` are named the same you can make this even more concis
 
 `combineReducers` is so simple you can implement it in 15 lines with an `Object.keys(reducers).reduce()`.
 
-## combining React and Redux
+## combining React and Redux (crude method)
 
 Very crudely, you can wrap a function around your entire `ReactDOM.render` and pass it as the callback to `store.subscribe`:
 
@@ -94,9 +94,9 @@ store.subscribe(renderfn)
 renderfn()
 ```
 
-_This will connect your redux store to your react view. The React view can send actions to update the redux store, and when the redux store is updated, it will call `renderfn` to show the new state._
+_This will connect your redux store to your react view. The React view can send actions to update the redux store, and when the redux store is updated, it will call `renderfn` to show the new state. This is hamfisted and we'll see a better way to do this._
 
-## separating Presentational Components and Container Components
+## separating Presentational Components and Container Components (basic method)
 
 Pretty straightforward for those familiar with `react-redux`.
 
@@ -129,4 +129,30 @@ render() {
 
 Separation like this is NOT required in redux but helps to move to other state management like Relay or other view layers like React Native without rewriting the unrelated code.
 
+the problem with above approach is passing down too many props down the tree especially when you have intermediate components. This breaks encapsulation because parents need to know too much about what children will need.
+
+You can disconnect this reliance on prop-passing by making the child component just read directly from `store.getState()` instead of getting its state through a prop from a parent.
+
 _note: do not call them "smart components" and "dumb components"._
+
+## combining React and Redux (better method)
+
+use `store.subscribe()` with `React.Component.forceUpdate()`
+
+```javascript
+class Foo extends Component {
+  componentDidMount() {
+    this.unsubscribe = store.subscribe(() => this.forceUpdate())
+  }
+  componentWillUnmount() {
+    this.unsubscribe() // the name 'unsubscribe' doesnt actually matter but is more readable
+  }
+  render() {
+    const state = store.getState()
+    return <div>{state.foobar}</div>
+  }
+}
+```
+
+_this updates individual components based on store subscription and is better than rerendering the entire app as you saw above. Individual components can also draw upon the redux state and no longer have to rely on getting state from parents._
+
