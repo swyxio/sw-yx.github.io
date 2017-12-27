@@ -281,4 +281,47 @@ This can seem like boilerplate but they help to document your software as it is 
 
 # Course 2: [Building React Applications with Idiomatic Redux](https://egghead.io/courses/building-react-applications-with-idiomatic-redux)
 
-to be completed
+## Redux Pro Tips
+
+1. Use ES6 to make your action creators and object methods more concise.
+2. Encapsulate all the store setup into a function and only export `configureStore()`.
+
+## Persisting Redux to localStorage
+
+`createStore` has a _second_ argument for you to supply things like `persistedState`. If supplied, it overrides any initial states you specify in your reducers.
+
+```javascript
+const loadState = () => {
+ try { // can fail if user privacy doesnt allow localStorage
+  const serializedState = localStorage.getItem('state')
+  if (serializedState === null) return undefined
+  return JSON.parse(serializedState)
+ } catch (err) {
+  return undefined
+ }
+}
+const saveState = state => {
+ try {
+  const serializedState = JSON.stringify(state);
+  localStorage.setItem('state', serializedState);
+ } catch (err) {
+  // do stuff
+ }
+}
+const persistedState = loadState();
+const store = createStore(rootReducer, persistedState);
+store.subscribe(() => {
+ saveState(store.getState())
+ // or saveState({foo: store.getState().foo}) if specific field
+})
+```
+
+this preserves the state of the app across reloads. 
+
+- Beware of a subtle bug if your rehydrated data doesn't include some counter data (for example) that isn't saved in redux store. you may find `v4` from `node-uuid` helpful.
+- adding an expensive operation like `JSON.stringify` to `store.subscribe()` can hurt performance. may use `throttle(saveStateFn, 1000)` from `lodash/throttle` to debounce at most every second.
+
+## Adding React Router
+
+to be continued (this is 2 yrs old so will be outdated)
+
