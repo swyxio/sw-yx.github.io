@@ -77,7 +77,7 @@ Plugging all that into Google isn't going to help! Why? Because you've left a bu
 
 James Roe phrased this better than I can:
 
-{% twitter 948706229785739264 %}
+ twitter 948706229785739264 
 
 So if you have an error code, Google that. If that doesn't work, Google the error message. If that doesn't work, Google the library you're using. and so on!
 
