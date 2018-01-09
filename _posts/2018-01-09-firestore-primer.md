@@ -25,3 +25,5 @@ So adopting needs to be tested to understand where redux goes in.
 5. copy in the component class from their readme
 6. add it into App.js
 7. npm start
+
+this turned out not to work very well. i have to try the simple <https://github.com/unfold/react-firebase/issues/50> version
