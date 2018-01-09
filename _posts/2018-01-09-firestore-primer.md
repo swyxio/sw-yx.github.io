@@ -27,3 +27,11 @@ So adopting needs to be tested to understand where redux goes in.
 7. npm start
 
 this turned out not to work very well. i have to try the simple <https://github.com/unfold/react-firebase/issues/50> version
+
+---
+
+i managed to adapt react-firebase for firestore successfully. not the neatest code but it works. i also sent it in as a PR <https://github.com/unfold/react-firebase/issues/50> but dont think it will get accepted. still dont know how to make my prettier work with eslint.
+
+time to look at auth rules.
+
+---
