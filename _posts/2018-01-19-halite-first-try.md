@@ -45,4 +45,6 @@ so i am falling prey to these basic issues:
 
 ---
 
+i had issues with timeouts so i implemented basic stuff: <http://forums.halite.io/t/speeding-up-python-bots/306/17>
 
+my best rank is 929 now <https://halite.io/user/?user_id=4342>
