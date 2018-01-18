@@ -21,9 +21,20 @@ Since bum rushes work as well with 2 ships as with 3 i might as well only send 2
 
 ok lets try that.
 
+--- 
+
+nothing i try works. sad. 
+
+---
+
+i made some progress with bumrush by being sensible with it. its 5am and im not getting anything else done.
+
+on to the rambo
+
 ---
 
 
 So there are a few characteristics of a Rambo unit that I want:
 
 - attacks furthest enemy docked ships
+- persistent
