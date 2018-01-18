@@ -48,3 +48,9 @@ so i am falling prey to these basic issues:
 i had issues with timeouts so i implemented basic stuff: <http://forums.halite.io/t/speeding-up-python-bots/306/17>
 
 my best rank is 929 now <https://halite.io/user/?user_id=4342>
+
+---
+
+i wasnt doing much better than my "viable settler v5" so i put that back in and im now back in the 700s.
+
+i am obsessed with "rambo" strategies. this guy <https://halite.io/user/?user_id=3093> used it on me [here](https://halite.io/play/?game_id=8292542).
