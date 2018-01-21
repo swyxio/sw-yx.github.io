@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2018-01-
+date: 2018-01-22
 tags: passportjs
 feelings: neutral
 title: passportjs local guide
@@ -259,3 +259,5 @@ class App extends Component {
 export default App
 
 ```
+
+i ran into a gnarly problem where the app wasnt saving down my session cookies. urgh.
