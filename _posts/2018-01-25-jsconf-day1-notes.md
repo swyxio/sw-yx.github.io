@@ -109,6 +109,13 @@ homework: how did she do the Show Layers page in the duotone section?
 
 - something about microservice arki
 - i have no idea what hes talking about
+- https://github.com/willmendesneto/micro-frontend-pages
 
+## shaz
 
+- IBM/Apache openwhisk (serverless)
+- <http://jamesthom.as/blog/2018/01/19/starting-openwhisk-in-sixty-seconds/>
+- `npm i -g openwhisk-workshop`
+- <https://serverless.com/>
+- mumbles
 
