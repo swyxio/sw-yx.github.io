@@ -105,7 +105,10 @@ homework: how did she do the Show Layers page in the duotone section?
 - REALLY understand your toolset including browser updates
 - took too much on - so pretty!
 
+## wilson mendes
 
+- something about microservice arki
+- i have no idea what hes talking about
 
 
 
