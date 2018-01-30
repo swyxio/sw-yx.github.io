@@ -28,7 +28,11 @@ command line
 
 github
 
-- git clone from private organizations: <https://help.github.com/articles/authorizing-a-personal-access-token-for-use-with-a-saml-single-sign-on-organization for more information.>
+- git clone from private organizations: <https://help.github.com/articles/authorizing-a-personal-access-token-for-use-with-a-saml-single-sign-on-organization for more information.> and then <https://stackoverflow.com/questions/18935539/authenticate-with-github-using-token>
+
+git push https://tsiq-swyx:4b8561b1b3dd12ae83e0aacb214b7697c8b59f93@github.com/tsiq/iqos-ui.git
+Username: tsiq-swyx
+Password: 4b8561b1b3dd12ae83e0aacb214b7697c8b59f93
 
 vscode settings
 
