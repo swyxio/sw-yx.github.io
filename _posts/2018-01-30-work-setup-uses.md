@@ -30,6 +30,7 @@ chrome
 - react devtools <https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en>
 - redux devtools <https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en>
 - video speed controller <https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk?hl=en>
+- devtools dark theme <https://chrome.google.com/webstore/detail/devtools-theme-zero-dark/bomhdjeadceaggdgfoefmpeafkjhegbo> must enable though: <https://howchoo.com/g/mtu3mwu5mdg/tell-chrome-developer-tools-to-use-a-dark-theme>
 
 github
 
