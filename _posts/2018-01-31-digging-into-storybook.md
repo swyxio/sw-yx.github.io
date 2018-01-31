@@ -43,3 +43,7 @@ i filed this: <https://github.com/storybooks/storybook/issues/2890>
 helpful issues:
 - <https://github.com/facebook/create-react-app/issues/3097>
 - <https://github.com/facebook/create-react-app/issues/2344>
+
+---
+
+solved! <https://github.com/storybooks/storybook/issues/2890>
