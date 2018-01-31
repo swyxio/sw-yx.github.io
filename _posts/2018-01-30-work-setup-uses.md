@@ -26,6 +26,11 @@ command line
 - <https://www.youtube.com/watch?v=qbNn5zJLZU0> z command
 
 
+chrome
+- react devtools <https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en>
+- redux devtools <https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en>
+- video speed controller <https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk?hl=en>
+
 github
 
 - git clone from private organizations: <https://help.github.com/articles/authorizing-a-personal-access-token-for-use-with-a-saml-single-sign-on-organization for more information.> and then <https://stackoverflow.com/questions/18935539/authenticate-with-github-using-token>
