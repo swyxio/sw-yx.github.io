@@ -49,7 +49,3 @@ helpful issues:
 solved! <https://github.com/storybooks/storybook/issues/2890>
 
 and that led me to this: <https://github.com/storybooks/storybook/issues/641> which showed how to do custom middleware. it was dead simple.
-
-![image](https://user-images.githubusercontent.com/6764957/35653334-baef832c-06b5-11e8-8098-a059bc06391e.png)
-
-![image](https://user-images.githubusercontent.com/6764957/35653394-fde64a76-06b5-11e8-99f7-9f1d27a2e7e8.png)
