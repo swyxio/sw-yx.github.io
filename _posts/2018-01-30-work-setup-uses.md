@@ -17,6 +17,8 @@ things to install
 - wesbos.com/uses
 - vscode insiders
 - LICEcap for gif recording <http://download.cnet.com/LICEcap/3000-2094_4-75984664.html>
+- AWS CLI
+- postman for API <https://www.getpostman.com/>
 
 mac defaults
 - <https://www.tekrevue.com/tip/how-to-turn-off-multitouch-trackpad-look-up-in-os-x/>
