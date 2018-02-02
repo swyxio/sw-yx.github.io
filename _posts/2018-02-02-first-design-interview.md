@@ -44,4 +44,11 @@ intune EDU
 - dark nav, white main is a good thing
 - but dark theme is possible
 - 20% increase in CTR
-- 
+
+1x1
+- status update: micromanager
+- jira update on slack
+- wait to resolve or ask for help - dont need to prove yourself
+- how do you want to share status update
+- no standups for now - rather talk about how than the what
+- go over typescript
