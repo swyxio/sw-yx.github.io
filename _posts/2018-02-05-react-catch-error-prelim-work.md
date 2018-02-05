@@ -19,3 +19,5 @@ description: trying out react catch error
 testing out cDC in codepen: <https://codepen.io/swyx/pen/oELbZv>
 
 the <https://github.com/facebook/create-react-app/pull/1101/files>
+
+and on the official docs for cDC <https://reactjs.org/docs/error-boundaries.html#how-about-event-handlers>
