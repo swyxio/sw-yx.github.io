@@ -1,11 +1,11 @@
 ---
 layout: post
-date: 2018-02-02
+date: 2018-02-01
 tags: storybook
 feelings: happy
 title: storybook addons
 comments: true
-description: storybook starts to payoff
+description: week 1 summaries
 ---
 
 day 1 as a professional developer. spent all day in orientation/compliance training, but got to set up my new macbook pro at work. first trip-up: i was unable to successfully install `nvm` on my new machine :disappointed: (relatedly, I can’t `npm i -g` without `sudo`)
@@ -29,3 +29,6 @@ day 3 - do basic typescript + react tutorials. i browsed a typescript course on 
 day 4. morning meeting figuring out backend APIs and getting AWS CLI to work. get assigned first real JIRA tickets at lunch, volunteer for the most laborious but the least abstract task (implementing a bootstrap list item component library with react storybook). by end of day i have a basic component lib up and running, including a nice storybook addon called `storybook-addon-jsx` that shows usage code alongside the rendered component. after yesterday’s shenanigans and today’s work i was called “the storybook expert”. they dont know that this is the first time i’ve touched this but i got the ideas from watching Cory House’s components course on PluralSight. 5pm: company happy hour.
 
 recap of day 5 (the last in this series). really fighting typescript and react. Because typescript needs to know the types of all the things, it is a lot harder to do simple react idioms that I’ve come to take for granted. Eg if you have `const ComponentA = props => <ComponentB {...props} />`, you can’t just use `<ComponentA foo="bar" />` because ComponentA needs to know in advance what prop types are coming in. Also if you want to use `this.state.items.map( item => item.property)` you have to specify AAAAALLL the types all the way down. Separately, I realized that even among React developers there can be a lot of strong differences in code style and preferred solutions for common problems. e.g. HOCs vs render props, styled-components vs SASS. It is important not to be obstinate about your own preferences. After all, you’re being paid to learn new styles!
+
+
+good questions to answer: <https://github.com/bradfrost/frontend-guidelines-questionnaire>
