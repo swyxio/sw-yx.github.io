@@ -43,7 +43,7 @@ now to investigate the 5 api's. this is helped by having a clear usage example i
 
 Then there are two build error api's.
 
-`reportBuildError` is a synchronous function. you feed it a string and react-error-overlay displays it.
+`reportBuildError` is a synchronous function. you feed it a string and react-error-overlay displays it. you can't use it without also supplying options to `startReportingRuntimeErrors` (below)
 
 `dismissBuildError` undoes that and set it to null.
 
