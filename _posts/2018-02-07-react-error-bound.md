@@ -135,3 +135,14 @@ class Plain extends Component {
 export default Plain;
 
 ```
+
+
+but the package as a whole is 265kb (790kb gzip). acemarke wanted something better: <https://twitter.com/acemarke/status/960330659414732800>
+
+this involves diving into listenToRuntimeErrors.
+
+---
+
+ok after diving in, it seems mark's original recs were spot on but i paused here becuase there was no further need.
+
+![image](https://user-images.githubusercontent.com/35976578/35952468-2066634a-0c4e-11e8-93e5-f252fcee90d5.png)
