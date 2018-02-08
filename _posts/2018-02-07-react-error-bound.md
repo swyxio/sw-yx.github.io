@@ -77,7 +77,6 @@ operation was a success. this gets R-E-O running easily on a react app:
 ```jsx
 import React, { Component } from "react";
 import {
-  reportBuildError,
   startReportingRuntimeErrors,
   stopReportingRuntimeErrors
 } from "react-error-overlay";
