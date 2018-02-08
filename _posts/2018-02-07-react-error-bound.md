@@ -69,3 +69,70 @@ filename is the more interesting one. this looks like a pointer to the bundle wi
 ---
 
 now on to try it in a sample CRA app.
+
+---
+
+operation was a success. this gets R-E-O running easily on a react app:
+
+```jsx
+import React, { Component } from "react";
+import {
+  reportBuildError,
+  startReportingRuntimeErrors,
+  stopReportingRuntimeErrors
+} from "react-error-overlay";
+
+const asyncerr = x => {
+  return new Promise(res => {
+    throw new Error("example error" + x);
+  });
+};
+const BuggyButton = () => (
+  <button
+    onClick={() => {
+      throw new Error("example error");
+    }}
+  >
+    Test Error Overlay
+  </button>
+);
+const BuggyButton5 = () => (
+  <button
+    onClick={() => {
+      asyncerr(1);
+      asyncerr(2);
+      asyncerr(3);
+      asyncerr(4);
+      asyncerr(5);
+    }}
+  >
+    Test Error Overlay 5 times
+  </button>
+);
+class Plain extends Component {
+  componentDidMount() {
+    startReportingRuntimeErrors({ onError: () => {} });
+  }
+  componentWillUnmount() {
+    stopReportingRuntimeErrors();
+  }
+  render() {
+    return (
+      <div>
+        <p>Testing react-error-overlay</p>
+        <ul>
+          <li>
+            <BuggyButton />
+          </li>
+          <li>
+            <BuggyButton5 />
+          </li>
+        </ul>
+      </div>
+    );
+  }
+}
+
+export default Plain;
+
+```
