@@ -74,15 +74,42 @@ now to scrape my follow's bios and stats.
 
 ```python
 # now get the user's own timeline
-driver.base_url = "https://twitter.com/" + arr[5]
-driver.get(driver.base_url)
-html_source = driver.page_source
-dailyemail_links = html_source.encode('utf-8')
-soup=bs(dailyemail_links)
-time.sleep(3)
-# stats
-stats = [x['data-count'] for x in soup.body.findAll('span', attrs={'class':'ProfileNav-value'})[:4]]#
-soup.body.findAll('div', 'content')[0]
+main = pd.DataFrame(data = {
+        'user': ['swyx'],
+        'stats': [[1,2,3,4]],
+        'text': [['test']],
+        'mostrecentTimestamp': [1234],
+        'engagements': [1234]
+    })
+for i in range(0,100):
+    currentUser = arr[i]
+    driver.base_url = "https://twitter.com/" + currentUser + '/with_replies'
+    driver.get(driver.base_url)
+    html_source = driver.page_source
+    dailyemail_links = html_source.encode('utf-8')
+    soup=bs(dailyemail_links)
+    time.sleep(2)
+    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+    time.sleep(2)
+    # stats
+    stats = map(lambda x: int(x), [x['data-count'] for x in soup.body.findAll('span', attrs={'class':'ProfileNav-value'})[:4]])
+    # all text
+    text = [''.join(x.findAll(text=True)) for x in soup.body.findAll('p', 'tweet-text')]
+    # most recent activity
+    alltweets = soup.body.findAll('li', attrs={'data-item-type':'tweet'})
+    mostrecentTimestamp = int(alltweets[0].findAll('span', '_timestamp')[0].get('data-time'))
+    # engagements
+    noretweets = [x.findAll('span', 'ProfileTweet-actionCount') for x in alltweets if not x.div.get('data-retweet-id')]
+    templist = [x.findAll('span', 'ProfileTweet-actionCount') for x in alltweets if not x.div.get('data-retweet-id')]
+    templist = [item for sublist in templist for item in sublist]
+    engagements = sum([int(x.get('data-tweet-stat-count')) for x in templist if x.get('data-tweet-stat-count')])
+    pd.concat([main, pd.DataFrame(data = {
+        'user': [currentUser],
+        'stats': [stats],
+        'text': [text],
+        'mostrecentTimestamp': [mostrecentTimestamp],
+        'engagements': [engagements]
+    })])
 ```
 
 
