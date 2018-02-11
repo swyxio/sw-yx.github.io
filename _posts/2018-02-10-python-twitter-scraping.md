@@ -68,6 +68,56 @@ that is a very basic scrape script for usernames and bios.
 
 now i have to scrape my follows' follows. the scolling will be smarter.
 
+```python
+driver = webdriver.Firefox()
+driver.base_url = "https://twitter.com/swyx/following"
+driver.get(driver.base_url)
+```
+
+and then login manually and get the arr ready
+
+
+```python
+df = pd.read_csv('BASICDATA.csv', encoding = "ISO-8859-1")
+arr = df.usernames
+```
+
+then
+
+
+```python
+for i in range(100,500):
+    currentUser = arr[i]
+    print('now doing user ' + str(i) + ': ' + currentUser)
+    driver.base_url = "https://twitter.com/" + currentUser + "/following"
+    driver.get(driver.base_url)
+    time.sleep(3) # first load
+    loopCounter = 0
+    lastHeight = driver.execute_script("return document.body.scrollHeight")
+    while True:
+        if loopCounter > 499:
+            break;
+        if loopCounter > 0 and loopCounter % 50 == 0:
+            print(loopCounter)
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(2)
+        newHeight = driver.execute_script("return document.body.scrollHeight")
+        if newHeight == lastHeight:
+            break
+        lastHeight = newHeight
+        loopCounter = loopCounter + 1
+    print('ended at: ' + str(loopCounter))
+    html_source = driver.page_source
+    dailyemail_links = html_source.encode('utf-8')
+    soup=bs(dailyemail_links)
+    temparr = [x.div['data-screen-name'] for x in soup.body.findAll('div', attrs={'data-item-type':'user'})]
+    tempbios = [x.p.text for x in soup.body.findAll('div', attrs={'data-item-type':'user'})]
+    d = {'usernames': temparr, 'bios': tempbios}
+    df = pd.DataFrame(data=d)
+    df.to_csv('data/' + currentUser + '.csv')
+```
+
+
 # follow's stats
 
 now to scrape my follow's bios and stats.
