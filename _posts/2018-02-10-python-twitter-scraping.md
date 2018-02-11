@@ -162,6 +162,17 @@ for i in range(0,100):
     })])
 ```
 
+data cleaning:
+
+```python
+namesandbios = df.set_index('usernames')
+final = main[1:].set_index('user')
+final['bios'] = namesandbios['bios']
+final = final.reset_index()
+final['stats-followers'] = list(map(lambda x: (int(x[2]) if x[2] != None else 0) if len(x) > 2 else 0, final['stats']))
+cleanedfinal = final.sort_values(by = ['stats-followers'])[170:]
+```
+
 
 # helpful
 
