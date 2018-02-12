@@ -120,19 +120,27 @@ for i in range(100,500):
 
 # follow's stats
 
-now to scrape my follow's bios and stats.
+now to scrape my follow's bios and stats. this was run/edited multiple times before i finally got all the stats i wanted
 
 ```python
 # now get the user's own timeline
 main = pd.DataFrame(data = {
-        'user': ['swyx'],
-        'stats': [[1,2,3,4]],
-        'text': [['test']],
-        'mostrecentTimestamp': [1234],
-        'engagements': [1234]
+        'user': ['swyx],
+        'text': ['text'],
+        'mostrecentTimestamp': ['mostrecentTimestamp'],
+        'engagements': ['engagements'],
+        'name': ['name'],
+        'loc': ['loc'],
+        'url': ['url'],
+        'stats_tweets': ['stats_tweets'],
+        'stats_following': ['stats_following'],
+        'stats_followers': ['stats_followers'],
+        'stats_favorites': ['stats_favorites'],
     })
-for i in range(0,100):
+# now get the user's own timeline
+for i in range(0,len(arr)):
     currentUser = arr[i]
+    print('doing user:' + str(i) + ' ' + currentUser)
     driver.base_url = "https://twitter.com/" + currentUser + '/with_replies'
     driver.get(driver.base_url)
     html_source = driver.page_source
@@ -140,26 +148,51 @@ for i in range(0,100):
     soup=bs(dailyemail_links)
     time.sleep(2)
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-    time.sleep(2)
+    time.sleep(1)
+    # name
+    name = soup.find('a', "ProfileHeaderCard-nameLink").text
+    # loc
+    temp = soup.find('span', 'ProfileHeaderCard-locationText')
+    temp = temp.text if temp else ''
+    loc = temp.strip() if temp else ''
+    # url
+    temp = soup.find('span', 'ProfileHeaderCard-urlText')
+    temp = temp.a if temp else None
+    url = temp['title'] if temp else ''
     # stats
-    stats = map(lambda x: int(x), [x['data-count'] for x in soup.body.findAll('span', attrs={'class':'ProfileNav-value'})[:4]])
+#     stats = [x.get('data-count') for x in soup.body.findAll('span', attrs={'class':'ProfileNav-value'})[:4]]
+    temp = soup.find('a',{'data-nav': 'tweets'})
+    stats_tweets = temp.find('span', 'ProfileNav-value')['data-count'] if temp else 0
+    temp = soup.find('a',{'data-nav': 'following'})
+    stats_following = temp.find('span', 'ProfileNav-value')['data-count'] if temp else 0
+    temp = soup.find('a',{'data-nav': 'followers'})
+    stats_followers = temp.find('span', 'ProfileNav-value')['data-count'] if temp else 0
+    temp = soup.find('a',{'data-nav': 'favorites'})
+    stats_favorites = temp.find('span', 'ProfileNav-value')['data-count'] if temp else 0
     # all text
     text = [''.join(x.findAll(text=True)) for x in soup.body.findAll('p', 'tweet-text')]
     # most recent activity
     alltweets = soup.body.findAll('li', attrs={'data-item-type':'tweet'})
-    mostrecentTimestamp = int(alltweets[0].findAll('span', '_timestamp')[0].get('data-time'))
+    mostrecentTimestamp = int(alltweets[0].findAll('span', '_timestamp')[0].get('data-time')) if len(alltweets) > 0 else 0
     # engagements
     noretweets = [x.findAll('span', 'ProfileTweet-actionCount') for x in alltweets if not x.div.get('data-retweet-id')]
     templist = [x.findAll('span', 'ProfileTweet-actionCount') for x in alltweets if not x.div.get('data-retweet-id')]
     templist = [item for sublist in templist for item in sublist]
     engagements = sum([int(x.get('data-tweet-stat-count')) for x in templist if x.get('data-tweet-stat-count')])
-    pd.concat([main, pd.DataFrame(data = {
+    main = pd.concat([main, pd.DataFrame(data = {
         'user': [currentUser],
-        'stats': [stats],
         'text': [text],
         'mostrecentTimestamp': [mostrecentTimestamp],
-        'engagements': [engagements]
+        'engagements': [engagements],
+        'name': [name],
+        'loc': [loc],
+        'url': [url],
+        'stats_tweets': [stats_tweets],
+        'stats_following': [stats_following],
+        'stats_followers': [stats_followers],
+        'stats_favorites': [stats_favorites],
     })])
+    main.to_csv('data/BASICDATA_profiles.csv')
 ```
 
 data cleaning:
