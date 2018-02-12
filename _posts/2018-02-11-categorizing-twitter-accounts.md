@@ -21,31 +21,31 @@ i think i want to go with just three dimensions of categorization
 tech categorization is going to be really imperfect but i made a bag of words based on my 4000 twitter follows
 
 ```python
-jslist = [ 'react', 'webpack', ' js', 'javascript','frontend', 'front-end', 'underscore','entscheidungsproblem', 'meteor', 'google']
+jslist = [ 'react', 'webpack', ' js', 'javascript','frontend', 'front-end', 'underscore','entscheidungsproblem', 'meteor']
 osslist = [' oss', 'open source','maintainer']
 designlist = ['css', 'designer', 'designing']
-devlist = ['dev', 'code', 'coding',  'eng',  'software', 'full-stack', 'fullstack', 'backend', 'devops', 'graphql', 'programming',  'computer', 'scien']
-makerlist = ['entrepreneur', 'hacker', 'maker']
+devlist = [' dev','web dev', 'webdev', 'code', 'coding',  'eng',  'software', 'full-stack', 'fullstack', 'backend', 'devops', 'graphql', 'programming',  'computer', 'scien']
+makerlist = ['entrepreneur', 'hacker', 'maker', 'founder', 'internet', 'web']
 def categorize(x):
     bio = unicode(x).lower()
-    if any(s in bio for s in makerlist):
-        return 'maker'
-    elif any(s in bio for s in designlist):
-        return 'design'
+    if any(s in bio for s in jslist):
+        return 'js'
     elif any(s in bio for s in osslist):
         return 'oss'
-    elif any(s in bio for s in jslist):
-        return 'js'
+    elif any(s in bio for s in designlist):
+        return 'design'
     elif any(s in bio for s in devlist):
         return 'dev'
+    elif any(s in bio for s in makerlist):
+        return 'maker'
     else:
         return ''
 cleanedfinal['cat'] = map(categorize,cleanedfinal['bios'])
-print(len(cleanedfinal[cleanedfinal['cat'] == 'maker'])) # 254
-print(len(cleanedfinal[cleanedfinal['cat'] == 'design'])) # 152
-print(len(cleanedfinal[cleanedfinal['cat'] == 'oss'])) # 73
-print(len(cleanedfinal[cleanedfinal['cat'] == 'js'])) # 371
-print(len(cleanedfinal[cleanedfinal['cat'] == 'dev'])) # 706
+print(len(cleanedfinal[cleanedfinal['cat'] == 'maker'])) # 573
+print(len(cleanedfinal[cleanedfinal['cat'] == 'design'])) # 136
+print(len(cleanedfinal[cleanedfinal['cat'] == 'oss'])) # 53
+print(len(cleanedfinal[cleanedfinal['cat'] == 'js'])) # 355
+print(len(cleanedfinal[cleanedfinal['cat'] == 'dev'])) # 758
 ```
 
-this gives me 1556 categorized twitter accounts.
+this gives me 1844 categorized twitter accounts.
