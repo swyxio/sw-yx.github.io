@@ -168,8 +168,10 @@ data cleaning:
 namesandbios = df.set_index('usernames')
 final = main[1:].set_index('user')
 final['bios'] = namesandbios['bios']
-final = final.reset_index()
+final = final.reset_index().drop(['Unnamed: 0'], axis=1)
+final['stats'] = list(map(lambda x: eval(x), final['stats'])) # parse from string
 final['stats-followers'] = list(map(lambda x: (int(x[2]) if x[2] != None else 0) if len(x) > 2 else 0, final['stats']))
+final['stats-follows'] = list(map(lambda x: (int(x[1]) if x[1] != None else 0) if len(x) > 1 else 0, final['stats']))
 cleanedfinal = final.sort_values(by = ['stats-followers'])[170:]
 ```
 
