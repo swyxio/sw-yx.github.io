@@ -48,4 +48,16 @@ print(len(cleanedfinal[cleanedfinal['cat'] == 'js'])) # 355
 print(len(cleanedfinal[cleanedfinal['cat'] == 'dev'])) # 758
 ```
 
-this gives me 1844 categorized twitter accounts.
+this gives me 1875 categorized twitter accounts.
+
+# gender
+
+- https://github.com/tue-mdse/genderComputer # this did not work, filed an issue
+- https://github.com/muatik/genderizer # this works!!!!
+- https://www.kaggle.com/crowdflower/twitter-user-gender-classification # this is nice raw data for ML in future
+
+# positivity
+
+using textblob: https://pypi.python.org/pypi/textblob
+
+you need this: https://stackoverflow.com/questions/26570944/resource-utokenizers-punkt-english-pickle-not-found
