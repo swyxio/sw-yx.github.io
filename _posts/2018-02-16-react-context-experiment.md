@@ -35,7 +35,7 @@ i ran into pretty bad context troubles. these didnt work:
 - <https://medium.com/dailyjs/reacts-%EF%B8%8F-new-context-api-70c9fe01596b>
 - <https://github.com/reactjs/rfcs/blob/master/text/0002-new-version-of-context.md>
 
-i also studied unstated for a fresher idea <https://news.ycombinator.com/item?id=16398582>
+i also studied unstated for a fresher idea
 
 <https://github.com/facebook/react/issues/5927> so i stopped there.
 
