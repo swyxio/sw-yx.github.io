@@ -15,3 +15,38 @@ description: diving into rxjs
 for react usage: 
 
 https://github.com/acdlite/recompose/blob/master/docs/API.md#componentfromstreamwithconfig
+
+---
+
+# basic hello world
+
+```js
+import React from "react";
+import { componentFromStream } from "recompose";
+
+const Potato = componentFromStream(props$ =>
+  props$.map(props => <div>{props.message}</div>)
+);
+export default () => <Potato message="hello world" />;
+```
+
+
+
+# a very basic rxreact timer using Observable.interval
+
+```js
+import React from "react";
+import { setObservableConfig, componentFromStream } from "recompose";
+import rxjsConfig from "recompose/rxjsObservableConfig";
+import { Observable } from "rxjs";
+
+setObservableConfig(rxjsConfig);
+
+const Potato = componentFromStream(props =>
+  Observable.interval(1000).map(count => <h1>{count}</h1>)
+);
+
+export default Potato;
+```
+
+
