@@ -30,8 +30,6 @@ const Potato = componentFromStream(props$ =>
 export default () => <Potato message="hello world" />;
 ```
 
-
-
 # a very basic rxreact timer using Observable.interval
 
 ```js
@@ -49,4 +47,32 @@ const Potato = componentFromStream(props =>
 export default Potato;
 ```
 
+# typewriter effect example using Observable.zip, .from, .interval, .scan, .switchMap and .map
+
+```js
+import React from "react";
+import rxjsConfig from "recompose/rxjsObservableConfig";
+import { Observable } from "rxjs";
+import { setObservableConfig, componentFromStream } from "recompose";
+
+setObservableConfig(rxjsConfig);
+
+const createTypewriter = message =>
+  Observable.zip(
+    Observable.from(message),
+    Observable.interval(100),
+    letter => letter
+  ).scan((acc, curr) => acc + curr);
+
+const Potato = props => <div>{props.message}</div>;
+
+const AppStream = componentFromStream(props$ =>
+  props$
+    .switchMap(props => createTypewriter(props.message))
+    .map(message => ({ message }))
+    .map(Potato)
+);
+
+export default () => <AppStream message="hello world" />;
+```
 
