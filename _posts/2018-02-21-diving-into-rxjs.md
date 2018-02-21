@@ -76,3 +76,38 @@ const AppStream = componentFromStream(props$ =>
 export default () => <AppStream message="hello world" />;
 ```
 
+# basic AJAX example using Observable.ajax, .pluck, .startWith
+
+```js
+import React from "react";
+import rxjsConfig from "recompose/rxjsObservableConfig";
+import { Observable } from "rxjs";
+import { setObservableConfig, componentFromStream } from "recompose";
+
+setObservableConfig(rxjsConfig);
+
+const pbid = id => `https://swapi.co/api/people/${id}`;
+
+const Potato = props => (
+  <div>
+    <h1>{props.name}</h1>
+    <h2>{props.homeworld}</h2>
+  </div>
+);
+
+const AppStream = componentFromStream(props$ =>
+  props$
+    .switchMap(props => Observable.ajax(pbid(props.id)))
+    .pluck("response")
+    .switchMap(
+      res =>
+        Observable.ajax(res.homeworld)
+          .pluck("response")
+          .startWith({ name: "" }), // optional
+      (person, homeworld) => ({ ...person, homeworld: homeworld.name })
+    )
+    .map(Potato)
+);
+
+export default () => <AppStream id={1} />;
+```
