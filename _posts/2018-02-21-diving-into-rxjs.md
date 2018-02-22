@@ -8,9 +8,10 @@ comments: true
 description: diving into rxjs
 ---
 
-<https://gist.github.com/btroncone/d6cf141d6f2c00dc6b35>
-<https://gist.github.com/staltz/868e7e9bc2a7b8c1f754>
-<https://www.learnrxjs.io/>
+- <https://gist.github.com/btroncone/d6cf141d6f2c00dc6b35>
+- <https://gist.github.com/staltz/868e7e9bc2a7b8c1f754>
+- <https://www.learnrxjs.io/>
+- <https://egghead.io/technologies/rx>
 
 for react usage: 
 
