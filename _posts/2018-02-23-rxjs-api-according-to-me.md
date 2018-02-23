@@ -8,6 +8,15 @@ comments: true
 description: rxjs api according to me
 ---
 
+
+## Work in progress
+
+ i stopped here: <http://reactivex.io/rxjs/manual/overview.html#multicasted-observables>
+
+---
+
+Here is my cheatsheet while I am learning rxjs. I tend to prefer bullet points and short examples. I also like to work progressively from high level down to low level so that is how this is ordered. I am cribbing very heavily from [the rxjs manual](http://reactivex.io/rxjs/manual/overview.html) (the old docs) and [the new rjsdocs](https://github.com/reactivex/rxjs-docs).
+
 # Key concepts
 
 ## Bullet point concepts
@@ -331,3 +340,4 @@ observable.subscribe(subject); // You can subscribe providing a Subject
 // observerA: 3
 // observerB: 3
 ```
+
