@@ -8,9 +8,30 @@ comments: true
 description: rxjs api according to me
 ---
 
+# Note to reader
+
 Here is my cheatsheet while I am learning rxjs. I tend to prefer bullet points and short examples. I also like to work progressively from high level down to low level so that is how this is ordered. I am cribbing very heavily from [the rxjs manual](http://reactivex.io/rxjs/manual/overview.html) (the old docs) and [the new rjsdocs](https://github.com/reactivex/rxjs-docs).
 
+I also care a lot about WHY to learn rxjs and the docs above should answer that better than me. But my initial impression is that it treats "time as a first class citizen", such that buffering and aggregating events become trivial declarative pure functions, instead of having to store results of imperative calculations in state.
+
+---
+
 # Key concepts
+
+## The Multiple Push collection paradigm
+
+Here is a [2x2 matrix of function paradigms](http://reactivex.io/rxjs/manual/overview.html#pull-versus-push):
+
+- Single Pull: `Function`
+- Multiple Pull: `Iterator` and `Generator functions`
+- Single Push: `Promise`
+- Multiple Push: `Observable`
+
+In **Pull** systems the Consumer decides when it receives data from the Producer. The Producer is unaware of when the data will be delivered. **Functions** get consumed when their `return` values are assigned, and **Generators** get consumed when their `iterator.next()` is called.
+
+In **Push** systems the Producer decides when to send data to the Consumer. The Consumer is unaware of when it will receive that data. **Promises** call their `.then`s when they want to, **Observables** push their data to `.subscribe`.
+
+---
 
 ## Observables vs Observers vs Subscriptions vs Subjects vs Operators
 
@@ -37,6 +58,8 @@ var observable = Rx.Observable.create(function (observer) {
 // do observable.subscribe somewhere down the line
 ```
 
+---
+
 **Observers** are:
 
 - consumers of values delivered by an **observable**.
@@ -51,6 +74,8 @@ var observer = {
   complete: () => console.log('Observer got a complete notification'),
 };
 ```
+
+---
 
 **Subscriptions** are:
 
@@ -68,6 +93,8 @@ var subscription = observable.subscribe(x => console.log(x));
 // was started by calling subscribe with an Observer.
 subscription.unsubscribe();
 ```
+
+---
 
 **Subjects** are:
 
@@ -104,6 +131,8 @@ Descriptions of Subject subtypes:
 - [ReplaySubject](http://reactivex.io/rxjs/manual/overview.html#replaysubject): A ReplaySubject records multiple values from the Observable execution and replays them to new subscribers. `var subject = new Rx.ReplaySubject(3); // buffer 3 values for new subscribers` or `var subject = new Rx.ReplaySubject(100, 500 /* windowTime */);`
 - [AsyncSubject](http://reactivex.io/rxjs/manual/overview.html#asyncsubject): The AsyncSubject is similar to the last() operator, in that it waits for the complete notification in order to deliver a single value.
 
+---
+
 **Operators** are:
 
 - pure methods on **Observables**
@@ -122,18 +151,7 @@ Descriptions of Subject subtypes:
 - Conditional/Boolean
 - Mathematical and Aggregation
 
-## The Multiple Push collection paradigm
-
-Here is a [2x2 matrix of function paradigms](http://reactivex.io/rxjs/manual/overview.html#pull-versus-push):
-
-- Single Pull: `Function`
-- Multiple Pull: `Iterator` and `Generator functions`
-- Single Push: `Promise`
-- Multiple Push: `Observable`
-
-In **Pull** systems the Consumer decides when it receives data from the Producer. The Producer is unaware of when the data will be delivered. **Functions** get consumed when their `return` values are assigned, and **Generators** get consumed when their `iterator.next()` is called.
-
-In **Push** systems the Producer decides when to send data to the Consumer. The Consumer is unaware of when it will receive that data. **Promises** call their `.then`s when they want to, **Observables** push their data to `.subscribe`.
+---
 
 ## (Advanced) Schedulers
 
@@ -145,16 +163,24 @@ In **Push** systems the Producer decides when to send data to the Consumer. The 
 
 There are 3 [types of Schedulers](http://reactivex.io/rxjs/manual/overview.html#scheduler-types) but RxJS will pick the " least concurrency scheduler" for you.
 
+---
+
 ## The Observable lifecycle
+
+Observables go through a rough lifecycle that can be described like this:
 
 - Creation: e.g. `const observable = Rx.Observable.create(...)`
 - Subscription: e.g. `const subscription = observable.subscribe(console.log)`
 - Execution: the code inside `Rx.Observable.create(function (observer) {...})` which calls `observer.next()` and possibly `observer.error()` and `observer.complete()`. Essentially this is "manual" implementation of the observable, and could be supplanted by all the inbuilt operators rxjs provides.
 - Disposal: e.g. `subscription.unsubscribe()` to cancel execution
 
+---
+
 # Stop reading and go learn operators
 
-You really get good when you learn some basic [Types of Operators](http://reactivex.io/rxjs/manual/overview.html#categories-of-operators).
+You really get good when you learn some basic [Types of Operators](http://reactivex.io/rxjs/manual/overview.html#categories-of-operators). Go!
+
+---
 
 # handy tricks
 
