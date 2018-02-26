@@ -110,7 +110,7 @@ Descriptions of Subject subtypes:
 - return new **Observables** (instead of modifying the existing one)
 - *static* (creates Observables) and *instance* (operates on Observables)
 
-[Types of Observables](http://reactivex.io/rxjs/manual/overview.html#categories-of-operators):
+[Types of Operators](http://reactivex.io/rxjs/manual/overview.html#categories-of-operators):
 
 - Creation 
 - Transformation 
@@ -151,6 +151,10 @@ There are 3 [types of Schedulers](http://reactivex.io/rxjs/manual/overview.html#
 - Subscription: e.g. `const subscription = observable.subscribe(console.log)`
 - Execution: the code inside `Rx.Observable.create(function (observer) {...})` which calls `observer.next()` and possibly `observer.error()` and `observer.complete()`. Essentially this is "manual" implementation of the observable, and could be supplanted by all the inbuilt operators rxjs provides.
 - Disposal: e.g. `subscription.unsubscribe()` to cancel execution
+
+# Stop reading and go learn operators
+
+You really get good when you learn some basic [Types of Operators](http://reactivex.io/rxjs/manual/overview.html#categories-of-operators).
 
 # handy tricks
 
