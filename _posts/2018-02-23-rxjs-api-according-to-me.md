@@ -8,18 +8,11 @@ comments: true
 description: rxjs api according to me
 ---
 
-
-## Work in progress
-
- i stopped here: <http://reactivex.io/rxjs/manual/overview.html#multicasted-observables>
-
----
-
 Here is my cheatsheet while I am learning rxjs. I tend to prefer bullet points and short examples. I also like to work progressively from high level down to low level so that is how this is ordered. I am cribbing very heavily from [the rxjs manual](http://reactivex.io/rxjs/manual/overview.html) (the old docs) and [the new rjsdocs](https://github.com/reactivex/rxjs-docs).
 
 # Key concepts
 
-## Bullet point concepts
+## Observables vs Observers vs Subscriptions vs Subjects vs Operators
 
 **Observables** are:
 
@@ -59,7 +52,7 @@ var observer = {
 };
 ```
 
-**Subsciptions** are:
+**Subscriptions** are:
 
 - disposable resource, eg execution of an **observable**
 - an object with one primary method: `unsubscribe`
@@ -105,6 +98,30 @@ subject.next(2);
 // observerB: 2
 ```
 
+Descriptions of Subject subtypes:
+
+- [BehaviorSubject](http://reactivex.io/rxjs/manual/overview.html#behaviorsubject): BehaviorSubjects are useful for representing "values over time". For instance, an event stream of birthdays is a Subject, but the stream of a person's age would be a BehaviorSubject. `var subject = new Rx.BehaviorSubject(0); // 0 is the initial value`
+- [ReplaySubject](http://reactivex.io/rxjs/manual/overview.html#replaysubject): A ReplaySubject records multiple values from the Observable execution and replays them to new subscribers. `var subject = new Rx.ReplaySubject(3); // buffer 3 values for new subscribers` or `var subject = new Rx.ReplaySubject(100, 500 /* windowTime */);`
+- [AsyncSubject](http://reactivex.io/rxjs/manual/overview.html#asyncsubject): The AsyncSubject is similar to the last() operator, in that it waits for the complete notification in order to deliver a single value.
+
+**Operators** are:
+
+- pure methods on **Observables**
+- return new **Observables** (instead of modifying the existing one)
+- *static* (creates Observables) and *instance* (operates on Observables)
+
+[Types of Observables](http://reactivex.io/rxjs/manual/overview.html#categories-of-operators):
+
+- Creation 
+- Transformation 
+- Filtering
+- Combination
+- Multicasting
+- Error Handling
+- Utility
+- Conditional/Boolean
+- Mathematical and Aggregation
+
 ## The Multiple Push collection paradigm
 
 Here is a [2x2 matrix of function paradigms](http://reactivex.io/rxjs/manual/overview.html#pull-versus-push):
@@ -118,7 +135,15 @@ In **Pull** systems the Consumer decides when it receives data from the Producer
 
 In **Push** systems the Producer decides when to send data to the Consumer. The Consumer is unaware of when it will receive that data. **Promises** call their `.then`s when they want to, **Observables** push their data to `.subscribe`.
 
-# A categorized API
+## (Advanced) Schedulers
+
+[Schedulers](http://reactivex.io/rxjs/manual/overview.html#scheduler) are:
+
+- a data structure: a priority queue for tasks
+- an execution context: e.g. immediately, or in another callback mechanism such as setTimeout or process.nextTick, or the animation frame
+- has a virtual clock: It provides a notion of "time" by a getter method now() on the scheduler.
+
+There are 3 [types of Schedulers](http://reactivex.io/rxjs/manual/overview.html#scheduler-types) but RxJS will pick the " least concurrency scheduler" for you.
 
 ## The Observable lifecycle
 
@@ -126,182 +151,6 @@ In **Push** systems the Producer decides when to send data to the Consumer. The 
 - Subscription: e.g. `const subscription = observable.subscribe(console.log)`
 - Execution: the code inside `Rx.Observable.create(function (observer) {...})` which calls `observer.next()` and possibly `observer.error()` and `observer.complete()`. Essentially this is "manual" implementation of the observable, and could be supplanted by all the inbuilt operators rxjs provides.
 - Disposal: e.g. `subscription.unsubscribe()` to cancel execution
-
-## Observable creators
-
-### of
-
-### from
-
-```js
-var observable = Rx.Observable.from([10, 20, 30]);
-var subscription = observable.subscribe(x => console.log(x));
-```
-
-### interval
-
-### fromEvent
-
-```js
-var button = document.querySelector('button');
-Rx.Observable.fromEvent(button, 'click')
-  .subscribe(() => console.log('Clicked!'));
-```
-
-### create
-
-```js
-var observable = Rx.Observable.create(function (observer) {
-  observer.next(1); // synchronous
-  observer.next(2); // synchronous
-  observer.next(3); // synchronous
-  setTimeout(() => { // asynchronous
-    observer.next(4);
-    observer.complete();
-  }, 1000);
-});
-
-console.log('just before subscribe');
-observable.subscribe({
-  next: x => console.log('got value ' + x),
-  error: err => console.error('something wrong occurred: ' + err),
-  complete: () => console.log('done'),
-});
-console.log('just after subscribe');
-
-// just before subscribe
-// got value 1
-// got value 2
-// got value 3
-// just after subscribe
-// got value 4
-// done
-```
-
-## Observable operators: Persistence
-
-### scan
-
-```js
-var button = document.querySelector('button');
-Rx.Observable.fromEvent(button, 'click')
-  .scan(count => count + 1, 0) // works like 'reduce'
-  .subscribe(count => console.log(`Clicked ${count} times`));
-```
-
-## Observable operators: Flow control
-
-### throttleTime
-
-```js
-var button = document.querySelector('button');
-Rx.Observable.fromEvent(button, 'click')
-  .throttleTime(1000) // at most allow 1 click per second
-  .scan(count => count + 1, 0)
-  .subscribe(count => console.log(`Clicked ${count} times`));
-```
-
-### filter
-### delay
-### debounceTime
-### take
-### takeUntil
-### distinct
-### distinctUntilChanged
-
-## Observable operators: Pure Transforms
-
-### map
-
-```js
-var button = document.querySelector('button');
-Rx.Observable.fromEvent(button, 'click')
-  .throttleTime(1000)
-  .map(event => event.clientX) // map means map :)
-  .scan((count, clientX) => count + clientX, 0)
-  .subscribe(count => console.log(count));
-```
-
-### pluck
-### pairwise
-### sample
-
-
-
-
-# Interesting examples
-
-## An observable that returns both synchronously AND asynchronously
-
-```js
-var foo = Rx.Observable.create(function (observer) {
-  console.log('Hello');
-  observer.next(42);
-  observer.next(100);
-  observer.next(200);
-  setTimeout(() => {
-    observer.next(300); // happens asynchronously
-  }, 1000);
-});
-
-console.log('before');
-foo.subscribe(function (x) {
-  console.log(x);
-});
-console.log('after');
-
-// "before"
-// "Hello"
-// 42
-// 100
-// 200
-// "after"
-// 300
-```
-
-## Subscribe/Unsubscribe interface implemented in pure javascript (no rxjs)
-
-```js
-function subscribe(observer) {
-  var intervalID = setInterval(() => {
-    observer.next('hi');
-  }, 1000);
-
-  return function unsubscribe() {
-    clearInterval(intervalID);
-  };
-}
-
-var unsubscribe = subscribe({next: (x) => console.log(x)});
-
-// Later:
-unsubscribe(); // dispose the resources
-```
-
-So why use rxjs if it can be done in pure js? "The reason why we use Rx types like Observable, Observer, and Subscription is to get safety (such as the Observable Contract) and composability with Operators."
-
-## adding/removing Child subscriptions
-
-```js
-var observable1 = Rx.Observable.interval(400);
-var observable2 = Rx.Observable.interval(300);
-
-var subscription = observable1.subscribe(x => console.log('first: ' + x));
-var childSubscription = observable2.subscribe(x => console.log('second: ' + x));
-
-subscription.add(childSubscription);
-
-setTimeout(() => {
-  // Unsubscribes BOTH subscription and childSubscription
-  subscription.unsubscribe();
-}, 1000);
-
-// second: 0
-// first: 0
-// second: 1
-// first: 1
-// second: 2
-```
 
 # handy tricks
 
@@ -341,3 +190,34 @@ observable.subscribe(subject); // You can subscribe providing a Subject
 // observerB: 3
 ```
 
+## refCount()
+
+<http://reactivex.io/rxjs/manual/overview.html#reference-counting>
+
+You can also use `observable.multicast(subject)` but theres no discernable difference between [multicasting](http://reactivex.io/rxjs/manual/overview.html#multicasted-observables) and Subject.
+
+## Manually written operator
+
+<http://reactivex.io/rxjs/manual/overview.html#what-are-operators->
+
+```js
+function multiplyByTen(input) {
+  var output = Rx.Observable.create(function subscribe(observer) {
+    input.subscribe({
+      next: (v) => observer.next(10 * v),
+      error: (err) => observer.error(err),
+      complete: () => observer.complete()
+    });
+  });
+  return output;
+}
+
+var input = Rx.Observable.from([1, 2, 3, 4]);
+var output = multiplyByTen(input);
+output.subscribe(x => console.log(x));
+
+// 10
+// 20
+// 30
+// 40
+```
