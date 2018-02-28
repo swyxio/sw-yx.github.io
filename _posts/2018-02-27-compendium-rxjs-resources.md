@@ -10,8 +10,6 @@ description: handy rxjs resources
 
 https://github.com/reactivex/rxjs
 
-
-
 RxJS core team
 - http://reactivex.io/rxjs/manual/overview.html (START HERE)
 - https://github.com/ReactiveX/rxjs-docs (deployed at http://rxjsdocs.com/)
@@ -36,3 +34,9 @@ Ecosystem additions
 
 Criticisms
 - https://www.christianalfoni.com/articles/2016_03_31_RxJs-the-smartest-dumbest-tool-ever
+
+Alternatives
+- http://staltz.github.io/xstream/
+- https://github.com/cujojs/most
+- http://kefirjs.github.io/kefir/
+- https://baconjs.github.io/
