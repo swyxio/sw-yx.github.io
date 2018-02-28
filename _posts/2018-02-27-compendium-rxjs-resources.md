@@ -3,7 +3,7 @@ layout: post
 date: 2018-02-27
 tags: rxjs compendium
 feelings: neutral
-title: compendium: rxjs resources
+title: compendium of rxjs resources
 comments: true
 description: handy rxjs resources
 ---
