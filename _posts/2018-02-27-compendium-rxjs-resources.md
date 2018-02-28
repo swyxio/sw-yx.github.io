@@ -21,7 +21,7 @@ Intro Articles
 
 With React
 - https://reactrocket.com/post/react-and-rxjs/
-- 
+- https://github.com/acdlite/recompose/blob/master/docs/API.md#componentfromstreamwithconfig
 
 Diagrams/short tutorials
 
