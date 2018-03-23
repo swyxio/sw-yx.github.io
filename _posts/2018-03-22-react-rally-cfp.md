@@ -22,7 +22,7 @@ Why DO we write imperative event handlers? You have to deal with an async `setSt
 
 ## Details
 
-Explain the theme and flow of your talk. What are the intended audience takeaways? is there an outline you plan to follow?
+**Explain the theme and flow of your talk. What are the intended audience takeaways? is there an outline you plan to follow?**
 
 The theme is "Counterfactual History", and theme song: [Cinderella - Don't Know What You Got (Til It's Gone)](https://www.youtube.com/watch?v=i28UEoLXVFQ)
 
@@ -54,7 +54,7 @@ Outline:
 
 ## Pitch
 
-Why is this talk pertinent? What is your involvement in the topic? Explain why this talk should be considered and what makes you qualified to speak on the topic.
+**Why is this talk pertinent? What is your involvement in the topic? Explain why this talk should be considered and what makes you qualified to speak on the topic.**
 
 This talk was born out of my frustration at why it felt so unnatural to connect RxJS with React even though I intuited that they embody superficially similar paradigms: ultimately, stuff happens, state changes, and then the dom changes because the state changes. I was also inspired by [Paul O Shannessy's React Rally 2016 talk](https://www.youtube.com/watch?v=_MAD4Oly9yg) where he showed it was possible to "build react from scratch" and show all the key parts in a single talk. So I tried building a reactive version of React, and to my surprise, it wasn't hard. So it begged the question: why -isn't- React reactive?
 
