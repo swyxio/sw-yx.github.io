@@ -75,14 +75,18 @@ React Mind, Beginner's Mind
 
 ## Abstract
 
-What is your talk about?
+**What is your talk about?**
+
+In 
 
 ## *for review committee*
 
 ## Details
 
-Explain the theme and flow of your talk. What are the intended audience takeaways? is there an outline you plan to follow?
+**Explain the theme and flow of your talk. What are the intended audience takeaways? is there an outline you plan to follow?**
+
 
 ## Pitch
 
-WHy is this talk pertinent? What is your involvement in the topic?
+
+**Why is this talk pertinent? What is your involvement in the topic? Explain why this talk should be considered and what makes you qualified to speak on the topic.**
