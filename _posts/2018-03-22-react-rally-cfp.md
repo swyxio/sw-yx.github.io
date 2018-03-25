@@ -66,6 +66,7 @@ I am far from the most qualified to speak on the topic, but I found this rabbit 
 
 ---
 
+https://twitter.com/KentBeck/status/974359988352110592
 
 # Talk 2
 
@@ -77,7 +78,7 @@ React Mind, Beginner's Mind
 
 **What is your talk about?**
 
-In 
+As the React pool gets deeper, it gets easier to accidentally let newbies drown. But managing learning curve and DX is not just a matter of ergonomics: when we let the ecosystem ossify around the wrong abstractions, everyone pays the costs down the road. I went from Javascript newbie to React contributor in a year and podcasted dozens of interviews with beginners through the process of learning React and it's ecosystem. In this talk, we'll peek past the Github and Stackoverflow usernames to see what *listening* to the thousands of people that learn React everyday can teach us.
 
 ## *for review committee*
 
@@ -85,8 +86,75 @@ In
 
 **Explain the theme and flow of your talk. What are the intended audience takeaways? is there an outline you plan to follow?**
 
+This is a talk about the technical choices we make and who we make them for.
+
+We will do this with an exploration of the audio documentary I have been making for the past year about people learning React (and web dev in general), and go through what we, the React community, gain from keeping a beginner's mindset as well as some thoughts on how to do it.
+
+- Who are the React beginners?
+  - None of the current React team is the original team
+  - Beginners are React's future
+  - Bootcamp grads now outnumber CS grads
+  - Sample of Stories (Qualitative)
+    - The English major
+    - The HR recruiter
+    - The Chef
+    - The "Dinosaur"
+  - Impostor Syndrome
+  - React Beginners Survey (Quantitative)
+    - How Experts think Beginners should Learn
+    - How Beginners Actually Learn
+- Why Be a Beginner
+  - The Cost of Wrong Abstractions
+    - Examples to be fleshed out
+  - The Best way to be a 10x Developer
+  - First Principles Thinking
+  - Code is read far more than it is written
+  - Docs are read far more than they are updated
+  - Solve Hard Problems > Bikeshedding
+  - React Accessibility
+  - The Design of React Things
+- Keeping a Beginners Mind
+  - Use of the word "Just"
+  - Quelling JS Fatigue
+    - Comparing vs Using
+    - Problem Solving > Github stars
+  - Gatekeeping
+    - What Too Much Thought Leading does to Beginners
+    - Standards vs Inclusion
+  - API choices
+    - #0CJS
+    - Adapters vs Layers
+    - Babel Stage <4 Features
+    - Boilerplates vs Toolkits
+    - Render Props vs HOCs
+    - CLIs
+    - Monorepos
+    - X-in-JS
+  - Community
+    - "How to Fight in Front of the Kids"
+    - Github issues
+    - Gitter/Slack/Discord/Forum
+    - Twitter
+    - Meetups & Conferences
+    - Podcasts
+    - Livestreams
+  - Documentation
+    - README.md
+    - Documentation Sites
+    - CONTRIBUTING.md
+    - Blogs
+    - Videos
+  - Beginners Mind at Work
+    - Hiring
+    - Training
+    - Managing
+  - View Source
+- Closing: Donella Meadows' 12 Points of Leverage in a System
 
 ## Pitch
 
-
 **Why is this talk pertinent? What is your involvement in the topic? Explain why this talk should be considered and what makes you qualified to speak on the topic.**
+
+This talk is relevant because React is getting more beginners than it has ever had, and at the same time we need to have a real discussion about how experts can keep a Beginner's Mind too. A lot of digital ink has been spilled and tempers lost because people have not kept a Beginner's Mind when dealing with each other, but even more pernicious is the hidden cost of the people who have been turned away because the far-reaching choices that we make in the React ecosystem haven't indicated that we welcome them.
+
+My involvement is both as a recent beginner and as someone who has documented my own journey (through daily blogposts to myself) and that of others (through my podcast at impostor-syndrome.org). I hope a voice for the React beginners at React Rally :)
