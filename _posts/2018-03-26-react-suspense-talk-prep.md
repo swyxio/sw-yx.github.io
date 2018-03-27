@@ -25,6 +25,12 @@ https://twitter.com/swyx/status/961082736252420096
 
 image https://pbs.twimg.com/media/DXyCoVdXcAIYa8a.jpg
 
+some history https://twitter.com/jordwalke/status/500587022890061824
+
+thought https://twitter.com/acdlite/status/962772968731328512
+
+hawaii test https://twitter.com/tlakomy/status/953254934278963201
+
 Basic flow
 
 - sierpinski triangle https://claudiopro.github.io/react-fiber-vs-stack-demo/
@@ -55,12 +61,14 @@ Basic flow
   - Custom Caches
     - Why simple is simple // https://github.com/facebook/react/blob/master/packages/simple-cache-provider/src/SimpleCacheProvider.js#L148
     - Apollo/relay
-- Community Usage
+- misc notes
+  - can supend from any of the render phase functions (render, getDerivedStateFromProps, setState, prepareUnmount?)
 - Definitions
   - Suspense is a fundamentally new capability that lets you render a component tree “in background” while components are fetching data, and display them only after the whole tree is ready. For slow connections, it gives you full control over where and when to show a placeholder. https://twitter.com/dan_abramov/status/972838329367584768
   - Suspense lets you *delay* rendering the content for a few seconds until the whole tree is ready. It *doesn’t* destroy the previous view while this is happening. https://twitter.com/dan_abramov/status/970363058030772225
   - Optional/Opt In
-  - Who worked on Suspense: https://twitter.com/dan_abramov/status/972856536073687040
+  - Who worked on Suspense: https://twitter.com/dan_abramov/status/972856536073687040 and https://twitter.com/dan_abramov/status/969173182811987968
+  - idea for suspense - streaming SSR: https://twitter.com/acdlite/status/969368473443774464
 - Use cases
   - ignoring the first state deferred state change if a second deferred state is set before the first one has completed https://twitter.com/karlrokeeffe/status/973449089693122560
   - catch promises from .read() in child components https://twitter.com/pete_gleeson/status/972954356269047808
@@ -74,7 +82,7 @@ Basic flow
   - AsyncValue https://github.com/acdlite/react/blob/7166ce6d9b7973ddd5e06be9effdfaaeeff57ed6/packages/react-reconciler/src/__tests__/ReactSuspense-test.js#L452
   - Loading https://medium.com/@pete_gleeson/creating-suspense-in-react-16-2-dcf4cb1a683f
 - Keywords
-  - Committing: The new capability here is that any component can “suspend” the update that caused its render from “committing”. At least for a while. This was never possible before. https://twitter.com/dan_abramov/status/970363058030772225
+  - Committing: The new capability here is that any component can “suspend” the update that caused its render from “committing”. At least for a while. This was never possible before. https://twitter.com/dan_abramov/status/970363058030772225 the lifecycle phases are split up like this (https://twitter.com/acdlite/status/969433691289149440)
 In React, if a component suspends, we keep rendering the siblings as deeply as we can. Suspend means "don't commit," not "don't reconcile."  https://twitter.com/acdlite/status/970495397125750784
   Commit = change the DOM. This is usually fast. Reconcile = call the render method, find out what should be rendered, call the next render method, etc. This can take a decent amount of time on a deep tree. https://twitter.com/dan_abramov/status/970683705768513536
   - Expiration Time: We assign an “expiration time” based on update priority. For events like clicks, it’s ~1 second. So you’ll get a placeholder after a second even if you “ask” for a bigger delay. But deferredUpdates() lets you opt into a longer expiration time (~5 sec). https://twitter.com/dan_abramov/status/971092374691766273 source for 5s expiration time https://github.com/facebook/react/blob/e1a106a071dff17737a7afb49a0b71899d60c248/packages/react-reconciler/src/ReactFiberScheduler.js#L998 suspend rendering has an expiration: real_delay = Math.min(delay_prop, expiration_time). Expiration time depends on the kind of the update (lo pri updates are 5 seconds, high pri are 1 second) https://twitter.com/dan_abramov/status/971187182621872128 react groups into buckets by expiration time - avoiding starvation (https://twitter.com/acdlite/status/978413091460272129)
