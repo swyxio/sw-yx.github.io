@@ -30,11 +30,8 @@ Basic flow
 - sierpinski triangle https://claudiopro.github.io/react-fiber-vs-stack-demo/
 
 - Why We Dont Want to Think About Rendering
-  - It is a profoundly erroneous truism, repeated by all copy-books and by eminent people when they are making speeches, that we should cultivate the habit of thinking of what we are doing. The precise opposite is the case. 
   - Civilization advances by extending the number of important operations which we can perform without thinking about them. 
-  - Operations of thought are like cavalry charges in a battle — they are strictly limited in number, they require fresh horses, and must only be made at decisive moments.
 - Think Less
-- Whats the Laugh???
 - Facts
   - Build a webapp with Vanilla JS
   - Build the same thing with React
@@ -82,7 +79,8 @@ In React, if a component suspends, we keep rendering the siblings as deeply as w
   Commit = change the DOM. This is usually fast. Reconcile = call the render method, find out what should be rendered, call the next render method, etc. This can take a decent amount of time on a deep tree. https://twitter.com/dan_abramov/status/970683705768513536
   - Expiration Time: We assign an “expiration time” based on update priority. For events like clicks, it’s ~1 second. So you’ll get a placeholder after a second even if you “ask” for a bigger delay. But deferredUpdates() lets you opt into a longer expiration time (~5 sec). https://twitter.com/dan_abramov/status/971092374691766273 source for 5s expiration time https://github.com/facebook/react/blob/e1a106a071dff17737a7afb49a0b71899d60c248/packages/react-reconciler/src/ReactFiberScheduler.js#L998 suspend rendering has an expiration: real_delay = Math.min(delay_prop, expiration_time). Expiration time depends on the kind of the update (lo pri updates are 5 seconds, high pri are 1 second) https://twitter.com/dan_abramov/status/971187182621872128 react groups into buckets by expiration time - avoiding starvation (https://twitter.com/acdlite/status/978413091460272129)
   - Cooperative scheduling: https://twitter.com/aweary/status/913619299087949824 2 images https://pbs.twimg.com/media/DK3TUnwU8AAbL9c.jpg lin clark https://www.youtube.com/watch?v=ZCuYPiUIONs
-  - Idempotency: 
+  - Algebraic effects: resumable exceptions Conceptually you can consider suspense to be similar to [algebraic effects](https://www.youtube.com/watch?v=hrBq8R_kxI0) (resumable exceptions) in langs that support them. https://twitter.com/dan_abramov/status/969629411996766208
+  - Idempotency: The more important part about the render function is its idempotency, not purity. That is preserved. Arbitrary side effects are still bad.  https://twitter.com/dan_abramov/status/969629411996766208
 - Big Picture
   - We dont have to think about the Render
     - Crucially, React guarantees that the final state is always deterministic based on the order of updates. Intermediate states may vary according to resources, but eventually everything resolves to a predictable state. https://twitter.com/acdlite/status/978413273027526656
