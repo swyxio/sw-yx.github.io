@@ -117,6 +117,7 @@ Resources
   - Async React + Apollo: https://dev-blog.apollodata.com/a-first-look-at-async-react-apollo-10a82907b48e
   - Auth0: https://auth0.com/blog/time-slice-suspense-react16/
   - Userland Suspense: https://github.com/petegleeson/create-create-fetcher/blob/master/src/future/index.js
+  There is: rendering doesn’t proceed with other siblings once you have the first error. But we need to render as much as possible. @acdlite rewrote error handling logic a week ago for that reason. It also forced deletion of all children instead of pausing. https://twitter.com/dan_abramov/status/969214785194688512
   - HOC: https://twitter.com/dan_abramov/status/970363058030772225
 - suspense ready libs
   - https://github.com/pomber/hitchcock (not yet released)
