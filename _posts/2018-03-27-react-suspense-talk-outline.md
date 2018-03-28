@@ -23,7 +23,6 @@ Basics
 
 outline for talk 1
 
-- A brief history of Async Rendering
 - Why do we want React Suspense?
   - easy API, fetch in render
   - only switch when ready
@@ -51,11 +50,12 @@ outline for talk 2
 
 - How does it work?
   - Emoji app
-  
+  - High Level API vs Low Level
 - Takeaways
   - React is evolving to Interact
   - Library innovation will be coming
   - We will need new devtools
+- Pit of Success
 
 ---
 
