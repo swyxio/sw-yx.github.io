@@ -98,12 +98,10 @@ Disclaimer: I do not speak for the React team, this is just what I, a regular Re
 - **Q: Enough talk. Where do I see some code?**
     - A: First check out Dan's JSConf talk on Time Slicing + Suspense (the official video is [here](https://reactjs.org/blog/2018/03/01/sneak-peek-beyond-react-16.html) but I can't embed it):
 
-{% youtube v6iR3Zk4oDY %}
 
 - **Q: More!?**
     - A: Then check the followup where he just talked Suspense:
 
-{% youtube 6g3g0Q_XVb4 %}
 
 - **Q: More!??**
     - A: Then have a play of the Movie demo [here](https://github.com/facebook/react/pull/12279)
