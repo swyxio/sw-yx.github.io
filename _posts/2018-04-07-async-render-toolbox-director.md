@@ -37,3 +37,8 @@ plan of attack
 - individual loading
 - load pausing
 
+---
+
+i was foiled by the [execution environment](https://developer.chrome.com/extensions/content_scripts#execution-environment) of my content script. the xmlttprequest that i modify in my content script is just not the same as the one that operates on the main browser. im not sure i see a way around this, i might haave to go for a web worker or a browser onrequest extension.
+
+---
