@@ -46,9 +46,10 @@ i was foiled by the [execution environment](https://developer.chrome.com/extensi
 
 you can sneak around the execution environment by [injecting a script tag](https://stackoverflow.com/questions/2660512/are-google-chrome-extension-content-scripts-sandboxed)... and then inject [a script tag inside the script tag](https://stackoverflow.com/questions/26183649/correct-simplest-way-of-calling-one-js-file-inside-another-js)... yo dawg i heard you like script tags
 
-
-yo and while ur at it can you go ahead and [add script tags inside your jsx](https://stackoverflow.com/questions/34424845/adding-script-tag-to-react-jsx?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa) k thx bye
-
--- 
+---
 
 i decided i probably also want to use react since im building a UI, so basically i need to set up an ejected CRA to build without chunk hash names. https://medium.com/@yosevu/how-to-inject-a-react-app-into-a-chrome-extension-as-a-content-script-3a038f611067
+
+---
+
+yo and while ur at it can you go ahead and [add script tags inside your jsx](https://stackoverflow.com/questions/34424845/adding-script-tag-to-react-jsx?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa) k thx bye
