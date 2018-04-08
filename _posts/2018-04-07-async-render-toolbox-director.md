@@ -24,3 +24,16 @@ but then this blogpost for apirequest.io [here](https://www.moesif.com/blog/tech
 the above article was light on details (and the extension code is minified), this article shows exactly how to "monkey patch" xmlhttprequest's send: <http://qnimate.com/monitoring-ajax-requests/>. This gist does it in a IIFE manner <https://gist.github.com/suprememoocow/2823600>
 
 I do need to determine what hooks i want to hook into. A bit of googling leads me to [the WHATWG spec](https://xhr.spec.whatwg.org/#events) and i think i pretty much have all the pieces I need.
+
+---
+
+plan of attack
+
+- add logging into onloadstart and onreadystatechange and onprogress and onload
+- do not pass loads until i want
+- figure out the difference between load and send
+- pause all loads on initiate
+- have a button i can click to proceed with loading
+- individual loading
+- load pausing
+
