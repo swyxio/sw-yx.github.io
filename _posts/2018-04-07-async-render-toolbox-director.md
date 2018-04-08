@@ -53,3 +53,7 @@ i decided i probably also want to use react since im building a UI, so basically
 ---
 
 yo and while ur at it can you go ahead and [add script tags inside your jsx](https://stackoverflow.com/questions/34424845/adding-script-tag-to-react-jsx?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa) k thx bye
+
+---
+
+then you pull the bundled jsx thru [raw git](https://stackoverflow.com/questions/17341122/link-and-execute-external-javascript-file-hosted-on-github)
