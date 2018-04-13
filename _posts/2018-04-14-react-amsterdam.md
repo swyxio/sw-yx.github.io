@@ -56,7 +56,7 @@ No need to Rx all the things. Easy wins:
 - ajax requests (easy cancellation)
 - anything async
 
-# Michele Bertoli: setState Machine
+# Michele Bertoli: setState Machine <a id="michele"></a>
 
 State is hard
 
