@@ -8,6 +8,13 @@ comments: true
 description: notes rom amsterdam
 ---
 
+Schedule
+
+- [Tracy](#tracy): Reactive Programming Demystified
+- [Michele](#michele): setState Machine 
+- [Michel](#michel): There and back again: grokking state and data
+- [Shirley](#sxywu): D3 and React, Together
+
 ---
 
 <a id="tracy"></a>
