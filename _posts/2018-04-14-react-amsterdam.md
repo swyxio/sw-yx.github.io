@@ -422,4 +422,38 @@ Delete twitter
 
 # Richard: GraphQL at scale with AWS
 
-test
+AWS AppSync
+AWS Amplify
+
+Hello world with GraphQL
+
+What comes after hello world?
+
+define schema on AWS AppSync
+
+trend: inspecting key schema in database ,autogenerating common graphql
+
+amplify is category based way of programming
+
+images and rich content
+
+create s3object butcket and key - both writes and reads
+
+graphql subscriptions - for realtime updates
+
+goal: start cost effectively - use graphql to swap out from dynamodb to elastic
+
+**what else comes after hello world??**
+
+today appsync is live! new features
+
+- test/debug resolver flows
+- cloudwatch
+- cloudformation
+- subscription resolvers
+- batch delete/read/put on individual resolvers-> IOT use case
+- AWS ampllify graphql
+- awsmobile cli + graphql
+- HIPPA compliance
+
+some demos of the interface. very clean.
