@@ -49,3 +49,9 @@ code examples:
 - drag and drop in react with a few lines of rxjs
 - adding inputs and chaining with little refactoring in angular
 - merging google vision + web speech + typed input to pipe into a search
+
+No need to Rx all the things. Easy wins:
+
+- click handlers
+- ajax requests (easy cancellation)
+- anything async
