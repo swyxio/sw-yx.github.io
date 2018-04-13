@@ -8,7 +8,13 @@ comments: true
 description: notes rom amsterdam
 ---
 
-# Tracy Lee: Reactive Programming Demystified <a id="tracy"></a>
+---
+
+<a id="tracy"></a>
+
+---
+
+# Tracy Lee: Reactive Programming Demystified
 
 increasing adoption of reactive programming
 
@@ -58,7 +64,11 @@ No need to Rx all the things. Easy wins:
 
 ---
 
-# Michele Bertoli: setState Machine <a id="michele"></a>
+<a id="michele"></a>
+
+---
+
+# Michele Bertoli: setState Machine 
 
 State is hard
 
@@ -113,3 +123,31 @@ Code example:
   - listening - ERROR - fetching
   - fetching - SUCCESS[!hasMore] - finish
   
+Workflow when using `react-automata`
+
+- send transition (event, data)
+- react-automata calculates
+- react-automata fires action methods for you
+
+React-automata API:
+
+- `withStatechart(statechart, {devTools: true})(MyComponent)` connects to redux dev tools
+- `<Action>` component shows on condition!! very nicely declarative!
+- `testStatechart({statechart}, MyComponent)` tests all the paths in statechart at once for free, taking snapshot
+
+Benefits
+
+- fewer bugs (80% less bugs when A/B tested at facebook)
+- easy to understand
+- separating what happens (in component) vs when it happens (in statechart)
+
+sample: <http://bit.ly/automata-calculator> no if statements or state flags
+
+takeaways:
+
+- think about states more than transitions. redux encourages you to think about actions that mutate your states, xstate tells you to think about states first
+- this is a top down approach
+- downside is youre goign to spend a lot of time thinking about how your components work before writing them
+- read more papers! :)
+- <bit.ly/statecharts-book>
+- <bit.ly/statecharts-paper>
