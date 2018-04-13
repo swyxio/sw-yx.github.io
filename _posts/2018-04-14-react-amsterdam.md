@@ -8,7 +8,7 @@ comments: true
 description: notes rom amsterdam
 ---
 
-# Keynote: Tracy Lee
+# Tracy Lee: Reactive Programming Demystified
 
 increasing adoption of reactive programming
 
@@ -55,3 +55,36 @@ No need to Rx all the things. Easy wins:
 - click handlers
 - ajax requests (easy cancellation)
 - anything async
+
+# Michele Bertoli: setState Machine
+
+State is hard
+
+- have to keep track of it over time
+- make sure users can only perform valid operations
+
+eg. Infinite Scroll
+
+- attach event handler to scroll
+- if scroll > 90% of page
+- fetch data and append to end
+
+problems
+
+- keep track of whether you're fetching: `this.state.isFetching`
+- no way to stop fetching if `data.hasMore` is falsy
+- dealing with errors - `this.state.hasError`
+- retry functionality
+- nested ternaries of state flags
+
+this is called the bottom-up approach
+
+- focusing on linear transitions
+- turns out, you need context
+- edge cases can come from combinations of state flags that are impossible
+
+solution: state machines!
+
+- we want to constrain ourselves from infinite state turing machines to deterministic finite automata
+- <Q: all states, Sigma: all inputs, delta: f(input) => state, q0: inital, F: final>
+- visualize with state transition diagrams
