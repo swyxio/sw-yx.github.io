@@ -158,3 +158,35 @@ takeaways:
 - read more papers! :)
 - <bit.ly/statecharts-book>
 - <bit.ly/statecharts-paper>
+
+---
+
+<a id="michel"></a>
+
+---
+
+# Michel Weststrate: There and back again: grokking state and data
+
+Why is state management hard: 
+
+- Organizing state
+- Updating state
+- Distributing changes
+
+You can choose to treat JS object as a value or an entity.
+
+?? State = the condition that something is in at a point in time: implies a thing that changes
+
+Object as value 
+
+- to represent a fact, immutable
+
+Object as entity
+
+- represent something stateful, changes over time
+
+Object properties: composition vs association
+
+- composition: composes dependent entities, proper life cycle handling - eg in React component tree
+- association: relates 2 independent entities
+- derivation: aggregations and transformations of existing state
