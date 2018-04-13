@@ -457,3 +457,21 @@ today appsync is live! new features
 - HIPPA compliance
 
 some demos of the interface. very clean.
+
+
+
+---
+
+<a id="manjula"></a>
+
+---
+
+# Manjula: Rethinking With React 16
+
+a recap of the react 16 changes
+
+- fragments
+- error boundaries
+- new context api
+- portals
+- new refs api
