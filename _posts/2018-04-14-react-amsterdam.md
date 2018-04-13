@@ -8,7 +8,7 @@ comments: true
 description: notes rom amsterdam
 ---
 
-# Tracy Lee: Reactive Programming Demystified
+# Tracy Lee: Reactive Programming Demystified <a id="tracy"></a>
 
 increasing adoption of reactive programming
 
@@ -56,6 +56,8 @@ No need to Rx all the things. Easy wins:
 - ajax requests (easy cancellation)
 - anything async
 
+---
+
 # Michele Bertoli: setState Machine <a id="michele"></a>
 
 State is hard
@@ -88,3 +90,26 @@ solution: state machines!
 - we want to constrain ourselves from infinite state turing machines to deterministic finite automata
 - <Q: all states, Sigma: all inputs, delta: f(input) => state, q0: inital, F: final>
 - visualize with state transition diagrams
+
+If too many states, use Harel statecharts!
+
+- clustering - wrapping shared transitions
+- orthogonality - indepedent states
+- guards - conditional blocking of transitions
+- actions: side effects of entry/exit events
+
+workflow: event -> statechart (evaluates guards etc) -> actions
+
+"A statechart is a magic box; you tell it what happened, it tells you what to do" @lmatteis
+
+Code example: 
+
+- `yarn add xstate` :) i know this already
+- `react-automata` - layer on top of xstate to work with it in React. 
+  - infinite scroll example:
+  - start -> ready -> fetching
+  - fetching - SUCCESS[hasMore] - listening
+  - listening - SCROLL[scrollPercentage>0.9] - fetching
+  - listening - ERROR - fetching
+  - fetching - SUCCESS[!hasMore] - finish
+  
