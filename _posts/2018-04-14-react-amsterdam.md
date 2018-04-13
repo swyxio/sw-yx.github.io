@@ -475,3 +475,75 @@ a recap of the react 16 changes
 - new context api
 - portals
 - new refs api
+
+
+---
+
+<a id="kanye"></a>
+
+---
+
+# ken: Mixed Mode React
+
+last year: [Fiber Renderers](https://www.youtube.com/watch?v=oPofnLZZTwQ)
+
+- custom react renderers
+- you can do an emoji renderer
+- react synth
+
+what if you want to render two things?
+
+- two renders, not good
+
+renderless components
+
+- ui doesnt just mean ui
+- non dom UI
+  - web audio
+  - canvas
+  - webgl
+  - non dom api's
+  
+simple example
+
+- `<Redirect />` component
+- `<Log />` component
+
+intermediate example
+
+- d3 example
+
+renderless component checklist
+
+- didnt catch it
+
+complex renderless components
+
+- arbitrarily nested sub components
+- relationally nested sub components
+- multi component non dom composition
+
+writing declaratively - using context (best part of React API)
+
+- theme example of new context API
+- you can pass antyhing in context, and you can pass it up too!
+
+registration pattern: 
+
+- initialize module in top level
+- pass function to children w context
+- children use the function to register with the parent
+- child component calls `this.props.register(uuid)`
+
+registration pattern 2:
+
+- initalize in top level
+- register callback w parent from the child
+- call the callback
+- parent calls the child's callback
+
+demo example
+
+- canvas renderer with react
+- translating declarative api with imperative one
+- with fallback input 
