@@ -547,3 +547,11 @@ demo example
 - canvas renderer with react
 - translating declarative api with imperative one
 - with fallback input 
+
+demo 2 - threejs
+
+- clicking balls
+
+mixing the demos
+
+- bringing in the `react-music` api
