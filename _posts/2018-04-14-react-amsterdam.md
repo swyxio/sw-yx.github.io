@@ -15,7 +15,10 @@ Schedule
 - [Michel](#michel): There and back again: grokking state and data
 - [Shirley](#sxywu): D3 and React, Together
 - [Lightning talks](#lightning)
-- 
+- [Kitze](#kitze): React State Management In a GraphQL Era
+- [Richard](#richard): GraphQL at scale with AWS
+- [Manjula](#manjula): Rethinking With React 16
+- [Ken](#kanye): Mixed Mode React
 
 ---
 
@@ -309,3 +312,61 @@ More.
 - create a radiusScale and arcGenerator (`d3.arc()`)
 - `const perSliceAngle = (2 * Math.PI) / data.length`
 - use `arcGenerator({startAngle: ..., endAngle: ..., innerRadius: ..., outerRadius: ...})`
+
+
+
+---
+
+<a id="lightning"></a>
+
+---
+
+# Lightning talk 1: Structure Your App's Story With Sagas and Selectors (Rebecca Hill)
+
+using selectors/ reselect
+
+- contain all knowledge about state shape in reducers and components only , refactoring becomes easier
+
+conditionals
+
+- action creators/ redux-thunk
+
+demo using games
+
+- redux-saga : uses generator functions
+
+whole file of selectors
+
+main takeaway: decouple biz logic from rest of application
+
+# Lightning talk 2: How to “Reactify” Your Existing UI Components (Olga Petrova)
+
+Wrapping ExtJS Component with a React Wrapper
+
+- i missed most of this haha sorry
+- sencha repo
+
+# Lightning talk 3: Inclusive React: A Survival Guide (Almero Steyn)
+
+Accessibility tips
+
+- dont do `outline: 0` or outline: none
+- use `label` with your `input`
+- use `buttton` with `aria-`
+- use html `button` not a `div`
+- use `a href` instead of `a onClick`
+- semantic html: use `<nav>`, `<aside>`, `<button>`, not just div tag
+- good contrast
+
+resources:
+- <https://reactjs.org/docs/accessibility.html>
+- <https://webaim.org/standards/wcag/checklist>
+- <http://www.w3.org/TR/wai-aria-practices-1.1>
+- use Semantic HTML where possible <http://developer.mozilla.org/en-US/docs/Web/HTML/Element>
+
+a11y tests for your app:
+
+- navigate by tab, enter, and arrow keys, no mouse
+- eslint-plugin-jsx-a11y
+- <http://www.deque.com/axe> runs a11y reports - can also just use react-axe: <http://github.com/dequelabs/react-axe>
+- screen reader tests
