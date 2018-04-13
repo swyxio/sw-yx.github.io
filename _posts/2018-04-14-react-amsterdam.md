@@ -245,4 +245,67 @@ Applying this to React: context vs sCU
 
 # Shirley Wu: D3 and React, Together
 
-test
+Where D3 conflicts with React: when it needs the dom
+
+- transitions
+- axes
+- brushes
+
+D3 doesnt need the DOM for:
+
+- layouts
+- geo
+- shape
+
+### Why
+
+For most of our use cases, we can have d3 just doing calcs, and react doing rendering. Only when you need transitions/axes/brushes do you have d3 doing both calc and rendering.
+
+- film flowers: only needs a click interaction
+- travel photos: only a hover interaction -> shows details
+
+D3 is more than enough for just simple interactions. But looking at more complex viz:
+
+- expense app: drag to link dates and expense, creation
+- brainsights: linking multiple viz with brushes
+- hamilton: persistent dots: manage scroll and state of final exploratory tool
+
+use React + d3 to componentize viz and manage state as user interacts.
+
+### How
+
+Weather data example
+
+LIVE. CODING.
+
+- use cWRP to get nextProps
+- update scales, and pass it into the `domain()` function
+- re-form the lineGenerator using the new `xScale` and `yScale`
+- setState with the lineGenerator result
+- inside `render()` -  pass it into `<path d={this.state.highs} {...} />`
+
+More? 
+
+More.
+
+- add axes!
+- inside cDU: call `d3.select(this.refs.xAxis).call(this.Axis)` <- not sure what this does
+- `<g ref='xAxis' transform{'translate(0, ${height - margin.bottom})}/>`
+
+More?
+
+More.
+
+- bar charts!
+- same process, calculate from scale, and then plot inside an `svg` tag inside `render`.
+- `this.state.bars.map(...)`
+- throw colorScale on and put it into the `bars` state as a `fill`
+
+More? 
+
+More.
+
+- radius scale chart!
+- create a radiusScale and arcGenerator (`d3.arc()`)
+- `const perSliceAngle = (2 * Math.PI) / data.length`
+- use `arcGenerator({startAngle: ..., endAngle: ..., innerRadius: ..., outerRadius: ...})`
