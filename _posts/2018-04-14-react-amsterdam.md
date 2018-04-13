@@ -14,6 +14,8 @@ Schedule
 - [Michele](#michele): setState Machine 
 - [Michel](#michel): There and back again: grokking state and data
 - [Shirley](#sxywu): D3 and React, Together
+- [Lightning talks](#lightning)
+- 
 
 ---
 
@@ -175,8 +177,6 @@ Why is state management hard:
 
 You can choose to treat JS object as a value or an entity.
 
-?? State = the condition that something is in at a point in time: implies a thing that changes
-
 Object as value 
 
 - to represent a fact, immutable
@@ -190,3 +190,59 @@ Object properties: composition vs association
 - composition: composes dependent entities, proper life cycle handling - eg in React component tree
 - association: relates 2 independent entities
 - derivation: aggregations and transformations of existing state
+
+Distributing Change
+
+- 2 ways to do it: manually `entity.name="frodo; this.forceUpdate()` or with subscriptions `entity.on('change', callback)` (or transparently "just using the data" eg in mobx)
+
+React's problem - no association with "outside state" eg association with sibling components, so have to pull up state
+
+- Redux allows your state to live outside component tree - one store, event emitter.
+- downsides of Redux - only one update = global update so need to use sCU/reselect, hard to compose/use references. Have to manually map values onto entities
+
+What Immer solves
+
+- State -> Draft -> Next state
+
+Comparison with Rx
+
+- streams = entities, they capture state
+- easily reason about the past
+- you dont ask for current value, you subscribe to the values
+
+MobX
+
+- turns all objects into entities
+- you can produce beautiful derivation trees from them
+
+MobX State tree
+
+- adds structure to mobx
+- react for data
+- composition & association - transparently reactive
+
+How can these state mgmt approaches make your life easier?
+
+- do you mainly reason about events that happened? => values
+- ... or the present? => identities
+- can you derive your information? better than introducing new information
+- consider that entities change over time, values might become irrelevant over time
+- can the receiver subscribe to changes?
+  - yes: send identity - eg smart redux container comopnent, mobx @observer
+  - no: create subscription, send value on each change - eg pass plain props/data
+
+his advice
+
+- make every field either read only or observable
+
+Applying this to React: context vs sCU
+
+---
+
+<a id="sxywu"></a>
+
+---
+
+# Shirley Wu: D3 and React, Together
+
+test
