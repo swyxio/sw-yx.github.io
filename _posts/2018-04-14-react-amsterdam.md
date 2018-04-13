@@ -370,3 +370,56 @@ a11y tests for your app:
 - eslint-plugin-jsx-a11y
 - <http://www.deque.com/axe> runs a11y reports - can also just use react-axe: <http://github.com/dequelabs/react-axe>
 - screen reader tests
+
+
+---
+
+<a id="kitze"></a>
+
+---
+
+# Kitze: React State Management In a GraphQL Era
+
+Data is #1 reason why state management is hard
+
+- data fetching
+- caching
+- reading
+- cache invalidating
+
+love-hate redux
+
+on to mobx
+
+thought leading 101
+
+comparison of redux vs mobx vs apollographql - apollo has less code
+
+basic stacks
+
+- apollo/router/setstate
+- apollo/router/setstate/form library
+- apollo/router/apollo-cache-persist
+- apollo/mobx/mobx-react-form/mobx-router
+- apollo/nextjs/setstate
+- next level - full page reloads? every route a mini app
+- apollo/apollo-link-state
+
+before you follow someone's advice, evaluate the context and your situation
+
+Don't be scared of the network, dont overengineer.
+
+Don't feel bad for not using latest & greatest
+
+Delete twitter
+
+
+---
+
+<a id="richard"></a>
+
+---
+
+# Richard: GraphQL at scale with AWS
+
+test
