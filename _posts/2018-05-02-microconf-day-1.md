@@ -152,4 +152,16 @@ intermission
 
 epic failing. james s tayler
 
-risk reward
+risk reward using bayes
+
+- take action
+- reduce uncertainty
+- revise probability
+- calculate expected value
+- repeat
+
+---
+
+thomas smale, fe international
+
+how to sell your business
