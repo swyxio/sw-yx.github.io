@@ -148,3 +148,8 @@ intermission
 8. send at the right time
 9. follow up at least once
 
+---
+
+epic failing. james s tayler
+
+risk reward
