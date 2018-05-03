@@ -5,7 +5,7 @@ tags: microconf
 feelings: neutral
 title: microconf day 2
 comments: true
-description: A standard blogpost description
+description: microconf day 2
 ---
 
 patio11
@@ -150,3 +150,21 @@ hello ladies
 - its really rough addressing those markets
 - women who are profesisonal empoyees at tech businessess
 - did a 180 over the years
+
+---
+
+permaculture talk
+
+- what is your goal
+- what do you want to get out of your saas
+
+didn't do enough customer research
+
+1. observe and interact
+2. obtain a yield
+3. use small and slow solutions
+4. apply self regulation and accept feedback
+
+dont build in secret
+
+dont let competitors lead your innovation
