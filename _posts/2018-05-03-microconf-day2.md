@@ -127,3 +127,26 @@ dont write blog posts
 
 narrative structures like heroes journey
 - works
+
+
+b2c
+- steve jobs 99c - google 0
+- answer with a story
+- you cant compete with 100b warchest
+- dont do horizontal b2c - find a particular grp of cust with emotional resonance about a topic
+- prosumers: dnd gamers, semi pro figure skaters.
+
+emailing your customers - talking to people who are saas
+- go to 50%
+
+hello ladies
+- selling for people who arent themselves developers
+- thought that software for devs
+- theres not enough software for devs int he world
+- number of software devs is increasing 50% a year
+- thats fine
+- there are large mkts - whoa re underserved
+- they may not be best met by you
+- its really rough addressing those markets
+- women who are profesisonal empoyees at tech businessess
+- did a 180 over the years
