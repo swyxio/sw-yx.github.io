@@ -165,3 +165,45 @@ risk reward using bayes
 thomas smale, fe international
 
 how to sell your business
+
+---
+
+mike taber how to followup via email
+
+closing the loop
+
+- making the decision, telling you
+
+4 reasons why people dont reply
+
+- never received it
+- received but dismissed
+- received with best of intentions - meant to reply
+
+patio11: busy people are busy people. follow up more than feels comfotable.
+
+why we dont follow up enough
+
+- incorrect value association between when we hit send and when we get a response
+- Time constraints
+- emotionally painful, it sucks to feel like ur repeating yourself
+
+does following up work?
+
+https://twitter.com/SamNeter/status/968090271421534208
+
+game
+
+- open rate 26.7% worst 94/?/26.7
+- reply rate 5.9% avg 29/5.9/0.6
+- % blocking tracking  (emails got a response where tracking pixel was blocked) 62.5%/11.3%/3.1%
+
+email sequence inside bluetick
+
+followup strategies that work
+
+- WHEN: select situation/schedule where it makes sense
+- ACTION: clear CTA
+- PERSONALIZATION: use their name
+- AUTOMATION: easy to send it out at scale
+
