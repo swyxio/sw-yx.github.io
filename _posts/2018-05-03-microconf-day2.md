@@ -66,7 +66,7 @@ GET THEIR EMAIL
 Evertyhin about email courses in one slide
 - make a promise with every subject line. keep it.
 - 75% education 25% sales. You need both.
-- frontload delivery. 3x in first week ins fine.
+- frontload delivery. 3x in first week is fine.
 - after end of course, email 1x every 2-4 weeks.
 
 checkpoints you want to reach in your business (you are not out of research phase until...)
