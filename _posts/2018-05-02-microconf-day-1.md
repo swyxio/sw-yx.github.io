@@ -205,6 +205,15 @@ followup strategies that work
 - WHEN: select situation/schedule where it makes sense
 - ACTION: clear CTA
 - PERSONALIZATION: use their name
-- AUTOMATION: easy to send it out at scale
+- AUTOMATION: easy to send it out at scale, schedule call, testimonials
 
-schedule call, testimonials
+example: design follow up process
+
+1. demo request
+2. schedule
+3. follow up
+4. demo
+
+# MUST CLOSE FEEDBACK LOOP ********
+
+Learn How to Automate your followups: course
