@@ -153,7 +153,7 @@ hello ladies
 
 ---
 
-permaculture talk
+permaculture talk: https://microconf.gen.co/marie-poulin
 
 - what is your goal
 - what do you want to get out of your saas
@@ -167,4 +167,6 @@ didn't do enough customer research
 
 dont build in secret
 
-dont let competitors lead your innovation
+dont let competitors lead your innovation - learn from your customers. your custs have a lot to teach you.
+
+design from patterns to details
