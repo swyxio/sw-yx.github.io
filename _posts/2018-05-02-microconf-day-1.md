@@ -207,3 +207,4 @@ followup strategies that work
 - PERSONALIZATION: use their name
 - AUTOMATION: easy to send it out at scale
 
+schedule call, testimonials
