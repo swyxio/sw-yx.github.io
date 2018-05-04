@@ -170,3 +170,45 @@ dont build in secret
 dont let competitors lead your innovation - learn from your customers. your custs have a lot to teach you.
 
 design from patterns to details
+
+---
+
+csallen
+
+founders learn from failure
+
+1. startup runway of almost certain death. measuring runway. 2009: launched after 11 months but didnt charge
+  - chris chen social music startup - ideas focusing less and less on building social music apps - as he was out of money
+  - 2 days to luanch a profitable product after 3 years of pivoting
+  - max lytvyn of grammarly - less than 6mths: solid plan for how to get there. didnt know who was going to buy.
+  - how did you know this was the right thing to do: by the time we were done, we'd prob be out of money
+  - need to change the order: sell first
+  - secret: buy helicopter
+  - dont quit your job: plan while you still have a helicopter
+2. the el dorado of ideas
+  - trello board to have ideas, obviously good ideas have people working on it
+  - you need ideas for stuff all the way
+  - building audience -> product idea -> launch -> new distro channels -> new features -> new cust segments
+  - figure out the right levers to press
+  - gold hunting analogy: 
+    - giant treasure chest is too obvious
+    - digging shallow holes
+    - dig deep holes
+      - who are these people
+      - where do they hagn out
+      - what do they complain about
+      - what makes them really excited
+      - what do they buy
+      - what do they never buy
+      - who do they follow
+      - etc
+    - what if new idea?
+      - dig another hole
+    - where should you dig
+      - amy hoy: stacking the bricks: qtns you should ask
+      - where the money's at
+      - how much money is changing hands here
+      - are the customers reachable
+3. theory of growth
+  - one pivot point. yelp, airbnb, dropbox, hotmail
+4. ?
