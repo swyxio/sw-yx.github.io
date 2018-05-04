@@ -226,4 +226,14 @@ founders learn from failure
   - stay on track to your destination
   - the higher you climb, the more distracting your options. easy to climb sideways. vision helps you say no and keep climbing up.
 4. living room of vision
-  - lskdj
+  - why do you have a vision
+  - diamond hiding in the living room
+  - founders who try everything and it eventually succeeds - why do they do this? they are "sure" it WILL work. try much harder.
+  - shrug - no idea how much time to spend
+  - "i quit"
+  - IH vision: "inspire people to create internet businesses and to help these new founders succeed at a scale large neough to have a global impact". never get bored of this.
+  - create you rown landscapes and metaphors as you learn.
+  - stairstep approach
+  - sales safari
+ 
+ 
