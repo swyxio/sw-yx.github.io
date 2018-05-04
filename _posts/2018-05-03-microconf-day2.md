@@ -210,5 +210,20 @@ founders learn from failure
       - how much money is changing hands here
       - are the customers reachable
 3. theory of growth
-  - one pivot point. yelp, airbnb, dropbox, hotmail
-4. ?
+  - one pivot point. yelp, airbnb, dropbox, hotmail. its a lie/not the whole story.
+  - growth is a climbing wall: navigate saturated channels, previous wins, dead ends, bad ideas, new ideas
+  - jason driscoff on IH story.
+  - indie shuffle blog for 7 years since 2009
+  - 2015 submithub in 2015 - 55k in mrr
+  - "jason already had a successful blog"
+  - hand tailored 1k emails to blogs. fb msg, soundcloud, email.
+  - 8 months to get first dollar.
+  - first step is the simplest. dont need a brilliant strategy.
+  - its ok that you started small
+  - now there are new steps easier to reach
+  - keep climbing. nobody jumps straight to the top
+  - plan your route - see what paths others took. look multiple steps ahead.
+  - stay on track to your destination
+  - the higher you climb, the more distracting your options. easy to climb sideways. vision helps you say no and keep climbing up.
+4. living room of vision
+  - lskdj
