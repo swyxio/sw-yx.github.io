@@ -41,3 +41,18 @@ Episode 16:
 - as happy as she has been for years
 - reacto - realistic?
 - necessary but not sufficient
+
+Episode 28:
+- Firebase vs SQL? firebase
+- using redux to control the game flow vs the reactive paradigm
+- game loop algorithm piece
+- design aspect - nightmare?
+- demo - sound crowd, hard to judge what's easy and difficult
+- career prep: definitive answers
+- focus on networking
+- systems and not goals: have a system for job search process
+- reacto too easy
+- overlapping rectangles
+- google doc: list of things for emily to learn (mvc, ror/django/ aws, os stuff)
+- bootcamp advice? just do it
+- how much more can we do if we worked like this 13 week phase
