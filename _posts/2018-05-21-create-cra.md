@@ -32,23 +32,23 @@ Ember CLI is really cool. Autodiscovery of dependencies and no config: React com
 https://twitter.com/dan_abramov/status/750755537239871488
 Pit of Success is not enough. Mount of Failure is just as important. Unmaintainable code should be hard to write.
 
-react-boilerplate
-https://twitter.com/dan_abramov/status/750332439856312320
+react-boilerplate https://twitter.com/dan_abramov/status/750332439856312320
 
 useful searches?
-from:dan_abramov since:2016-07-12 until:2016-07-20
-from:vjeux since:2016-07-12 until:2016-07-20
+
+- from:dan_abramov since:2016-07-12 until:2016-07-20
+- from:vjeux since:2016-07-12 until:2016-07-20
 
 previous:
 
-react starter kit: https://twitter.com/dan_abramov/status/755169928412590083
-react boilerplate dec 2015: https://news.ycombinator.com/item?id=10794502
-nwb: https://github.com/insin/nwb
-enclave: https://github.com/eanplatter/enclave
-budo: https://github.com/mattdesl/budo
-prot: https://github.com/mattdesl/prot
-rackt-cli: https://github.com/mzabriskie/rackt-cli
-rwb: https://github.com/petehunt/rwb
+- react starter kit: https://twitter.com/dan_abramov/status/755169928412590083
+- react boilerplate dec 2015: https://news.ycombinator.com/item?id=10794502
+- nwb: https://github.com/insin/nwb
+- enclave: https://github.com/eanplatter/enclave
+- budo: https://github.com/mattdesl/budo
+- prot: https://github.com/mattdesl/prot
+- rackt-cli: https://github.com/mzabriskie/rackt-cli
+- rwb: https://github.com/petehunt/rwb
 
 
 https://pbs.twimg.com/media/CouqBE9UsAASqrW.jpg
