@@ -8,6 +8,10 @@ comments: true
 description: notes for giving my talk
 ---
 
+<https://www.beautiful.ai/deck/-LD4eaMxlqSlCy6biPmZ/Creating-Create-React-App>
+
+<div style="position:relative;width:100%;height:0;padding-bottom:calc(56.25% + 40px);"><iframe allowfullscreen style="position:absolute; width: 100%; height: 100%;border: solid 1px #333;" src="https://www.beautiful.ai/player/-LD4eaMxlqSlCy6biPmZ/Creating-Create-React-App"/></div>
+
 # 4. Poll the Audience
 
 who has set up webpack+babel+react manually?
