@@ -29,3 +29,4 @@ so for integrating starter-search into gatsby's www i need to:
 - add route for dependencies so that we can link from other sites
 - write the automation script last
 
+i cant do this right now as have family issues. really bad timing.
