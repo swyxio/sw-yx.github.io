@@ -16,5 +16,11 @@ i also fixed the detail page generation.
 
 now i have to work on the detail page look. its blank right now
 
+---
 
+detail page is done! ![gatsbystarters](https://user-images.githubusercontent.com/35976578/41505865-d60f0124-71df-11e8-9957-bd96b971f7c2.gif)
+
+now to work on adding the scrape script
+
+---
 
