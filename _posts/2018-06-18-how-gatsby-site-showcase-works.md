@@ -12,7 +12,7 @@ relevant links:
 
 - preview: <https://deploy-preview-5524--gatsbyjs.netlify.com/showcase/>
 - PR: <https://github.com/gatsbyjs/gatsby/pull/5524> (rebased to <https://github.com/gatsbyjs/gatsby/pull/5941>)
-- issue: <https://github.com/gatsbyjs/gatsby/issues/4392>
+- issue: <https://github.com/gatsbyjs/gatsby/issues/4392> and the followup post mvp issue <https://github.com/gatsbyjs/gatsby/issues/5927>
 
 # backend/gatsby
 
