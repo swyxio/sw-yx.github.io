@@ -10,9 +10,9 @@ description: a walkthrough for kurt and a braindump for myself
 
 relevant links:
 
-- preview: https://deploy-preview-5524--gatsbyjs.netlify.com/showcase/
-- PR: https://github.com/gatsbyjs/gatsby/pull/5524 (rebased to https://github.com/gatsbyjs/gatsby/pull/5941)
-- issue: https://github.com/gatsbyjs/gatsby/issues/4392
+- preview: <https://deploy-preview-5524--gatsbyjs.netlify.com/showcase/>
+- PR: <https://github.com/gatsbyjs/gatsby/pull/5524> (rebased to <https://github.com/gatsbyjs/gatsby/pull/5941>)
+- issue: <https://github.com/gatsbyjs/gatsby/issues/4392>
 
 # backend/gatsby
 
