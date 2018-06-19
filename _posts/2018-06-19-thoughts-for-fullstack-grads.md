@@ -64,10 +64,10 @@ The subheading for this one is **avoid FOMO**. Vue passed React in Github stars,
 
 How do you "fill in what you missed" but "avoid fear of missing out"?
 
-"Missing out" is other-oriented, while "what you missed" is you-oriented. Fill in -your- gaps. Focus on you and your needs. "No man is an island" but there are so many opportunities in tech that you can pretty much pick out your turf and play entirely within it and be completely ignorant of all the other stuff and still do great! Don't get me wrong: I'm a big fan of playing the meta-game. It is possible to make strategic blunders but it's also impossible to avoid them altogether. It's much better to focus on the "good enough" and be directionally but not literally correct. The goal is to be accurate, not precise.
+"Missing out" is other-oriented, while "what you missed" is you-oriented. Fill in -your- gaps. Focus on you and your needs. "No man is an island" but there are so many opportunities in tech that you can pretty much pick out your turf and play entirely within it and be completely ignorant of all the other stuff and still do great! Don't get me wrong: I'm a big fan of playing the meta-game. It is possible to make strategic blunders but it's also impossible to avoid them altogether. It's much better to focus on the "good enough" and be directionally but not literally correct. The goal is to be accurate, not precise. Try your best to be right, but don't worry when you're wrong.
 
 There's more to this than just *what* you missed. There's also the *why* and the *who*. Who made the paradigms we live in now. Why are things the way there are? Let your intellectual curiosity carry you and fill in your lack of experience with research that nobody else bothers to do. Guess what? There could not be an easier subject matter to research, this stuff is literally all online and version controlled with git, and all the people involved are still alive and easily contactable.
 
 And when you're done filling in, when you've found something cool in your research, write it up.
 
-Learn in public.
+p.s. Learn in public.
