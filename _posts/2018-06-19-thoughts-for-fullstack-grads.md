@@ -18,7 +18,7 @@ description: thoughts on being a top quintile bootcamp alum
 
 The difference between the 50th percentile and the 95th percentile is $40k, or 50% more pay. note: money is not a good sole metric of outcome, also 30% dont even get jobs.
 
-i am no authority nor a paragon of success but i find myself thinking a lot about how people should position themselves to do well during a career transition into tech. I thought I should write these thoughts down in the hopes of better structuring them for an alumni panel tomorrow. None of these things are at all required if you want to have an average life in tech, but I think each of these things help improve your odds of being in the top quintile of outcomes.
+i am no authority nor a paragon of success but i find myself thinking a lot about how people should position themselves to do well during a career transition into tech. Note that if you're average you'll already have an extremely high chance of getting a job so I won't bother addressing that. I thought I should write these thoughts down in the hopes of better structuring them for an alumni panel tomorrow. None of these things are at all required if you want to have an average life in tech, but I think each of these things help improve your odds of being in the top quintile of outcomes.
 
 # 7 rules for post bootcamp life
 
@@ -34,13 +34,15 @@ i am no authority nor a paragon of success but i find myself thinking a lot abou
 
 If there's a golden rule, it's this one, so I put it first. All the other rules are more or less elaborations of this rule #1.
 
-You already know that you will never be done learning. But most people "learn in private", and lurk. They consume content without creating any themselves. Again, that's fine, but we're here to talk about being in the top quintile. What you do here is to have a habit of creating learning exhaust. Write Blogs and tutorials and cheatsheets. Speak at meetups and conferences. Ask and answer things on Stackoverflow or Reddit. Make Youtube videos or Twitch streams. Whatever your thing is, make the thing you wish you had found when you were learning the thing. Don't judge your results by "claps" or upvotes - just talk to yourself from 3 months ago. I keep an almost-daily dev blog written for no one else but me.
+You already know that you will never be done learning. But most people "learn in private", and lurk. They consume content without creating any themselves. Again, that's fine, but we're here to talk about being in the top quintile. What you do here is to have a habit of creating learning exhaust. Write Blogs and tutorials and cheatsheets. Speak at meetups and conferences. Ask and answer things on Stackoverflow or Reddit. (Avoid the walled gardens like Slack and Discourse, they're not public). Make Youtube videos or Twitch streams. Start a newsletter. Draw cartoons. Whatever your thing is, make the thing you wish you had found when you were learning the thing. Don't judge your results by "claps" or upvotes - just talk to yourself from 3 months ago. I keep an almost-daily dev blog written for no one else but me.
 
 Guess what? it's not about reaching as many people as possible with your content. If you can do that, great, remember me when you're famous. but chances are that by far the biggest beneficiary of you trying to help past you is future you. If others benefit, that's icing.
 
-Oh you think you're done? Don't stop there. Enjoyed an Egghead.io or FrontendMasters or Pluralsight video? Reach out to the instructors and thank them, and ask questions. Make PR's on github. make your own libraries. Go to conferences and summarize what you learned. Document what you did, the problems you solved. Heck, go back to your own bootcamp to tell alumni what's worked for you. There's always one level deeper.
+Oh you think you're done? Don't stop there. Enjoyed a coding video? Reach out to the speaker/instructor and thank them, and ask questions. Make PR's on github. Make your own libraries no one will ever use. Clone stuff you like. Teach workshops. Go to conferences and summarize what you learned. Document what you did, the problems you solved. Heck, go back to your own bootcamp to tell alumni what's worked for you. There's always one level deeper.
 
 The subheading under this rule would be: **Try your best to be right, but don't worry when you're wrong.** Repeatedly. If you feel uncomfortable, or like an impostor, good. You're pushing yourself. Don't assume you know everything, but try your best anyway, and let the internet correct you when you are inevitably wrong. Wear your noobyness on your sleeve.
+
+Did I mention that teaching is the best interview prep? Talk while you code. It can be stressful and I haven't done it all that much but my best technical interviews have been where I ended up talking like I teach instead of desperately trying to prove myself. We're animals, we're attracted to confidence and can smell desperation.
 
 At some point you'll get some support behind you. People notice genuine learners. They'll want to help you. Don't tell them, but they just became your mentors.
 
@@ -51,3 +53,21 @@ Eventually you run out of mentors, and just solve things on your own. You're sti
 Learn in public.
 
 p.s. Eventually, they'll want to pay you (a lot more than you think) for your help too.
+
+# Fill in what you missed
+
+You missed a lot in your bootcamp. I'm not talking about compiler theory from computer science courses. I don't mean algos. I mean a lot of basic knowledge of your tools is lacking. "A poor craftsman blames his tools", they say. But you. You're no craftsman, you're a novice. You don't even know your own tools that well. You haven't built that much, and you still freak out when things go wrong. It's not your fault, but it's in your power to fix your gaps. The bootcamp gave you a head start, now you have to go the distance.
+
+If you're a frontend dev: Learn Webpack. Learn Babel. Learn what TC39 is and does. Heck, learn Javascript all over again. Learn bash. Learn git. Learn CI/CD. Learn frontend testing. Learn Docker. Learn AWS, and Firebase. Learn design and CSS. OPEN NODE_MODULES. Yeah, it's a lot, and I don't truly know some of these things either. I'm workin on it. Equally important is figuring out what is ok to miss. I have my list, I'm not sharing it. But there are some things you will use daily in whatever career you end up in, and some other things are sexier or seem important but are really just nice-to-have. Figure out the difference. Tech is a house of cards a mile high, abstractions built atop abstractions. Lower levels of abstraction have a longer half-life than higher ones. Kyle Simpson says you should learn one abstraction level below where you work. I think that's directionally but not literally correct.
+
+The subheading for this one is **avoid FOMO**. Vue passed React in Github stars, should you pivot to Vue? Your favorite thought leader says you should check out ReasonML, is Javascript dead? Why the hell do people want to kill Redux so bad? Is css-in-js literally the devil?
+
+How do you "fill in what you missed" but "avoid fear of missing out"?
+
+"Missing out" is other-oriented, while "what you missed" is you-oriented. Fill in -your- gaps. Focus on you and your needs. "No man is an island" but there are so many opportunities in tech that you can pretty much pick out your turf and play entirely within it and be completely ignorant of all the other stuff and still do great! Don't get me wrong: I'm a big fan of playing the meta-game. It is possible to make strategic blunders but it's also impossible to avoid them altogether. It's much better to focus on the "good enough" and be directionally but not literally correct. The goal is to be accurate, not precise.
+
+There's more to this than just *what* you missed. There's also the *why* and the *who*. Who made the paradigms we live in now. Why are things the way there are? Let your intellectual curiosity carry you and fill in your lack of experience with research that nobody else bothers to do. Guess what? There could not be an easier subject matter to research, this stuff is literally all online and version controlled with git, and all the people involved are still alive and easily contactable.
+
+And when you're done filling in, when you've found something cool in your research, write it up.
+
+Learn in public.
