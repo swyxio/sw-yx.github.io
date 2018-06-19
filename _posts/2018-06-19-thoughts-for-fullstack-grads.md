@@ -38,7 +38,7 @@ You already know that you will never be done learning. But most people "learn in
 
 Guess what? it's not about reaching as many people as possible with your content. If you can do that, great, remember me when you're famous. but chances are that by far the biggest beneficiary of you trying to help past you is future you. If others benefit, that's icing.
 
-Oh you think you're done? Don't stop there. Make PR's on github. make your own libraries. Document what you did, the problems you solved. Heck, go back to your own bootcamp to tell alumni what's worked for you. There's always one level deeper.
+Oh you think you're done? Don't stop there. Enjoyed an Egghead.io or FrontendMasters or Pluralsight video? Reach out to the instructors and thank them, and ask questions. Make PR's on github. make your own libraries. Go to conferences and summarize what you learned. Document what you did, the problems you solved. Heck, go back to your own bootcamp to tell alumni what's worked for you. There's always one level deeper.
 
 The subheading under this rule would be: **Try your best to be right, but don't worry when you're wrong.** Repeatedly. If you feel uncomfortable, or like an impostor, good. You're pushing yourself. Don't assume you know everything, but try your best anyway, and let the internet correct you when you are inevitably wrong. Wear your noobyness on your sleeve.
 
