@@ -34,17 +34,25 @@ i am no authority nor a paragon of success but i find myself thinking a lot abou
 
 If there's a golden rule, it's this one, so I put it first. All the other rules are more or less elaborations of this rule #1.
 
-You already know that you will never be done learning. But most people "learn in private", and lurk. They consume content without creating any themselves. Again, that's fine, but we're here to talk about being in the top quintile. What you do here is to have a habit of creating learning exhaust. Write Blogs and tutorials and cheatsheets. Speak at meetups and conferences. Ask and answer things on Stackoverflow or Reddit. (Avoid the walled gardens like Slack and Discourse, they're not public). Make Youtube videos or Twitch streams. Start a newsletter. Draw cartoons. Whatever your thing is, make the thing you wish you had found when you were learning the thing. Don't judge your results by "claps" or upvotes - just talk to yourself from 3 months ago. I keep an almost-daily dev blog written for no one else but me.
+You already know that you will never be done learning. But most people "learn in private", and lurk. They consume content without creating any themselves. Again, that's fine, but we're here to talk about being in the top quintile. What you do here is to have a habit of creating learning exhaust. Write blogs and tutorials and cheatsheets. Speak at meetups and conferences. Ask and answer things on Stackoverflow or Reddit. (Avoid the walled gardens like Slack and Discourse, they're not public). Make Youtube videos or Twitch streams. Start a newsletter. Draw cartoons. Whatever your thing is, make the thing you wish you had found when you were learning. Don't judge your results by "claps" or retweets or stars or upvotes - just talk to yourself from 3 months ago. I keep an almost-daily dev blog written for no one else but me.
 
-Guess what? it's not about reaching as many people as possible with your content. If you can do that, great, remember me when you're famous. but chances are that by far the biggest beneficiary of you trying to help past you is future you. If others benefit, that's icing.
+Guess what? It's not about reaching as many people as possible with your content. If you can do that, great, remember me when you're famous. But chances are that by far the biggest beneficiary of you trying to help past you is future you. If others benefit, that's icing.
 
-Oh you think you're done? Don't stop there. Enjoyed a coding video? Reach out to the speaker/instructor and thank them, and ask questions. Make PR's on github. Make your own libraries no one will ever use. Clone stuff you like. Teach workshops. Go to conferences and summarize what you learned. Document what you did, the problems you solved. Heck, go back to your own bootcamp to tell alumni what's worked for you. There's always one level deeper.
+Oh you think you're done? Don't stop there. Enjoyed a coding video? Reach out to the speaker/instructor and thank them, and ask questions. Make PR's to libraries you use. Make your own libraries no one will ever use. Clone stuff you like. Teach workshops. Go to conferences and summarize what you learned. Heck, go back to your own bootcamp to tell alumni what's worked for you. There's always one level deeper. But at every step of the way: Document what you did and the problems you solved.
+
+Am I making myself clear? In one year people need to be going "yo who the F is this I see this kid everywhere". That kid is YOU.
 
 The subheading under this rule would be: **Try your best to be right, but don't worry when you're wrong.** Repeatedly. If you feel uncomfortable, or like an impostor, good. You're pushing yourself. Don't assume you know everything, but try your best anyway, and let the internet correct you when you are inevitably wrong. Wear your noobyness on your sleeve.
 
+People think you suck? Good. Tell them you agree. Ask them to explain, in detail, why you suck. You want to just feel good or you want to **be** good? No objections, no hurt feelings. Then go away and prove them wrong. Of course, if they get abusive block them. 
+
 Did I mention that teaching is the best interview prep? Talk while you code. It can be stressful and I haven't done it all that much but my best technical interviews have been where I ended up talking like I teach instead of desperately trying to prove myself. We're animals, we're attracted to confidence and can smell desperation.
 
-At some point you'll get some support behind you. People notice genuine learners. They'll want to help you. Don't tell them, but they just became your mentors.
+At some point you'll get some support behind you. People notice genuine learners. They'll want to help you. Don't tell them, but they just became your mentors. This is very important: *Pick up what they put down*. Think of them as offering up quests for you to complete. When they say "Anyone willing to help with ______ ______?" you're that kid in the first row with your hand already raised. These are senior engineers, some of the most in-demand people in tech. They'll spend time with you, 1 on 1, if you help them out (p.s. and there's always something they want help on). You can't pay for this shit. They'll teach you for free. Most people don't see what's right in front of them. But not you.
+
+"With so many junior devs out there, why will they help *me*?", you ask.
+
+Because you learn in public. By teaching you they teach many. You amplify them. You have one thing they don't: a beginner's mind. You see how this works?
 
 At some point people will start asking you for help because of all the stuff you put out. 80% of developers are "dark", they dont write or speak or participate in public tech discourse. But you do. You must be an expert, right? Don't tell them you aren't. Answer best as you can, and when you're stuck or wrong pass it up to your mentors.
 
@@ -52,7 +60,7 @@ Eventually you run out of mentors, and just solve things on your own. You're sti
 
 Learn in public.
 
-p.s. Eventually, they'll want to pay you (a lot more than you think) for your help too.
+p.s. Eventually, they'll want to pay you for your help too. A lot more than you think.
 
 # Fill in what you missed
 
@@ -66,8 +74,8 @@ How do you "fill in what you missed" but "avoid fear of missing out"?
 
 "Missing out" is other-oriented, while "what you missed" is you-oriented. Fill in -your- gaps. Focus on you and your needs. "No man is an island" but there are so many opportunities in tech that you can pretty much pick out your turf and play entirely within it and be completely ignorant of all the other stuff and still do great! Don't get me wrong: I'm a big fan of playing the meta-game. It is possible to make strategic blunders but it's also impossible to avoid them altogether. It's much better to focus on the "good enough" and be directionally but not literally correct. The goal is to be accurate, not precise. Try your best to be right, but don't worry when you're wrong.
 
-There's more to this than just *what* you missed. There's also the *why* and the *who*. Who made the paradigms we live in now. Why are things the way there are? Let your intellectual curiosity carry you and fill in your lack of experience with research that nobody else bothers to do. Guess what? There could not be an easier subject matter to research, this stuff is literally all online and version controlled with git, and all the people involved are still alive and easily contactable.
+There's more to this than just *what* you missed. There's also the *why* and the *who*. Who made the paradigms we live in now. Why are things the way there are? Let your intellectual curiosity carry you and fill in your lack of experience with research that nobody else bothers to do. Guess what? There could not be an easier subject matter to research, this stuff is literally all online and version controlled with git, and all the people involved are still alive and easily contactable. 
 
-And when you're done filling in, when you've found something cool in your research, write it up.
+And when you've filled something in, when you've found something cool in your research, write it up.
 
 p.s. Learn in public.
