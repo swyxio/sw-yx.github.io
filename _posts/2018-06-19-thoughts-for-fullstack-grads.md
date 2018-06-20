@@ -40,8 +40,6 @@ Guess what? It's not about reaching as many people as possible with your content
 
 Oh you think you're done? Don't stop there. Enjoyed a coding video? Reach out to the speaker/instructor and thank them, and ask questions. Make PR's to libraries you use. Make your own libraries no one will ever use. Clone stuff you like. Teach workshops. Go to conferences and summarize what you learned. Heck, go back to your own bootcamp to tell alumni what's worked for you. There's always one level deeper. But at every step of the way: Document what you did and the problems you solved.
 
-Am I making myself clear? In one year people need to be going "yo who the F is this I see this kid everywhere". That kid is YOU.
-
 The subheading under this rule would be: **Try your best to be right, but don't worry when you're wrong.** Repeatedly. If you feel uncomfortable, or like an impostor, good. You're pushing yourself. Don't assume you know everything, but try your best anyway, and let the internet correct you when you are inevitably wrong. Wear your noobyness on your sleeve.
 
 People think you suck? Good. Tell them you agree. Ask them to explain, in detail, why you suck. You want to just feel good or you want to **be** good? No objections, no hurt feelings. Then go away and prove them wrong. Of course, if they get abusive block them. 
