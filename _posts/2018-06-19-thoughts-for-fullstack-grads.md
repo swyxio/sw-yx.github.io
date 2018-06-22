@@ -48,7 +48,7 @@ People think you suck? Good. You agree. Ask them to explain, in detail, why you 
 
 Did I mention that teaching is the best way to learn? Talk while you code. It can be stressful and I haven't done it all that much but my best technical interviews have been where I ended up talking like I teach instead of desperately trying to prove myself. We're animals, we're attracted to confidence and can smell desperation.
 
-At some point you'll get some support behind you. People notice genuine learners. They'll want to help you. Don't tell them, but they just became your mentors. This is very important: *Pick up what they put down*. Think of them as offering up quests for you to complete. When they say "Anyone willing to help with ______ ______?" you're that kid in the first row with your hand already raised. These are senior engineers, some of the most in-demand people in tech. They'll spend time with you, 1 on 1, if you help them out (p.s. and there's always something they want help on). You can't pay for this shit. They'll teach you for free. Most people don't see what's right in front of them. But not you.
+At some point you'll get some support behind you. People notice genuine learners. They'll want to help you. Don't tell them, but they just became your mentors. This is very important: *Pick up what they put down*. Think of them as offering up quests for you to complete. When they say "Anyone willing to help with ______ ______?" you're that kid in the first row with your hand already raised. These are senior engineers, some of the most in-demand people in tech. They'll spend time with you, 1 on 1, if you help them out (p.s. and there's always something they want help on). You can't pay for this stuff. They'll teach you for free. Most people don't see what's right in front of them. But not you.
 
 "With so many junior devs out there, why will they help *me*?", you ask.
 
@@ -61,6 +61,8 @@ Eventually you run out of mentors, and just solve things on your own. You're sti
 Learn in public.
 
 p.s. Eventually, they'll want to pay you for your help too. A lot more than you think.
+
+*writing notes: maybe insert a bit about only helping those who ask for help*
 
 # 2. Know your tools
 
