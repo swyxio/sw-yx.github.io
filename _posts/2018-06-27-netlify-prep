@@ -1,0 +1,169 @@
+---
+layout: post
+date: 2018-06-27
+tags: netlify
+feelings: sick
+title: netlify prep
+comments: true
+description: prep for a chat
+---
+
+things i really want to know:
+  - what is the market opportunity?
+  - key customers?
+  - what is the split of open source to proprietary?
+  - what is the big hairy audacious goal?
+  - what is the top priority of the company right now?
+  - who are the key people in the company
+  - what does a competitor have to do in other to compete with you?
+  - who are the competitors?
+  - runway?
+  
+
+matt's words
+---
+
+infrastructure as code
+browser being a document viewer
+monolithic cms felt backwards
+started seeing SSGs, grunt gulp -> react
+frontend developers - PSD -> to page
+
+very clearly separate frontend from backend -> shell for SPA -> living directly on CDN
+talking to a few services
+bitballoon -> drag and drop in a few seconds
+
+chris: first hybrid agency - flash and video immersive website
+sold that agency - became chief digital officer
+creating digital strategy
+strugglign with the price of doing business online
+20 years ago: started making websites and applicaiton
+social internet - 
+but if you did a payments gateway you did it yourself and host it on your server
+slow single pt of origin, and varnish
+largest surface area
+60m requests a month - wpadmin
+western agencies overprovision by 700%
+legacy web too slow, too insecure, redundant
+draw a circle around 2 megatrends - frontend revolutions, microservice
+prebuilt all the markup - only use the browser for microservices
+trying to do this - simply no viable workflows
+not good enough in the browser - need the infrastructure
+atomic deploys - for your blog - uploading 100k pages file by file is infeasabile
+wordpress - is also a build tool, templating engine, not just cms
+no viable way of building real sites
+market mimicing this 1:1
+hopper richard doing obama campaign doing yourself
+netlify - saw that what was needed was a viable workflow
+start at the level of where they feel the pain - didnt have the infrastructure underneath to support the workflow
+instead of just building service level - first cdn meant to be the origin
+
+tried talking to fastly and akamai - etc - needed to own the software that do that
+push the logic to the edge - natural gateway layer that is running the same cdn that your frontend is served from
+break the issue of atomic deploys and cache invalidation
+
+consistent deploy - git analogy
+had to build out this cdn - really stupid approach  
+building cdn to serve small frontend assets, with instant cache invalidation
+never gonna have the peering agreements - that amzn has
+build cdn across all the cloud providers - incl hostvirtual alibaba
+all of netlify builts on top of cdn over 5 years
+
+netlify cdn is a means to an end - dont sell storage or bandwidth - sell services
+lambda put in a website folder - and run it on lambda for you
+
+workflow - netlify - used to get client - want to build in drupal - that ecosystem is built
+
+churn in the build tool area - didnt want to build your own 
+ecosystem SSG for identity
+believe that the web should fundamentally be open
+also coherent experience
+private beta in march 2015 - serving 250m reqs/month in end 2015
+2.1m seed in march 2016
+
+ryan metrics infra first employee
+david - first contributor to docker and lead dev on gh enterprise
+frances - PWA - husband head of chrome - code for america and ukgov
+daniel freeman - vp of sales and marketing atlassian - cmo - sumologic - head of marketing at cloudflate
+data scientists - core contributor to R
+
+32 people
+david wells just joined gp
+
+go back to what is netlify - 
+
+neltify is the workflow - site call - 
+the separate building from hosting
+
+completely agnostic when it comes to tooling
+dont want to end up react and gatsby.
+
+make a strong ecosystem
+
+go and host microservices and get a database - dont want to give you a prescriptive workflow
+have to use this database - to use this framework
+
+
+# zeit
+
+zeit is building their own runtime layer - do you want to run yoru code on zeit/amzn/etc
+
+from biz model - more interested in building WORKFLOW - 
+
+if you have pure frontend layer - and a little layer of serverless fns, and then microservices
+then you permit small frontend teams to build very powerful integrations on their own
+
+as the frontend space increases in complexity
+
+serverside rendering for SPAs. cleaner architecture - impt runtime layer
+
+for serverless - k8s
+
+glue code layer - frontend write a little glue code 
+
+with the msvc concepts - as individual services get smaller they get more reusable
+
+each of those frameworks have their own ecosystem
+
+ecosystem of services for the browser
+
+---
+
+# business model
+
+standard
+spin something up on 
+integrated with git
+zeit - much more locked in
+open standards - scale - agnostic approach
+inside sales - compliance, SLAs
+alternatives for netlify - people are building it themselves: the cost of doing that is high
+
+classic dual funnel system - bottom up company
+self serve tier
+and then enterprise real
+
+---
+
+hire people
+talk to people
+technical interview
+reached - involved open source
+netlifycms - simply static site generators
+core internal frontend 
+different open source tools
+janky admin UI
+
+---
+
+solutions engineer
+
+no dedicated team of solutions engineer - right now they need to do the work of figuring out the right stack - 
+we can give them the platform - but nothing beyond that
+help with the adoption
+
+frances - cpo
+david - cto
+david wells - 
+
+4-6pm - 1-3pm est
