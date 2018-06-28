@@ -37,7 +37,13 @@ design principles
 - be consistent not uniform
 - make things open: it makes things better
 
+older culture talk: https://vimeo.com/68252987 - repeats hidden waterfalls again. strictly design in browser, dont even have photoshop. bunting on holiday page. be consistent not uniform. make things open, makes things better.
+
+---
+
 i think designing for incrementality is an important idea - we dont want to encourage incremental thinking but we must accommodate incremental needs. it is impossible to expect a rebuild everytime a small thing changes. but how do you design for incrementality?
+
+----
 
 <https://www.youtube.com/watch?v=8n5D4SDqIck> panel Q&A thing
 
