@@ -39,3 +39,15 @@ design principles
 
 i think designing for incrementality is an important idea - we dont want to encourage incremental thinking but we must accommodate incremental needs. it is impossible to expect a rebuild everytime a small thing changes. but how do you design for incrementality?
 
+<https://www.youtube.com/watch?v=8n5D4SDqIck> panel Q&A thing
+
+- reusable parts instead of monolith
+- componentize/pattern library approach
+- build tools :(
+- what do you not miss: browser bugs, ssl cert renewal, srcsafe/no source control, php
+- netlify: logic all the way to edge, distributed
+- DESTROY THE MONOLITH
+- reach, openness, PWA bandwagon
+- security with jamstack
+- best way: json web tokens - crypto signed, with more info, each service takes the key. stateless authentication
+- jamstack - public domain project - who owns this piece of software
