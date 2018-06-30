@@ -111,3 +111,17 @@ Nice touch: [one-line config for Preact](https://react-static.js.org/docs/concep
 I started out this research with only a vague idea of what each do, and I believe it would be irresponsible to pick any one of these over the other. They are apples and oranges and tomatoes, and they all address different problems in unique and interesting ways. The world is wide enough for a diversity of solutions to the wide array of problems, and I welcome these additions to my toolkit. 
 
 I will note that probably the biggest positive surprise to me was Docusaurus, as I had no idea how easy some of these difficult problems in documentation are in Docusaurus.
+
+---
+
+# starting work on boring-ssg
+
+ok so i know that i want to use parcel to bundle and i know that i don't know how to SSR react. so lets start there.
+
+things i didn't know i didnt know:
+
+- how to keep node running given parcel's event system: [solution](https://stackoverflow.com/a/23354058/1106414)
+- how to make parcel's bundler events work: i couldn't so [sidestep](https://github.com/sw-yx/create-react-app-parcel/blob/master/packages/react-scripts-parcel/scripts/build.js#L188)
+- now i can get parcel to do basic js bundling, but how to make it -not- do that and do what i want?
+- look into [parcel transforms](https://parceljs.org/transforms.html)? maybe [packages](https://parceljs.org/packagers.html) actually
+- ok packagers writing is not documented. i'm really not sure if this is worthwhile but here goes. the relevant source is [here](https://github.com/parcel-bundler/parcel/blob/master/src/packagers/Packager.js#L19) and i need to provide stuff to `fs.createWriteStream`
