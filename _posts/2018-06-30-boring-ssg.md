@@ -41,3 +41,6 @@ pm session
 - i monkey patched it in node modules but the problems are chaining. not good. now I have "Uncaught TypeError: Cannot read property 'ReactCurrentOwner' of undefined"
 - i tried just using "straight parcel" and my app works. so its definitely something to do with me SSRing an app. potentially with babel-register.
 - trying to upgrade to babel 7 and got a variety of errors.
+- trying babel node after seeing artsy run into this: http://artsy.github.io/blog/2017/11/27/Babel-7-and-TypeScript/
+- had a few issues but [this note from logan](https://github.com/babel/babel/issues/6130#issuecomment-324495961) helped me get over the hump?
+- YAY I HAVE A REHYDRATING REACH ROUTER APP
