@@ -22,3 +22,18 @@ more notes on boring ssg
 - ok i got the js loading to work from html but now parcel's assumptions are coming to bite me: "Uncaught TypeError: Super expression must either be null or a function, not undefined"
 - that seems to be a bug in parcel :(  changing the Chrome class to a function fixes it
 - aafter a bit more tweaking I HAVE A REHYDRATING APP!! WOO!!
+
+pm session
+
+- caught in a weird memory crash/loop when i comment out the assetManifest script which doesnt seem important at all. the commenting out may be unrelated
+- i may have found an infinite loop/memory leak. i dont know how this is my fault.
+- started stepping through react but honestly im probably not gonna get anywhere with that. what to do?
+- nuked the directory and retried
+- it works! now for routing
+- reading <https://reacttraining.com/react-router/web/guides/server-rendering>
+- reading <https://reach.tech/router/server-rendering>
+- tried adding reach/router into my app. not much luck, i get a weird "Uncaught TypeError: Cannot read property 'createContext' of undefined" error.
+- find related issue, file PR to maybe bump react version <https://github.com/reach/router/pull/92>
+- try it myself, nope.
+- try it on C-R-A-P - reach/router works fine. damn.
+- attempted filing an issue on reach/router or on parcel, balked.
