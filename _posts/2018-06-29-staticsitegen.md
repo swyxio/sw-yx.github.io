@@ -125,3 +125,8 @@ things i didn't know i didnt know:
 - now i can get parcel to do basic js bundling, but how to make it -not- do that and do what i want?
 - look into [parcel transforms](https://parceljs.org/transforms.html)? maybe [packages](https://parceljs.org/packagers.html) actually
 - ok packagers writing is not documented. i'm really not sure if this is worthwhile but here goes. the relevant source is [here](https://github.com/parcel-bundler/parcel/blob/master/src/packagers/Packager.js#L19) and i need to provide stuff to `fs.createWriteStream`
+- running into gnarly "🚨  The "chunk" argument must be one of type string or Buffer" error. i dont have high hopes of solving this unless i really want to dive into node streams.
+- i clearly must supply a js file to the js stream; the problem goes away if i do `await this.dest.write(asset.generated.js);`. whether i should insert myself in the middle is the debatable question.
+- taking a break and trying out react-dom/server - got an `Invariant Violation: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object.` error
+- ok so it only happens when i import files. or use classes in the same files. basically `babel-node` is not very stable for jsx.
+- i know the react team maintain ssr [fixtures](https://github.com/facebook/react/tree/master/fixtures/ssr), checking those out.
