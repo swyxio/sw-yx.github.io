@@ -37,3 +37,34 @@ pm session
 - try it myself, nope.
 - try it on C-R-A-P - reach/router works fine. damn.
 - attempted filing an issue on reach/router or on parcel, balked.
+
+it was gonna be something like this:
+
+---
+
+# 🐛 bug report
+
+I wont be upset if this is closed without comment.
+
+I am trying to make a static site generator with React, Parcel, and @reach/router. I have tested @reach/router with Parcel and I do know that Parcel can parse it fine. but when I throw babel-register and SSR into the mix that might increase the tech risk a bit.
+
+All i know is that the proximate cause of my error is Parcel interacting with Rollup. When Rollup bundles @reach/router, it generates these lines:
+
+```js
+var _createReactContext = require("create-react-context");
+var _createReactContext2 = _interopRequireDefault(_createReactContext);
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+```
+
+when I import @reach/router in my Parcel app this gets bundled to:
+
+```js
+var _react = require('react');
+var _react2 = _interopRequireDefault(_react);
+var _implementation = require('./implementation');
+var _implementation2 = _interopRequireDefault(_implementation);
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+exports.default = _react2.default.createContext || _implementation2.default; // error on this line
+```
+
+---
