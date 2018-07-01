@@ -56,6 +56,34 @@ so i am having trouble with my babel strategy - talking out loud in case anyone 
 - However now i’m making a library to do the same thing and i can’t use `babel-node` or `babel-register`. 
 - so in my library i compile down using regular `babel`. however now this es5 js inside the library doesn’t know how to work with the esnext js in the app!
 
+---
+
+after being in a bit of a funk i am retrying babel-register
+
+- taking serious inspiration from react-statics setup with the separate js file.
+- well ok i gave the babel config a try and it did not work. trying it in a slightly different place, and with a "binhelper"
+- now it wants to have a top level .babelrc. i am also forced to install babel-preset-react-app top level. lets see.
+- ok. i have hit the limit. i cant get the babel node thing to work without seriously ripping up a lot of this infrastructure. time to scale down my ambitions, and just work on last mile for boring-ssg.
+
+
+
+# miscellany
+
+---
+
+today i learned how npm's bin works. in your package.json you have this:
+
+```
+  "bin": {
+    "jamstack-scripts": "./bin/jamstack-scripts.js"
+  },
+```
+
+upon install that file (if it exists) gets copied to your top level `node_modules/.bin` thingy. and thats how you can run `jamstack-scripts foobar` in the command line within that folder.
+
+
+---
+
 
 
 ---
