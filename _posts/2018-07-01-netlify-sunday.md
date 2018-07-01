@@ -44,6 +44,19 @@ info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this comm
 - filed [this issue](https://github.com/facebook/create-react-app/issues/4717)
 - minor [babel](https://stackoverflow.com/questions/38056498/babel-es7-async-regeneratorruntime-is-not-defined) hiccup nbd
 - now i have `yarn start` running but because i prebabeled my stuff i basically punted on doing it for SSR?
+- this is a big problem, potetntial showstopper. i dont know how to do this.
+
+
+stuck
+___
+
+so i am having trouble with my babel strategy - talking out loud in case anyone here has ideas/advice
+
+- basically for static site generation i need babel running in node to SSR the react app. I know how to do this as a standalone app, its just `babel-node`. 
+- However now i’m making a library to do the same thing and i can’t use `babel-node` or `babel-register`. 
+- so in my library i compile down using regular `babel`. however now this es5 js inside the library doesn’t know how to work with the esnext js in the app!
+
+
 
 ---
 
