@@ -68,5 +68,5 @@ evening session
 - i did the rewrite, deleted a lot of code. it works now but my testing environment uses `serve` which gives 404 when i refresh on a url.
 - `serve` is not picking up `serve.json` so i am going to use an express server
 - YES i can actually demo refreshes!
-
+- ok i worked out some minor kinks with index and now i am happy with the refresh behavior.
 
