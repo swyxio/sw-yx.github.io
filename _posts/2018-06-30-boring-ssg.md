@@ -49,4 +49,24 @@ evening session
 
 - ok so even though the router works on one page, i should really try to generate multiple pages. at this point tho the tech risk is going way down because i know i can programmatically generate pages, and the logic is well within my control rather than with libraries i don't know.
 - the thing about parcel is it starts with an entry index.html. we may have to flex that if we ever want it to produce different pages. (we dont technically have to - there is another way where we let it chunk everything and we figure out the events to hook into to generate pages)
-- 
+- actually rereading the [getting started](https://parceljs.org/getting_started.html) it doesnt have to start with html...
+- ok so `index.js` is now my entry asset and i moved it into dist. i could very conceivably make a lot more different entry assets with that.
+- wasted some time looking into how suspense helps with loading. i really wish i could use this now. but i will have zero help if i run into a bug.
+- time to shift everything into a pages mentality. i am using "test1" as a de facto library.
+- its apretty big move. i think i screwed up, i dont know where i'm supposed to bundle the hydrater
+- parcel insists on having a file to bundle. can i convince it otherwise?
+- i could do some nasty file manipulation stuff but i dont want to. i am going to try combining the hydrater
+- no it can't be done. the dynamic important i would need for it to work can't be statically analyzed and so can't be bundled for rehydration. i get a `'../../src/pages/index.js' module not found` type error. so i need to have a cahce and i need to do file manipulation
+- ok i am doing a big rewrite of the node process so that i can acommodate the dynamic page generation. i am also using react-static's config so that i dont have to come up with something new for now. BORING IS GOOD.
+- got the writeout working
+- i have to write out a js file to bundle
+- ok i had some issues there but it works, now to bundle
+- now to write the html
+- i have things rendering and rehydrating, but my routes are broken
+- i am putting in a Layout component, but i need my components to know what path they are on
+- i think i had the wrong model of SSRing - i was SSRing individual pages, but the right way is to SSR one page with different routes being rendered. i was going for one route one bundle, when i should be going for multiple routes one bundle. this makes a ton more sense, i dont know what i was thinking
+- i did the rewrite, deleted a lot of code. it works now but my testing environment uses `serve` which gives 404 when i refresh on a url.
+- `serve` is not picking up `serve.json` so i am going to use an express server
+- YES i can actually demo refreshes!
+
+
