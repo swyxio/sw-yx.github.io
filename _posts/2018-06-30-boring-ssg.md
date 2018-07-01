@@ -44,3 +44,9 @@ pm session
 - trying babel node after seeing artsy run into this: http://artsy.github.io/blog/2017/11/27/Babel-7-and-TypeScript/
 - had a few issues but [this note from logan](https://github.com/babel/babel/issues/6130#issuecomment-324495961) helped me get over the hump?
 - YAY I HAVE A REHYDRATING REACH ROUTER APP
+
+evening session
+
+- ok so even though the router works on one page, i should really try to generate multiple pages. at this point tho the tech risk is going way down because i know i can programmatically generate pages, and the logic is well within my control rather than with libraries i don't know.
+- the thing about parcel is it starts with an entry index.html. we may have to flex that if we ever want it to produce different pages. (we dont technically have to - there is another way where we let it chunk everything and we figure out the events to hook into to generate pages)
+- 
