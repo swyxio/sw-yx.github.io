@@ -75,6 +75,36 @@ sun evening
 - the data injection is very complex. not sure i have enough time to do it.
 - drew some state charts, then decided that while the route/split data was possible, it wasnt ever going to be finished by me on time. need to be less ambitious.
 - big ball of data approach.
+- even going with big ball of data i am having trouble injecting the ball into the html. 
+- this `react-safe` library is great for that: https://stackoverflow.com/a/48371050/1106414
+- okay. after a lot of finnicking i have data rendering in server and in window.
+- i tried importing images and stuff but it seems if i have a js entry point the parcel logic is not at all worked out for that.
+- ok well i have markdown coming in slowly. just need to get static files up.
+- done! woo.
+- now i need to move back to indexhtml if i have a hope of bundling assets.
+- trying to inspect the bundler - this is very handy: https://stackoverflow.com/a/18354289/1106414 - instead of JSON.stringify use util.inspect(object)
+- well i had to abandon the move back to indexhtml. the problem isnt caused by parcel really - its that babel-node doesnt know how to transpile CSS. and i have run out of time to fix that
+- actually i havent!!! babel plugins to the rescue! <https://www.npmjs.com/package/babel-plugin-css-modules-transform>
+- for the record i am still on JS not HTML. ok so now i have a BoringShell.css working... trying all.sass
+- the sass renaming with `babel-plugin-transform-rename-import` didnt work, i got this:
+
+```
+/Users/swyx/netlify/boringssg2/boring-ssg/src/layouts/index.js: Cannot resolve dependency './all.css' at '/Users/swyx/netlify/boringssg2/boring-ssg/src/layouts/all.css'
+    at Resolver.resolve (/Users/swyx/netlify/boringssg2/boring-ssg/node_modules/parcel-bundler/src/Resolver.js:70:17)
+    at <anonymous>
+```
+
+```babelrc
+    ["transform-rename-import", { 
+      "original": "^(.+?)\\.sass$", 
+      "replacement": "$1.css" 
+      }]
+```
+
+- i can try to skip that with the compiled css
+- ok i got svgs working
+- basically have the whole site up except for the blog posts so lets do that
+- i have blogposts working
 
 
 # miscellany
