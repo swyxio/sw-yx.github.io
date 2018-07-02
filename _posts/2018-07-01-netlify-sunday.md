@@ -65,6 +65,16 @@ after being in a bit of a funk i am retrying babel-register
 - now it wants to have a top level .babelrc. i am also forced to install babel-preset-react-app top level. lets see.
 - ok. i have hit the limit. i cant get the babel node thing to work without seriously ripping up a lot of this infrastructure. time to scale down my ambitions, and just work on last mile for boring-ssg.
 
+----
+
+sun evening
+
+- so back to boring ssg. time to brush up the DX a bit and actually do a bit of data injection
+- took in the files from gatsby starter netlifycms
+- now i have a basic markdown plugin but its not injected
+- the data injection is very complex. not sure i have enough time to do it.
+- drew some state charts, then decided that while the route/split data was possible, it wasnt ever going to be finished by me on time. need to be less ambitious.
+- big ball of data approach.
 
 
 # miscellany
