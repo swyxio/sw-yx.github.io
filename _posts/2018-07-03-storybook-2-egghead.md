@@ -165,3 +165,43 @@ const wInfoStyle = {
 export const wInfo = text =>
   withInfo({ inline: true, source: false, styles: wInfoStyle, text: text });
 ```
+
+# Use the Knobs Addon to make your Storybook stories interactive
+
+`yarn add -D @storybook/addon-knobs`
+
+
+config.js:
+
+```js
+import { setAddon, addDecorator } from '@storybook/react';
+import { withKnobs, select } from '@storybook/addon-knobs/react';
+addDecorator(withKnobs);
+```
+
+addons.js:
+
+`import '@storybook/addon-knobs/register';`
+
+Buttons.stories:
+
+```
+import { text, boolean } from '@storybook/addon-knobs/react';
+
+
+    <Button
+      label={text('label', 'Enroll')}
+      disabled={boolean('disabled', false)}
+      onClick={() => alert('hello there')}
+    />
+```
+
+```
+import { color } from '@storybook/addon-knobs/react';
+
+const label = 'Color';
+const defaultValue = '#ff00ff';
+const groupId = 'GROUP-ID1';
+
+const value = color(label, defaultValue, groupId);
+```
