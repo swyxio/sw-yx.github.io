@@ -31,8 +31,8 @@ configure(loadStories, module);
 ```js
 import React from 'react';
 
-export const Button = ({ bg }) => (
-  <button style={{ backgroundColor: bg }}> I am a button </button>
+export const Button = ({ bg, children }) => (
+  <button style={{ backgroundColor: bg }}> {children} </button>
 );
 ```
 
@@ -44,7 +44,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Button } from './Button';
 
-storiesOf('Button', module).add('with PGR background', () => (
+storiesOf('Button', module).add('with background', () => (
   <Button bg="palegoldenrod">Hello Button</Button>
 ));
 ```
