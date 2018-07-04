@@ -48,3 +48,46 @@ storiesOf('Button', module).add('with background', () => (
   <Button bg="palegoldenrod">Hello Button</Button>
 ));
 ```
+
+# add a Welcome Screen to your Storybook
+
+define `welcomeStory.js`
+
+```js
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+
+storiesOf('Welcome', module).addWithJSX(
+  'to your new Storybook🎉',
+  () => <h1>Welcome to your new Storybook!</h1>)
+);
+```
+
+go to config:
+
+```js
+  require('./welcomeStory');
+```
+
+# Use the JSX addon in Storybook
+
+`yarn add -D @storybook/addons storybook-addon-jsx`
+
+`.storybook/addons.js`:
+
+`import 'storybook-addon-jsx/register';`
+
+in config.js:
+
+```js
+import { setAddon } from '@storybook/react';
+import JSXAddon from 'storybook-addon-jsx';
+setAddon(JSXAddon);
+
+// addDecorator
+// import { withKnobs, select } from '@storybook/addon-knobs/react';
+// addDecorator(withKnobs);
+
+```
+
+use `addWithJSX`
