@@ -91,3 +91,77 @@ setAddon(JSXAddon);
 ```
 
 use `addWithJSX`
+
+
+# Use the Info addon to document your Storybook stories
+
+`yarn add -D @storybook/addon-info`
+
+use markdown
+
+```
+storiesOf('Component', module)
+  .add('simple info',
+    withInfo(`
+      description or documentation about my component, supports markdown
+    
+      ~~~js
+      <Button>Click Here</Button>
+      ~~~
+    
+    `)(() =>
+      <Component>Click the "?" mark at top-right to view the info.</Component>
+    )
+  )
+```
+
+
+```
+
+storiesOf('Component', module)
+  .add('simple info',
+    withInfo({
+      styles: {
+        header: {
+          h1: {
+            color: 'red'
+          }
+        }
+      },
+      text: 'String or React Element with docs about my component', // Warning! This option's name will be likely renamed to "summary" in 3.3 release. Follow this PR #1501 for details
+      // other possible options see in Global options section below
+    })(() =>
+      <Component>Click the "?" mark at top-right to view the info.</Component>
+    )
+  )
+```
+
+utils.js:
+
+```js
+import { withInfo } from '@storybook/addon-info';
+const wInfoStyle = {
+  header: {
+    h1: {
+      marginRight: '20px',
+      fontSize: '25px',
+      display: 'inline'
+    },
+    body: {
+      paddingTop: 0,
+      paddingBottom: 0
+    },
+    h2: {
+      display: 'inline',
+      color: '#999'
+    }
+  },
+  infoBody: {
+    backgroundColor: '#eee',
+    padding: '0px 5px',
+    lineHeight: '2'
+  }
+};
+export const wInfo = text =>
+  withInfo({ inline: true, source: false, styles: wInfoStyle, text: text });
+```
