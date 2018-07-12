@@ -115,3 +115,30 @@ export const Button = (props: Props) => {
 }
 ```
 
+---
+
+docgen
+
+1. `yarn add -D react-docgen-typescript-webpack-plugin`
+2.  webpack config
+
+`const TSDocgenPlugin = require('react-docgen-typescript-webpack-plugin');`
+
+`defaultConfig.plugins.push(new TSDocgenPlugin());`
+
+3. button.tsx
+
+```tsx
+export interface Props {
+  /** this dictates what the button will say  */
+  label: string;
+  /** this dictates what the button will do  */
+  onClick: () => void;
+  /**
+   * Disables onclick
+   *
+   * @default false
+   **/
+  disabled?: boolean;
+}
+```
