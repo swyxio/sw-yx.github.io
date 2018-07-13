@@ -120,3 +120,12 @@ timeline
 - backends are very constrained - in what they can or cant do
 - even if the implementation is weird - ecommerce
 - vuecommerce
+- not hard to figure out that part - how does that translate to gatsby. the UX is obvious - its more of a technical/ business goal
+
+---
+
+images too long to process
+
+- backend person - build system, do the build ourselves: 40 sites
+- v2 end of july
+- kurt gets back and we can sync up again
