@@ -105,3 +105,18 @@ agencies agencies agencies
 - feel the constraints of gbpress - learn gb for real
 - apple vs android - compare with high end enterprise webdev vs sqspace/wpress
 - ridiculously entry into using gatsby. cool + fun + useful
+
+---
+
+timeline
+
+- constraint is v2, and also after v2
+- cloud platform
+- REALLY ANSWER WHAT DOES THE DX FEEL LIKE
+- how fast can you go from install gatsbypress, and a finished custom site - in 1hr
+- making that one movement super fluid and well documented.
+- its the first try and its the most common thing people will do
+- ship a default plugin stack
+- backends are very constrained - in what they can or cant do
+- even if the implementation is weird - ecommerce
+- vuecommerce
