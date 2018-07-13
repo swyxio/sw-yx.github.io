@@ -93,3 +93,15 @@ basic stypes
 - then a launch launch
 - with 10 super nice themes that we launch with
 - and you can install right away
+- color presets
+- typo presets
+- 25 diff combos of color and typos.
+
+---
+
+agencies agencies agencies
+
+- gbpress - really attractive entry pt into the gatsby ecosystem
+- feel the constraints of gbpress - learn gb for real
+- apple vs android - compare with high end enterprise webdev vs sqspace/wpress
+- ridiculously entry into using gatsby. cool + fun + useful
