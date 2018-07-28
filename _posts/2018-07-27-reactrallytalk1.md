@@ -39,3 +39,34 @@ had to take a nap
 
 
 right now the main task is to make didact use zen-observable so that i am reactive by default. i start off with the pure element creation bit: https://engineering.hexacta.com/didact-element-creation-and-jsx-d05171c55c56
+
+---
+
+3am. finally made some headway - wrapping addEventListener into a fromEvent:
+
+```js
+function fromEvent(el, eventType) {
+  return new Observable(observer => {
+    el.addEventListener(eventType, e => observer.next(e))
+    // on unsub, remove event listener
+    return () => console.log('not implemented yet')
+  })
+}
+```
+
+this lets me make change handlers into streams:
+
+```js
+function LabeledSlider() {
+  return <input type="range" min={20} max={80} value={state} 
+  onInput={e$ => {
+    e$.subscribe(e => {
+      state = e.target.value;
+      console.log(state)
+      render(appElement(), document.getElementById("app"));
+    })
+  }}/>
+}
+```
+
+but now i have to think about what `setState` means when we are talking about streams.
