@@ -32,3 +32,10 @@ also reviewd pomber's writeup https://engineering.hexacta.com/didact-instances-r
 
 also evan's talk on many flavors of FRP https://www.youtube.com/watch?v=Agu6jipKfYw
 
+
+---
+
+had to take a nap
+
+
+right now the main task is to make didact use zen-observable so that i am reactive by default. i start off with the pure element creation bit: https://engineering.hexacta.com/didact-element-creation-and-jsx-d05171c55c56
