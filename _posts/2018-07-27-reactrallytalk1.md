@@ -70,3 +70,10 @@ function LabeledSlider() {
 ```
 
 but now i have to think about what `setState` means when we are talking about streams.
+
+
+---
+
+4am i have found a perf issue too - you cant just subscribe at the point of render - you have to create the stream at instatiation or you will have multiple streams.
+
+this maymean i have to go to class based components sooner than planned.
