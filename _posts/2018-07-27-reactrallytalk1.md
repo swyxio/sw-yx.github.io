@@ -107,3 +107,13 @@ function LabeledSlider() {
 this causes multiple subscriptions, bad.
 
 this may mean i have to go to class based components sooner than planned.
+
+4.05 lol i solved it by storing the stream on the dom
+
+```js
+if (!dom[name + '$']) { // note - bug if handler mutates
+      const stream = fromEvent(dom, eventType)
+      stream.subscribe(nextProps[name])
+      dom[name + '$'] = stream
+    }
+```
