@@ -76,4 +76,34 @@ but now i have to think about what `setState` means when we are talking about st
 
 4am i have found a perf issue too - you cant just subscribe at the point of render - you have to create the stream at instatiation or you will have multiple streams.
 
-this maymean i have to go to class based components sooner than planned.
+heres the reconciler:
+
+```js
+  // Add event listeners
+  Object.keys(nextProps).filter(isEvent).forEach(name => {
+    const eventType = name.toLowerCase().substring(2);
+    // dom.addEventListener(eventType, nextProps[name]);
+    // nextProps[name](fromEvent(dom, eventType))
+    const stream = fromEvent(dom, eventType)
+    stream.subscribe(nextProps[name])
+    dom[name + '$'] = stream
+  });
+```
+
+and usage
+
+```js
+function LabeledSlider() {
+  return <input type="range" min={20} max={80} value={state} 
+  onInput={e => {
+      state = e.target.value;
+      console.log(state)
+      render(appElement(), document.getElementById("app"));
+  }}
+  />
+}
+```
+
+this causes multiple subscriptions, bad.
+
+this may mean i have to go to class based components sooner than planned.
