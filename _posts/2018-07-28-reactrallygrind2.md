@@ -46,3 +46,33 @@ function merge(...obsArgs) {
   })
 }
 ```
+
+
+i also sketched out a proto api for reactive react:
+
+```js
+class Abc extends Component {
+  source($) {
+    return Observable.of(1)
+  }
+  render($) {
+    return <LabeledSlider />
+  }
+}
+
+class LabeledSlider extends Component {
+  constructor() {
+    this.input = <input type="range" min={20} max={80} onInput={console.log} />
+  }
+  source($) {
+    return this.input.onInput$
+  }
+  render($) {
+    return <div>{this.input}</div>
+  }
+}
+```
+
+i definitely havent worked out how the values go in and out of each other yet.
+
+
