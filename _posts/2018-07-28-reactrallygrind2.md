@@ -155,3 +155,17 @@ function scan(obs, cb, initial) {
 ```
 
 with this ground work i think i can start refashioning things into the core of the Creat reconciler.
+
+---
+
+3am ok i struggled with whether i could construct sources first and then do the view in the reducer, but it seems this is probably not possible so i am just making both data$ and view$ at the same time.
+
+the other thing i cant resolve is how to make eventListeners into sources. i've opted for the very creative strategy of IGNORING THE PROBLEM for now, hopefully i might be able to use some sort of `createRef` or `attach()` strategy if i ever get there.
+
+so assuming sources only ever come exogenously, i can make some progress. maybe. urgh this is an absurd assumption.
+
+---
+
+4am hmm, the vdom library (https://github.com/Matt-Esch/virtual-dom) seems like it would fit very very well in api with my scan and subscribe function so i dont have to rewrite all of the reconciliation (currently reconciliation does two jobs, it diffs and it creates recursively and imperatively. i need the creation to be separate fromt the diff so i can create a bunch of sources and then just diff to kingdom come).
+
+assuming i do that then i am really struggling with making an api that would pass a source both to `source` and its value to `render`.
