@@ -86,14 +86,20 @@ ended up dipping into vtext and vnode instead of using hyperscript but it workd!
 ```js
 class App extends Component {
   source($) {
-    return scan(Ticker(), x => x+1, 0)
+    return scan(
+      Ticker(), // tick every second
+      x => x+1, // count up
+      0         // from zero
+    )
   }
   render(state, prevState) {
-    return <div> hello world {state} </div>
+    const elapsed = state === INITIALSOURCE ? 0 : state
+    return <div> number of seconds elapsed: {elapsed} </div>
   }
 }
 
 mount(<App />, document.getElementById('app'))
+
 ```
 
 this produces a steadily ticking counter next to hello world!
