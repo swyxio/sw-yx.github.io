@@ -75,4 +75,10 @@ class LabeledSlider extends Component {
 
 i definitely havent worked out how the values go in and out of each other yet.
 
+---
 
+12am briefly considered using functions as the component api. but didact's updateInstance is clearly triggered by passing a reconcile on the internalInstance so i dont see any reason to modify that. classes it is.
+
+---
+
+12.45 ok i have started working on `creatsource`. i have a great nearterm goal - just using zenobservable, make a vanilla js updating app.
