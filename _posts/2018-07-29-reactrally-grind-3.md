@@ -23,14 +23,11 @@ export function mount(element, container) {
   return scan(
     source$, 
     (prevDOM, next) => {
-      if (prevDOM === INITIALSOURCE) {
-        return rootNode
-      } else {
         const vDOM = render(element, next)
         patch(rootNode, diff(prevDOM, vDOM))
         return vDOM
-      }
-    }
+    },
+    rootNode
   ).subscribe()
 }
 ```
