@@ -103,3 +103,16 @@ mount(<App />, document.getElementById('app'))
 ```
 
 this produces a steadily ticking counter next to hello world!
+
+---
+
+6pm ok so looking at last nights todo list:
+
+- make every dom el a source: not done yet but doable under my static stream restriction
+- figure out if sinks matter? maybe
+- render takes observable? not sure what this mmeans haha
+
+now my new wishlist:
+
+- local stream state based on the instance
+- trying to show the rough edges based on this new thingy...
