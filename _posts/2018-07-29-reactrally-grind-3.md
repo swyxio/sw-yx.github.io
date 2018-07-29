@@ -76,3 +76,24 @@ function traverse(source$, addToStream) {
 ```
 
 now i just need to render a bunch of h's
+
+---
+
+ended up dipping into vtext and vnode instead of using hyperscript but it workd!
+
+# Hello world!
+
+```js
+class App extends Component {
+  source($) {
+    return scan(Ticker(), x => x+1, 0)
+  }
+  render(state, prevState) {
+    return <div> hello world {state} </div>
+  }
+}
+
+mount(<App />, document.getElementById('app'))
+```
+
+this produces a steadily ticking counter next to hello world!
