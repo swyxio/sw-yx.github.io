@@ -82,3 +82,21 @@ i definitely havent worked out how the values go in and out of each other yet.
 ---
 
 12.45 ok i have started working on `creatsource`. i have a great nearterm goal - just using zenobservable, make a vanilla js updating app.
+
+---
+
+1.15 needed a scan instead of a reduce, so i wrote one:
+
+```js
+function scan(obs, cb, initial) {
+  const INIT = '__NO_INITIAL_VALUE'
+  let sub, acc = INIT
+  if (typeof initial !== 'undefined') acc = initial
+  return new Observable(observer => {
+    if (!sub) sub = obs.subscribe(val => {
+      if (acc !== INIT) acc = cb(acc, val)
+      observer.next(acc)
+    })
+  })
+}
+```
