@@ -234,3 +234,18 @@ class Counter extends Component {
   }
 }
 ```
+
+4.15 ok made a basic createHandler()
+
+```js
+export function createHandler() {
+  const emitter = createChangeEmitter()
+  let handler = emitter.emit
+  handler.$ = new Observable(observer => {
+    return emitter.listen(value => observer.next(value))
+  })
+  return handler
+}
+```
+
+now to have persistent instances
