@@ -197,3 +197,40 @@ const Counter = componentFromStream(props$ => {
   )
 })
 ```
+
+---
+
+4am i took componentFromStream and adapted it for my use now to implement:
+
+```js
+class Counter extends Component {
+  constructor() {
+    this.$ = {
+      increment: createEventHandler(),
+      decrement: createEventHandler()
+    }
+  }
+  source($) {
+    const {increment, decrement} = this.$
+    const state$ = scan(
+      startWith(
+        merge(
+          mapToConstant(increment.$, 1), 
+          mapToConstant(decrement.$, -1)
+        ),
+        0
+      ),
+      (acc, n) => acc + n, 0 // scan args
+    )
+    return state$
+  }
+  render(state) {
+    const {increment, decrement} = this.$
+    return <div {...props}>
+        Count: {state}
+        <button onClick={increment}>+</button>
+        <button onClick={decrement}>-</button>
+      </div>
+  }
+}
+```
