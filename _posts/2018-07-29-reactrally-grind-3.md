@@ -249,3 +249,27 @@ export function createHandler() {
 ```
 
 now to have persistent instances
+
+---
+
+6.40am woohoo i have a working counter app!
+
+```js
+
+class App extends Component {
+  increment = createHandler(() => 1)
+  decrement = createHandler(() => -1)
+  source($) {
+    const source$ = merge(this.increment.$, this.decrement.$)
+    const reducer = (acc, n) => acc + n
+    return scan(startWith(source$, 0), reducer, 0)
+  }
+  render(state) {
+    return <div>
+        Count: {state}
+        <button onclick={this.increment}>+</button>
+        <button onclick={this.decrement}>-</button>
+      </div>
+  }
+}
+```
