@@ -173,4 +173,27 @@ i can adapt this idea.
 
 `recompose` also has a nice section: https://github.com/acdlite/recompose/blob/v0.26.0/docs/API.md#componentfromstream
 
-with a `createEventHandler` i should probably use.
+with a `createEventHandler` i should probably use:
+
+```js
+const Counter = componentFromStream(props$ => {
+  const { handler: increment, stream: increment$ } = createEventHandler()
+  const { handler: decrement, stream: decrement$ } = createEventHandler()
+  const count$ = Observable.merge(
+      increment$.mapTo(1),
+      decrement$.mapTo(-1)
+    )
+    .startWith(0)
+    .scan((count, n) => count + n, 0)
+
+  return props$.combineLatest(
+    count$,
+    (props, count) =>
+      <div {...props}>
+        Count: {count}
+        <button onClick={increment}>+</button>
+        <button onClick={decrement}>-</button>
+      </div>
+  )
+})
+```
