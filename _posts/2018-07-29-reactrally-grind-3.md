@@ -116,3 +116,61 @@ now my new wishlist:
 
 - local stream state based on the instance
 - trying to show the rough edges based on this new thingy...
+
+---
+
+3am long detour but i took in jafar husain's awesome rxjs course on FEM and also explored recompose and reasonreact from egghead. i feel very close to something here.
+
+Reason react looks like this:
+
+```re
+type state = {count: int};
+
+type action =
+  | Increment
+  | Decrement;
+
+let component = ReasonReact.reducerComponent("Counter");
+
+let string = ReasonReact.stringToElement;
+
+let make = _children => {
+  ...component,
+  initialState: () => {count: 0},
+  reducer: (action, state) =>
+    switch action {
+    | Increment => ReasonReact.Update({count: state.count + 1})
+    | Decrement => ReasonReact.Update({count: state.count - 1})
+    },
+  render: ({send, state}) => {
+    let msg = "Current Count:  " ++ string_of_int(state.count);
+    <div>
+      <h2> (string(msg)) </h2>
+      <button onClick=(_event => send(Increment))> (string("+")) </button>
+      <button onClick=(_event => send(Decrement))> (string("-")) </button>
+    </div>;
+  }
+};
+```
+
+so having the `send` function is a pretty good idea i should steal.
+
+theres an alternative using `self.handle`...
+
+```re
+let handleClick = (_event, _self) => Js.log("click!");
+
+let make = (~message, _children) => {
+  ...component,
+  render: self =>
+    <div onClick=(self.handle(handleClick))>
+      (ReasonReact.stringToElement(message))
+    </div>
+};
+```
+
+i can adapt this idea.
+
+`recompose` also has a nice section: https://github.com/acdlite/recompose/blob/v0.26.0/docs/API.md#componentfromstream
+
+with a `createEventHandler` i should probably use.
