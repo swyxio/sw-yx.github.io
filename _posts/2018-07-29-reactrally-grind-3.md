@@ -273,3 +273,7 @@ class App extends Component {
   }
 }
 ```
+
+i would have cracked persistent isntances much earlier but i lost like an hour to a bug due to shadowing of an `instance` variable .
+
+ok so now i need to make my stream into a stream of streams so that my state can be local. idk if that is overengineering already.
