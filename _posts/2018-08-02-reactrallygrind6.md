@@ -50,3 +50,11 @@ requestAnimationFrame(function(timestamp){
     moveit(timestamp, adiv, 400, 2000) // 400px over 1 second
 })
 ```
+
+
+---
+
+the om style serialize state and free undo stuff is also seriously cool, i want it:
+
+- https://circleci.com/blog/local-state-global-concerns/
+- https://swannodette.github.io/2013/12/31/time-travel
