@@ -58,3 +58,9 @@ the om style serialize state and free undo stuff is also seriously cool, i want 
 
 - https://circleci.com/blog/local-state-global-concerns/
 - https://swannodette.github.io/2013/12/31/time-travel
+
+---
+
+3 aug
+
+slidemaking mode. i am 20 slides in and i think i have the rough sequence of arguments, but i need diagrams to help argue the point and then i need some examples.
