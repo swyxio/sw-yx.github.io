@@ -64,3 +64,11 @@ the om style serialize state and free undo stuff is also seriously cool, i want 
 3 aug
 
 slidemaking mode. i am 20 slides in and i think i have the rough sequence of arguments, but i need diagrams to help argue the point and then i need some examples.
+
+i also want to figure out if push-pull FRP is actually what we are talking about.
+
+1.30am - done with "problem" flowcharts. now i need to look into push pull frp
+
+ok i think i have all the charts i need. i am not going to claim push pull frp because i frankly dont super understand it but i like the idea of a reactive structure that is a "sequence of non reactive phases".
+
+7.30am done https://www.beautiful.ai/-LIw2oTJmrrwRqvsoYgD/3
