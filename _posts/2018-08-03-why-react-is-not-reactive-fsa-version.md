@@ -131,6 +131,16 @@ Your view as a stream of your data
 
 notes
 
+more 2x2 diagrams
+
+- one and sync: T
+- many and sync: arrays
+- one and async: promises
+- many and async: observable
+- https://channel9.msdn.com/Events/Lang-NEXT/Lang-NEXT-2014/Keynote-Duality
+
+---
+
 - Haskell GUI https://www.stackbuilders.com/tutorials/haskell/gui-application/
 
 full observable
