@@ -15,3 +15,9 @@ i took a little detour reading about operating systems and have more content to 
 i renamed creat to reactive-react. i am pretty much dropping the alternate universe thing - i think it is too ambitious for my first ever talk. 
 
 i last left it in the middle of a refactor to stateMap. i need to finish it so that every component has local state based on the component instance. then i need to work on demos.
+
+---
+
+statemap worked well
+
+i tried to do the timeslicing thing but that was a bit of a fail because victory requires react. and i dont really feel like doing a bunch of react-reactive-react compat work OR working in D3.
