@@ -23,4 +23,11 @@ https://www.youtube.com/watch?v=xTHR0IN1c6s
 - 1.04 - push requests -> make it more of a joke
 - 1.05 - NAIL THE END
 
-add yak joke
+TODO list
+
+- add yak joke
+- diagram from reactive react
+- flip pull/push
+- emphasize the mental model as a selling point of the talk
+- call it react earlier
+- emphasize the blue arrows
