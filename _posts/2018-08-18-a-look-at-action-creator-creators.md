@@ -172,3 +172,8 @@ export const { reducer, actions } = createReducerActions(
 https://github.com/cl1ck/redux-bits
 
 has too much magic, i'm not even going to bother
+
+
+---
+
+wrote this up in  https://github.com/markerikson/redux-starter-kit/issues/17
