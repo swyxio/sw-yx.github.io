@@ -146,3 +146,29 @@ export const {
   }
 });
 ```
+
+### createReducerActions
+
+https://github.com/christiangenco/createReducerActions
+
+```js
+// redux/counter.js
+import createReducerActions from "create-reducer-actions";
+
+const initialState = 0;
+export const { reducer, actions } = createReducerActions(
+  {
+    increment: state => state + 1,
+    decrement: state => state - 1,
+    add: (state, { payload }) => state + payload,
+    sub: (state, { payload }) => state - payload
+  },
+  initialState
+);
+```
+
+### redux-bits
+
+https://github.com/cl1ck/redux-bits
+
+has too much magic, i'm not even going to bother
