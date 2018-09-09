@@ -10,13 +10,18 @@ description: 47 out of 47!
 
 this task was to write a distributed spanning tree algorithm. i struggled a lot with this one because ive never done distributed programming before and in particular after watching the intro video i felt there was a lot that was unclear to do with the `pathThrough` or `switchThrough` parameters (namely i didnt really -get- what they were for or how they should be used)
 
+
 I think the best way to explain switchThrough/pathThrough is by looking at distributed spanning trees like a chain of public unrequited love. Kind of like a love triangle. A loves B, B loves C. each person can only love one other person (that's your switchThrough), yet each person has to keep track of who it is involved with (that's your activeLinks). Through a set of rules (as you discover lower roots or shorter distance or tiebreak equal distance routes), nodes change who they "love". When they do that they have to "break up" with their old love, and tell their new love they love them. Both acts will trigger acknowledgement responses (a "you're dead to me" from the breakupee, and a "k" from the new love) from the receivers, and when the acknowledgements come back to the node, it has to be "strong enough" to not change their mind about who they love and send any more messages. write that in code and you've got a distributed algo that establishes consistency without going into infinite loops.
+
 
 i got pretty far with my first attempt just implementing pseudocode from reading the instruction pdf. but eventually got to a point where my algo was running into the 6-7 link problem in NoLoopTopo that a couple others also ran into (so it was too stingy, didn't send enough messages when a non-active neighbor changed root and might suddenly become interesting again to the node after it was initially written off). if i tried to correct that, i got an opposite problem where i was either stuck in an infinite loop in ComplexLoopTopo or some similar issue i can't quite remember (so it was too greedy, sent too many messages some of which were spurious and the self correcting nature of the distributed algo causes the infinite loop when trying to correct those wrong messages). So i alternated back and forth between stingy and greedy algos and didn't get anywhere.
 
+
 i was stuck like this for a very very long time, until on the last day i decided to do 2 things which really helped:
 
+
 1. throw out all my processmessage code and rewrite from scratch. the lack of baggage helps especially with the improved understanding gained from the first attempt. with this i was able to break through and solve all the provided base cases, but was at like 19/47 of the student provided github test suite.
+
 2. implement a lot more logging. in particular my logging strategy wound up looking like this:
 
 - log initial switch states
@@ -26,7 +31,9 @@ i was stuck like this for a very very long time, until on the last day i decided
 - log post message processing switch state (with a nice visual separation '----')
 - log ending switch states
 
+
 i also set up circuit breakers (to not get drowned with infinite loops) and filters (to focus in on particular pairs of switches) in my logging code.
+
 
 With this level of logging and focus you are finally able to track what on earth is going on in your network and figure out which precise message is being generated (or is missing) so you can go fix that in your code. In particular being able to spot when root and switchThrough changes happen between pre and post processing and then trace the impact messages that are generated from them really really helped - i became very good and scannign through lines and lines of logs to tell that story to myself.
 
