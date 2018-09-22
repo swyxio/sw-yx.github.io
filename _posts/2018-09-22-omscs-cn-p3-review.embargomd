@@ -1,0 +1,19 @@
+---
+layout: post
+date: 2018-09-22
+tags: omscs
+feelings: happy
+title: omscs computer networking project 3 review
+comments: true
+description: boom boom
+---
+
+this task was easier after the stressfulness of project 2. i knew the basics of distributed algos now and there was no reflection in this project - there is just a dirty flag and a refresh of all outbound nodes.
+
+after the first 2-3 passes i think i managed to get a couple of the Topos working, but in Topos with negative infinite loops, the negative infinite loops kept propagating to other nodes (like if AA - CC was -99, that would spread out and infect the other nodes connected to AA).
+
+This might sorta kinda make sense if -99 were a real value but because it is a fake "infinity value" i wrote code to prevent propagation of -99. also if you have a situation where -99 + 5 it has to equal -99 because reasons.
+
+that solved the rest of the cases.
+
+The instructions around logging were very unclear. the previous project just validated against the final state, whereas here there was a lot of logging against all the intermediate state. and because there are "infinite" loops, that's a lot of logs and it can spam the console which you can't really avoid. I could control the result logging in my code, but it definitely took way too long to figure out (1hr?) compared to actually working on the algorithm that matters. As a result of the messiness of having intentional infinite loops that are validated against, intensive logging like i did in p2 was not useful. instead i just read other people's comments on how they solved problems like the -99 spreading and just implemented their words into code. not a very satisfactory project compared to p2.
