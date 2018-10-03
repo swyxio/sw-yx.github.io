@@ -47,6 +47,3 @@ https://www.youtube.com/watch?v=cX3CldSwWmc
   - site showcase
 - linda
   - migrating from v1 to v2
-    
-
----
