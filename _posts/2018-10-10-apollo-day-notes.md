@@ -53,10 +53,48 @@ apollo server
   - schema first development
   - built in structure to get data plumbed
   - designed for a pit of speed
-  
+- preview
+  - streaming data instead of request/response
 
+part 2 sneak peek
 
+- questions - about Smarter Collaboration
+  - static typing in workflow
+  - will changes on the server break my client
+  - apollo with tools like github and vscode
+- graphql summit vscode extension
+  - autocomplete features - pull schema down from engine
+  - fragments
+  - realtime p95 statistics of apollo engine
+- ci workflow tools
+  - warning for deprecating api's - right in github
+  - diff visible inside engine as well - can see warnings and failures
+  - operation validation
+- better together
+- circle ci config - use apollo cli to publish schema to apollo engine
+- vscode also uses cli to  to pull down schema
+- schema tags - to tag staging or dev or whatever
+- q&a
+  - distributed schemas is the way forward
+  - fragment matchers
+  - precompiled version of apollo just for your app?
+  - you just need an engine api key - vscode will automatically connect to engine metrics for you
+  - lifelong view into your graph of what is running - cant be from your dev server
+  - dont allow arbitrary queries - the solution is engine which is a data poool
+  - typescript - codegen - passed the type into query component and get the render prop with the type
   
+query security
+
+- questions
+  - what risks do i take runnign a graph api?
+  - who do i give access to my graph?
+  - how can i secure my graph?
+- demo 4: apollo query registry
+  - an operation registry
+  - new command - `npx apollo queries:register`
+  - descopes your graph to only what your client is using
+  - q4 api
+    - integrated quotas in your schema itself
   
 future hints
 
