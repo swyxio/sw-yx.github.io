@@ -99,3 +99,10 @@ query security
 future hints
 
 - code splitting in apollo client
+
+
+---
+
+immir ceo talk
+  - growth in graphql is due to importance and complexity of APIs and apps
+  - point to point - rest soap, prenegotiation between supplier and consumer of data. "procedural"
