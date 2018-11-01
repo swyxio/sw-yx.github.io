@@ -13,3 +13,4 @@ things i want in devrelhub
 - collaboration
 - multiple views - list view, week by week view
 - okr baking in
+- auth
