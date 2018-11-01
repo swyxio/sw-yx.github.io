@@ -10,8 +10,16 @@ description: we need custom software for devrelhub
 
 things i want in devrelhub
 
-- collaboration
 - multiple views - list view, week by week view
-- okr baking in
-- auth
 - airtable?
+
+next
+
+- auth
+- polling lambda function?
+
+
+nice to have
+
+- collaboration
+- okr baking in
