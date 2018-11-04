@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2018-08-
+date: 2018-10-10
 tags: apollo
 feelings: neutral
 title: apollo day notes
