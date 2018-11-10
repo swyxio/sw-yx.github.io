@@ -21,3 +21,8 @@ good tutorials
 2.30am god i got so deep yak shaving again.
 
 nothing worked. i am now basing off of: chrome-extension://jifpbeccnghkjeaalbbjmodiffmgedin/crxviewer.html?crx=https%3A%2F%2Fclients2.google.com%2Fservice%2Fupdate2%2Fcrx%3Fresponse%3Dredirect%26os%3Dmac%26arch%3Dx86-64%26os_arch%3Dx86-64%26nacl_arch%3Dx86-64%26prod%3Dchromecrx%26prodchannel%3Dunknown%26prodversion%3D69.0.3497.100%26acceptformat%3Dcrx2%2Ccrx3%26x%3Did%253Dbkgcmmmkhfdobnaaepcgaojgikjilgml%2526uc&zipname=bkgcmmmkhfdobnaaepcgaojgikjilgml.zip
+
+---
+
+done! at around 4.30am
+https://chrome.google.com/webstore/detail/dkhfpnphbcckigklfkaemnjdmghhcaoh/publish-delayed
