@@ -9,6 +9,8 @@ description: drafts for the react conf blogpost
 ---
 
 
+https://gist.github.com/sw-yx/17965a31413acb461c4d64028527011e
+
 junked notes below
 
 ---
