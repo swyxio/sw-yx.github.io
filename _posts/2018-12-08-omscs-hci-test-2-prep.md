@@ -51,10 +51,21 @@ woot woot lets go
   - activity theory: predates HCI.
     - why is user doing the task in the first place. not just -what- they are doing.
     - users can move up and down the hierarchy of activity -> action -> operator.  the more competent you are - driving a car - the more of a subconscious operator it is
+  - nardi - comparing activity theory and other thingies. incl permanent persistent structues
 
-2.9
+2.9 Interfaces and politics
 
-2.10
+2.10 Conclusion to principles
+
+- Processor: External
+- Predictor: Internal. Disappearing ui. gulf of execution/eval. understanding mapping, expert blindspot, learned helplessness.
+- Participant: Context. 
+- 5 tips: on screen ui design
+  - use a grid
+  - use whitespace
+  - know gestalt principles: proximity, continuation, movement, similarity
+  - reduce clutter
+  - design in grayscale
 
 ## 3.5: prototyping
 
