@@ -139,12 +139,12 @@ woot woot lets go
 
 3.8 - conclusion to methods
 
+http://omscs6750.gatech.edu/fall-2018/required-reading-list/
 
-
-reading 7
-reading 8
-reading 9
-reading 10
-reading 11
-reading 12
-reading 13
+- reading 7
+- reading 8
+- reading 9
+- reading 10
+- reading 11
+- reading 12
+- reading 13
