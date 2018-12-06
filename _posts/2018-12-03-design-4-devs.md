@@ -132,3 +132,11 @@ Here are notes from [Sarah Drasner's Design workshop](https://github.com/sdras/d
   - High-fi prototype that works
   - Screenshot and abs position things
   - Motion: Transforms
+
+----
+
+Animation:
+
+- http://animista.net
+- https://daneden.github.io/animate.css/
+- http://tobiasahlin.com/spinkit/
