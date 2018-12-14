@@ -140,3 +140,9 @@ Animation:
 - http://animista.net
 - https://daneden.github.io/animate.css/
 - http://tobiasahlin.com/spinkit/
+- http://www.transformicons.com/docs.html
+
+Design inspo
+
+- https://tympanus.net/Development/DraggableDualViewSlideshow/
+
