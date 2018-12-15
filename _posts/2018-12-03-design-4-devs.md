@@ -45,6 +45,9 @@ Here are notes from [Sarah Drasner's Design workshop](https://github.com/sdras/d
     - [Paletton](https://paletton.com)
     - [Palettab](https://palettab.com)
     - [UI Gradients](https://uigradients.com)
+    - [Cool Backgrounds](https://coolbackgrounds.io/)
+    - [Web Gradients](https://webgradients.com/)
+    - [CSS Gradient](https://cssgradient.io/)
     - [Gradient Animator](https://www.gradient-animator.com/)
     - Adobe Capture - take a "mood" on phone
     - [CSS Named colors game](http://codepo8.github.io/css-colour-names/)
@@ -146,3 +149,6 @@ Design inspo
 
 - https://tympanus.net/Development/DraggableDualViewSlideshow/
 
+Bonus toys
+
+- https://leaverou.github.io/css3patterns/
