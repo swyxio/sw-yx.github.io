@@ -38,24 +38,27 @@ and then write MDX
 
 ```mdx
 ---
-name: MyComponent
+name: My Awesome Button Component
 route: /
 ---
 
-import { PropsTable, Playground } from 'docz'
-import {Button} from './Button'
+import { PropsTable, Playground } from 'docz';
+import Button from './Button';
 
 ## This is your Button component
 
-Some text here
+Lorem ipsum
 
 <Playground>
-  <Button />
+  <Button text="helloworld" state="error" />
+  <Button text="helloworld" state="success" />
 </Playground>
+
+Dolor sit
 
 <PropsTable of={Button} />
 
-More text here
+Amet consecitur
 ```
 
 8. Some advanced stuff - typeof, in/union types
