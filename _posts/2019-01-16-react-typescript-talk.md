@@ -15,7 +15,15 @@ description: prep notes for react typescript talk
 5. React Hooks
 6. Commenting and Docz
 
-first `yarn add -D docz-theme-default docz@0.12.17`
+first fix package.json
+
+```json
+  "resolutions": {
+    "ansi-styles": "^3.2.0"
+  }
+```
+
+then `yarn add -D docz-theme-default docz@0.12.17`
 then scripts `docz": "docz dev"`
 then `doczrc.js`
 
