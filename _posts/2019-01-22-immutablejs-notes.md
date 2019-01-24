@@ -36,7 +36,7 @@ export function foo(){
     - reconciliation is O(n), 
     - reconciliation minus unchanged legs is O(log N)
   - undo is easy
-  - PIDS work because of strcutrual sharing, removing complexity
+  - PIDS work because of structural sharing, removing complexity
 - copy on write is good https://en.wikipedia.org/wiki/Copy-on-write
 
 If an object is immutable, it can be "copied" simply by making another reference to it instead of copying the entire object. Because a reference is much smaller than the object itself, this results in memory savings and a potential boost in execution speed for programs which rely on copies (such as an undo-stack).
