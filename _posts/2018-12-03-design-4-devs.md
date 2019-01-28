@@ -51,6 +51,7 @@ Here are notes from [Sarah Drasner's Design workshop](https://github.com/sdras/d
     - [Gradient Animator](https://www.gradient-animator.com/)
     - Adobe Capture - take a "mood" on phone
     - [CSS Named colors game](http://codepo8.github.io/css-colour-names/)
+    - https://cloudflare.design/color
   - Inspiration
     - https://dribbble.com/uixninja
     - Dribble - steal palette or search by color
