@@ -99,4 +99,8 @@ This is a much simpler project than the other two - a static github page with th
 
 - [rbx – a UI Framework based on Bulma](https://www.reddit.com/r/reactjs/comments/ait5h2/new_ui_framework_based_on_bulma_written_in/)
 
+This is a fascinating TypeScript-first fork of react-bulma-components after user Devin Fee faced some frustrations maintaining the typescript typings for react-bulma.
 
+Users compared this with Bloomer and Ant Design, as well as Bootstrap and SemanticUI. Devin gave really great responses for why use Bulma in the comments.
+
+Devin's medium writeup also documented his problems with getting his build toolchain to work together and it should be very instructive for anyone looking to do the same.
