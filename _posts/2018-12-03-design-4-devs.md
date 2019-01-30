@@ -153,3 +153,4 @@ Design inspo
 Bonus toys
 
 - https://leaverou.github.io/css3patterns/
+- burgers https://march08.github.io/animated-burgers/
