@@ -29,7 +29,7 @@ description: more podcasting for great goodness
 
 
 
-Welcome to this week in /r/reactjs, where we read you the top stories of the week based the votes of 92,000 React developers. This podcast is never longer than 10 minutes, so lets get started.
+Welcome to this week in /r/reactjs, where we read you the top stories of the week based the votes of 94,000 React developers. This podcast is never longer than 10 minutes, so lets get started.
 
 
 ## Discussions
