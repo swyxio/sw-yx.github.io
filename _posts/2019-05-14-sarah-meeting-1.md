@@ -19,3 +19,4 @@ process
 
 - bringing feedback in from devs to product
 - inflection from series a to b, growing beyond 50
+- 1on1 career ladder
