@@ -14,3 +14,8 @@ form
 - 3-5 bullet points last week
 - 3-5 bullet points this week
 - fun to share
+
+process
+
+- bringing feedback in from devs to product
+- inflection from series a to b, growing beyond 50
