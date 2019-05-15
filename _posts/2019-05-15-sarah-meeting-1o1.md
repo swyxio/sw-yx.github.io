@@ -45,5 +45,8 @@ scheduling things
 - weekly monday standup
 - themed meetings: agenda items, purpose driven
 
+- security
+- marketing partnering with dx
 
+- speaker training
 
