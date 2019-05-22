@@ -238,3 +238,25 @@ export type Action<T> = {
   repeatable?: boolean
 }
 ```
+
+
+----
+
+this lets me get rid of code like this
+
+```ts
+
+/**
+ * iterate through an array of requirements to check they are valid (by calling .assert)
+ *
+ * return array of validatedRequirements that you can easily call `.every` on to check.
+ * intentionally don't run `every` for you so you can iterate through
+ */
+const validateRequirements = async (reqs: Requirement[], config: Config) => {
+  const validator = async (req: Requirement) => req.assert(await req.getter(config))
+  return await Promise.all(
+    reqs.map(async req => ({ ...req, isValid: await validator(req) } as ValidatedRequirement))
+  )
+}
+```
+
