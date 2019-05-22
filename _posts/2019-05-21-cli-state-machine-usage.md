@@ -294,53 +294,65 @@ export type Action<PreStateType = any, ExecuteType = any, PostStateType = any> =
 my tests go from this:
 
 ```ts
-import { Action, State } from '../../src/types'
+import { Action, State, Requirement } from '../../src/types'
 import { initStateMachine, processStateMachine } from '../../src'
 import { blankConfig } from '../../src/index'
 
-let foo = 0
+let password = 'oldPassword'
+let loginStatus = false
 
-export const myState: State = {
-  uniqueName: 'state1',
-  description: 'state1 description',
-  requirements: [
-    {
-      name: 'req1',
-      description: 'req1desc',
-      getter: async () => foo,
-      assert: async (gotten: number) => gotten === 0,
-    },
-  ],
+const loggedInRequirement: Requirement = {
+  name: 'loggedIn',
+  getter: async () => loginStatus,
+  assert: async (status: boolean) => status === true,
 }
-export const myAction: Action = {
-  uniqueId: 'action1',
-  requiredStates: [myState],
+const loggedOutRequirement: Requirement = {
+  name: 'loggedOut',
+  getter: async () => loginStatus,
+  assert: async (status: boolean) => status === false,
+}
+
+export const loggedInState: State = {
+  uniqueName: 'loggedIn',
+  requirements: [loggedInRequirement],
+}
+export const loggedOutState: State = {
+  uniqueName: 'loggedOut',
+  requirements: [loggedOutRequirement],
+}
+export const loginAction: Action = {
+  uniqueId: 'loginAction',
+  requiredStates: [loggedOutState],
+  postExecuteState: loggedInState,
   execute: async () => {
-    foo = 1
+    loginStatus = true
   },
 }
-
-export const randomOtherAction: Action = {
-  uniqueId: 'action2',
-  requiredStates: [myState],
+export const logoutAction: Action = {
+  uniqueId: 'logoutAction',
+  requiredStates: [loggedInState],
+  postExecuteState: loggedOutState,
   execute: async () => {
-    foo = 1
+    loginStatus = false
+  },
+}
+export const changePasswordAction: Action = {
+  uniqueId: 'changePassword',
+  requiredStates: [loggedInState],
+  postExecuteState: loggedInState,
+  execute: async () => {
+    password = 'newPassword'
   },
 }
 
 describe('basic action', () => {
-  it("doesn't work if I fail to init", async () => {
-    expect.assertions(1)
-    await processStateMachine(myAction, blankConfig).catch(e =>
-      expect(e).toEqual(new Error('CLIactions empty, call initStateMachine first'))
-    )
-  })
-  it('works with numbers', async () => {
-    expect.assertions(2)
-    initStateMachine([myAction])
-    expect(foo).toEqual(0)
-    await processStateMachine(myAction, blankConfig)
-    expect(foo).toEqual(1)
+  it('self heals', async () => {
+    initStateMachine([loginAction, logoutAction, changePasswordAction])
+    expect(password).toEqual('oldPassword')
+    expect(loginStatus).toEqual(false) // not logged in
+    await processStateMachine(changePasswordAction, blankConfig)
+    expect(password).toEqual('newPassword')
+    expect(loginStatus).toEqual(true) // logged in
   })
 })
 
@@ -349,5 +361,60 @@ describe('basic action', () => {
 to this:
 
 ```ts
+import { Action, State } from '../../src/types'
+import { initStateMachine, processStateMachine } from '../../src'
+import { blankConfig } from '../../src/index'
+
+let password = 'oldPassword'
+let loginStatus = false
+
+export const loggedInState: State = {
+  stateId: 'loggedIn',
+  getValue: async () => loginStatus,
+  assert: async (status: boolean) => status === true,
+}
+export const loggedOutState: State = {
+  stateId: 'loggedOut',
+  getValue: async () => loginStatus,
+  assert: async (status: boolean) => status === false,
+}
+export const loginAction: Action = {
+  actionId: 'loginAction',
+  beforeState: loggedOutState,
+  afterState: loggedInState,
+  execute: async () => {
+    // console.log('logging in')
+    loginStatus = true
+  },
+}
+export const logoutAction: Action = {
+  actionId: 'logoutAction',
+  beforeState: loggedInState,
+  afterState: loggedOutState,
+  execute: async () => {
+    // console.log('logging out')
+    loginStatus = false
+  },
+}
+export const changePasswordAction: Action = {
+  actionId: 'changePassword',
+  beforeState: loggedInState,
+  afterState: loggedInState,
+  execute: async () => {
+    password = 'newPassword'
+  },
+}
+
+describe('basic action', () => {
+  it('self heals', async () => {
+    initStateMachine([loginAction, logoutAction, changePasswordAction])
+    expect(password).toEqual('oldPassword')
+    expect(loginStatus).toEqual(false) // not logged in
+    await processStateMachine(changePasswordAction, blankConfig)
+    expect(password).toEqual('newPassword')
+    expect(loginStatus).toEqual(true) // logged in
+  })
+})
+
 
 ```
