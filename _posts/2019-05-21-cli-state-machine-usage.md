@@ -51,3 +51,72 @@ certain things could be better about this:
 - i have to write code to check and make folder if it doesn't exist
 - then i return the dirname
 
+
+---
+
+i also dont like this repetitive api...
+
+```ts
+import chalk from 'chalk'
+import { Action, State, Requirement, Config } from './types'
+import { prompt } from 'enquirer'
+
+export const createRequiredFieldInConfig = (
+  /** field name */
+  fieldName: string,
+  options: {
+    /** message to the user to prompt for field */
+    message?: string
+    /** default reply if you have one to specify */
+    initial?: string
+  } = {}
+) => {
+  // may want to put more validation on the fieldName in future
+  if (fieldName.includes(' '))
+    throw new Error(`fieldName ${chalk.yellow(fieldName)} cannot have a space in it`)
+
+  const fieldNameMissingRequirement: Requirement = {
+    name: 'fieldNameMissingRequirement_' + fieldName,
+    getter: async (config: Config) => config[fieldName],
+    assert: async (field: any) => field === undefined,
+  }
+  const fieldNameExistsRequirement: Requirement = {
+    name: 'fieldNameExistsRequirement_' + fieldName,
+    getter: async (config: Config) => config[fieldName],
+    assert: async (field: any) => field !== undefined,
+  }
+  const fieldNameMissingState: State = {
+    uniqueName: 'fieldNameMissingState_' + fieldName,
+    requirements: [fieldNameMissingRequirement],
+  }
+  const fieldNameExistsState: State = {
+    uniqueName: 'fieldNameExistsState_' + fieldName,
+    requirements: [fieldNameExistsRequirement],
+  }
+  const fieldNamePromptAction: Action = {
+    uniqueId: 'fieldNamePromptAction_' + fieldName,
+    requiredStates: [fieldNameMissingState],
+    postExecuteState: fieldNameExistsState,
+    execute: async config => {
+      const question = {
+        type: 'input',
+        name: 'answer',
+        message: options.message || `Enter ${chalk.yellow(fieldName)}: `,
+        initial: options.initial,
+      }
+      const { answer } = await prompt(question)
+      config[fieldName] = answer
+    },
+  }
+  return {
+    fieldNameMissingRequirement,
+    fieldNameExistsRequirement,
+    fieldNameMissingState,
+    fieldNameExistsState,
+    fieldNamePromptAction,
+  }
+}
+```
+
+so i am getting rid of the idea of requirements.
+
