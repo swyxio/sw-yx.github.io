@@ -260,3 +260,30 @@ const validateRequirements = async (reqs: Requirement[], config: Config) => {
 }
 ```
 
+---
+
+i fought really hard to keep the preStates an array... but this is impossible to type:
+
+```ts
+/**
+ * an Action is the primary unit of the state machine
+ *
+ * see field comments for what each does
+ *  */
+export type Action<PreStateType = any, ExecuteType = any, PostStateType = any> = {
+  actionId: string
+  description?: string
+  /** "BEFORE": prerequisite states to check */
+  preStates: State<PreStateType>[]
+  /** "DURING": the meat of the action to execute once */
+  execute: (config: Config, value: ExecuteType) => Promise<void>
+  /** "AFTER": a state that should be fulfilled after execute runs */
+  postState?: State<PostStateType>
+  /** if postExcuteState isn't fulfilled, should we repeat this Action?
+   *
+   * make truthy to repeat executing until postState is fulfiled
+   * default falsy to blame the developer for postState not being fulfiled */
+  repeatable?: boolean
+}
+
+```
