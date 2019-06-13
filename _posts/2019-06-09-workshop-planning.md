@@ -12,11 +12,12 @@ relevant links
 
 - https://www.gatsbyjs.org/contributing/how-to-run-a-gatsby-workshop/
 - https://github.com/wgao19/anyhowly-rocks
+- https://github.com/wesbos/gatsby-demo
+- https://github.com/wesbos/Gatsby-Workshop/tree/master/gatsby-site/src
 
 ecom examples
 
 - https://gatsby-shopify-starter.netlify.com/product/dknypure-drape-neck-dress/
-- https://github.com/wesbos/Gatsby-Workshop/tree/master/gatsby-site/src https://github.com/wesbos/gatsby-demo
 - https://www.shopflamingo.com/
 
 static content/blog examples
