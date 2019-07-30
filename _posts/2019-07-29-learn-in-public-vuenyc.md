@@ -33,6 +33,7 @@ https://www.youtube.com/watch?time_continue=6&v=-f-rZepNKW0
     - Talk to past you. By far the biggest beneficiary will be future you.
     - If others benefit, that's icing
 - They will Read it
-  - 
+
+  - Trolls
 - Why does it work?
   - 
