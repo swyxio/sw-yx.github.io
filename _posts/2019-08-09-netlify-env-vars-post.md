@@ -18,7 +18,7 @@ Environment Variables occupy an interesting space in our collective mindset. The
 
 ### Making use of Environment Variables on the Frontend
 
-Because unintentionally leaking API tokens to clients is a Very Bad Thing, we have evolved best practices like prefixing environment variables with [`REACT_APP_`](https://facebook.github.io/create-react-app/docs/adding-custom-environment-variables#docsNav) or [`VUE_APP_`](https://cli.vuejs.org/guide/mode-and-env.html#environment-variables) or [`GATSBY_`](https://www.gatsbyjs.org/docs/environment-variables/#client-side-javascript). If you aren't seeing an environment variable that you expected to see, this is probably the cause.
+Because unintentionally leaking API tokens to clients is a Very Bad Thing, we have evolved best practices like prefixing environment variables with [`REACT_APP_`](https://facebook.github.io/create-react-app/docs/adding-custom-environment-variables#docsNav) or [`VUE_APP_`](https://cli.vuejs.org/guide/mode-and-env.html#environment-variables) or [`GATSBY_`](https://www.gatsbyjs.org/docs/environment-variables/#client-side-javascript). If you aren't seeing an environment variable that you expected to see, this is probably the cause. Please [check our Common Environment Variables Issues Guide on the Netlify Community site](https://community.netlify.com/t/common-issue-using-environment-variables-on-netlify-correctly/267/1) for self-serve help!
 
 For hosted platforms like Netlify, we can also [use environment variables to communicate from the build environment to the frontend](https://www.netlify.com/docs/continuous-deployment/?utm_source=blog&utm_medium=scotchio&utm_campaign=devex#environment-variables), for the frontend to configure itself based on that information.
 
