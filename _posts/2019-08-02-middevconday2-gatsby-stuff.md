@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2019-09-02
+date: 2019-08-02
 tags: middevcon
 feelings: moderate
 title: middevconday2 gatsby stuff
