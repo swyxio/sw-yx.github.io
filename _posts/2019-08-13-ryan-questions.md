@@ -18,3 +18,20 @@ description: some quetsions ahread of call
   - supertwitter
   - contracting
  
+framework for reactrouter
+- dynamic
+- codesplitting
+- data loading
+- i18n
+ on full site
+
+
+thru to end 2020
+
+swe/education
+react router & nextjs
+dynamic routes based on permission
+
+
+mj software/roadmap/gh issues
+rf training/executing/mgmt
